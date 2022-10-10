@@ -8,7 +8,7 @@
 - Use Git Version control to coordinate 
 - 
 ### Group  
-`Bharadwaj Chukkala` | `Venkata Sairam Polina`
+`Bharadwaj Chukkala` | `Venkata Sairam Polina` | `Shelvin Pauly`
 
 ### Part 1 
 - The Teams created their tentative UML Class Diagram for implementing the code.
