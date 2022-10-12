@@ -80,23 +80,13 @@ sudo apt-get install lcov [install lcov]
 cd build
 firefox coverage/index.html` [install firefox]
 ```  
-### Run cppcheck and cpplint
-Run cppcheck: Results are stored in `./results/cpp_check.pdf`
-```
-sh run_cppcheck.sh
-```
 
-Run cpplint: Results are stored in `./results/cpplint.pdf`
-```
-sh run_cpplint.sh
-```
-### The UML class diagrams
+### The UML Class Diagrams
 
-[Mid-term Project-2.pdf](https://github.com/bharadwaj-chukkala/ENPM808X_Midterm_project/files/9767961/Mid-term.Project-2.pdf)
-
+![Class Diagram](https://user-images.githubusercontent.com/106445479/195428101-53fa582a-ed0f-48cc-b707-a5aeedcb2053.png)
 *Fig 1 :  UML class diagram*
 
-[Mid-term Project-1.pdf](https://github.com/bharadwaj-chukkala/ENPM808X_Midterm_project/files/9767962/Mid-term.Project-1.pdf)
 
+![Activity Diagram](https://user-images.githubusercontent.com/106445479/195427932-de4681d8-850a-4c22-8239-b083cc1708c9.png)
 *Fig 2 :  Activity diagram*
 
