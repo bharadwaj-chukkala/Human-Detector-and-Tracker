@@ -12,9 +12,12 @@ This project involves the development of a Perception Module for Human Obstacle 
 - Use Software Development Process AIP  
 - Use Git Version control to coordinate
 - Code Coverage and Continuous Integration with TravisCI and Coveralls
-- 
-### Group  
-`Bharadwaj Chukkala` | `Venkata Sairam Polina` | `Shelvin Pauly`
+
+### Group
+| `Bharadwaj Chukkala`  | `Venkata Sairam Polina` | `Shelvin Pauly` |
+| ------------- | ------------- |------------- |
+| 118341705 | 118436579 | 118426556 |
+| Navigator | Design Keeper | Driver  |
 
 ### Part 1 
 - The Teams created their tentative UML Class Diagram for implementing the code.
