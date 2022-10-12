@@ -17,7 +17,7 @@ This project involves the development of a Perception Module for Human Obstacle 
 | `Bharadwaj Chukkala`  | `Venkata Sairam Polina` | `Shelvin Pauly` |
 | ------------- | ------------- |------------- |
 | 118341705 | 118436579 | 118426556 |
-| Navigator | Design Keeper | Driver  |
+| Navigator | Driver |  Design Keeper |
 
 ### Phase 0 
 - The Team created their tentative UML Class Diagram for implementing the code.
@@ -57,7 +57,6 @@ This project involves the development of a Perception Module for Human Obstacle 
 ├── <font color="#3465A4"><b>include</b></font>
 │   └── lib.hpp
 ├── MId term proposal ENPM08X.docx
-├── readme.md
 ├── README.md
 ├── <font color="#3465A4"><b>test</b></font>
 │   ├── CMakeLists.txt
