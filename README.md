@@ -34,8 +34,8 @@ This project involves the development of a Perception Module for Human Obstacle 
 
 ### Software Project Management Plan Aspects
 - ```Overview, Process, Technologies, Risk Management, References``` - [Project Proposal](https://github.com/bharadwaj-chukkala/ENPM808X_Midterm_project/blob/master/Project%20Proposal.pdf)
-- ```Design``` Initial Product Backlog using ESC, Assigning Responsibilities by CRC - [Software Development utils](https://github.com/bharadwaj-chukkala/ENPM808X_Midterm_project/tree/master/Design_Neccesities)
-- ``` Implementation``` Class Diagram and Activity Diagram - [UML Diagrams](https://github.com/bharadwaj-chukkala/ENPM808X_Midterm_project/tree/master/UML%20Diagrams)
+- ```Design, Initial Product Backlog (ESC), Assigning Responsibilities (CRC)``` - [Software Development utils](https://github.com/bharadwaj-chukkala/ENPM808X_Midterm_project/tree/master/Design_Neccesities)
+- ``` Implementation, Class Diagram, Activity Diagram``` - [UML Diagrams](https://github.com/bharadwaj-chukkala/ENPM808X_Midterm_project/tree/master/UML%20Diagrams)
 
 ## Contents
 
