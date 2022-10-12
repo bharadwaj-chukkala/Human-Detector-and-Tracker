@@ -29,7 +29,8 @@ This project involves the development of a Perception Module for Human Obstacle 
 - cpplinting and checking will be done for the package
 - The code will be standardly documented using Doxygen
 
-
+### Proposal Video
+! [Click Here] (https://drive.google.com/file/d/1BUSOc8T6gLknhAt8TJ6uW9MLCY49dpPH/view?usp=sharing)
 ## Contents
 
 <pre>├── <font color="#3465A4"><b>app</b></font>
