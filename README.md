@@ -86,7 +86,8 @@ firefox coverage/index.html` [install firefox]
 ![Class Diagram](https://user-images.githubusercontent.com/106445479/195428101-53fa582a-ed0f-48cc-b707-a5aeedcb2053.png)
 *Fig 1 :  UML class diagram*
 
-
-<img src="[http://....jpg](https://user-images.githubusercontent.com/106445479/195427932-de4681d8-850a-4c22-8239-b083cc1708c9.png)" width="250" height="250" />
+<p align="center">
+<img src="https://user-images.githubusercontent.com/106445479/195427932-de4681d8-850a-4c22-8239-b083cc1708c9.png" width="250" height="250" />
+</p>
 *Fig 2 :  Activity diagram*
 
