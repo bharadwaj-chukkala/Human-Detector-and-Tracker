@@ -1,11 +1,17 @@
-# ENPM808X-Midterm
+# Human Obstacle Detection and Tracking
+[![Build Status](https://travis-ci.org/dpiet/cpp-boilerplate.svg?branch=master)](https://travis-ci.org/dpiet/cpp-boilerplate)
+[![Coverage Status](https://coveralls.io/repos/github/dpiet/cpp-boilerplate/badge.svg?branch=master)](https://coveralls.io/github/dpiet/cpp-boilerplate?branch=master)
+---
 
 ## Overview
+This project involves the development of a Perception Module for Human Obstacle Detection and Tracking for a ACME Robotics product.
+
 ### Task
-- We need to create a vision module for an AGV product of ACME Robotics 
+- We need to create a Perception module for an AGV product of ACME Robotics 
 - Simulate Pair Programming and Test Driven Development
-- Use Software Development Process like AIP 
-- Use Git Version control to coordinate 
+- Use Software Development Process AIP  
+- Use Git Version control to coordinate
+- Code Coverage and Continuous Integration with TravisCI and Coveralls
 - 
 ### Group  
 `Bharadwaj Chukkala` | `Venkata Sairam Polina` | `Shelvin Pauly`
@@ -86,9 +92,11 @@ sh run_cpplint.sh
 ```
 ### The UML class diagrams
 
+[Mid-term Project-2.pdf](https://github.com/bharadwaj-chukkala/ENPM808X_Midterm_project/files/9767961/Mid-term.Project-2.pdf)
 
 *Fig 1 :  UML class diagram*
 
+[Mid-term Project-1.pdf](https://github.com/bharadwaj-chukkala/ENPM808X_Midterm_project/files/9767962/Mid-term.Project-1.pdf)
 
 *Fig 2 :  Activity diagram*
 
