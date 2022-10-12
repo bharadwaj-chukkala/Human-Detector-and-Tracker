@@ -82,12 +82,18 @@ firefox coverage/index.html` [install firefox]
 ```  
 
 ### The UML Class Diagrams
-
+<p align="center">
 ![Class Diagram](https://user-images.githubusercontent.com/106445479/195428101-53fa582a-ed0f-48cc-b707-a5aeedcb2053.png)
+    
 *Fig 1 :  UML class diagram*
+</p>
+
+
 
 <p align="center">
-<img src="https://user-images.githubusercontent.com/106445479/195427932-de4681d8-850a-4c22-8239-b083cc1708c9.png" width="250" height="250" />
-</p>
+<img src="https://user-images.githubusercontent.com/106445479/195427932-de4681d8-850a-4c22-8239-b083cc1708c9.png" width="450" height="450" />
+
 *Fig 2 :  Activity diagram*
+</p>
+
 
