@@ -19,14 +19,14 @@ This project involves the development of a Perception Module for Human Obstacle 
 | 118341705 | 118436579 | 118426556 |
 | Navigator | Design Keeper | Driver  |
 
-### Part 1 
-- The Teams created their tentative UML Class Diagram for implementing the code.
-- In the next step both teams created necessary classes and methods.
+### Phase 0 
+- The Team created their tentative UML Class Diagram for implementing the code.
+- In the next step the driver created necessary classes and methods.
 - The Team created the test cases for essentially how the detection is supposed to work.
 - CMakeLists were created appropriately as seen in the content tree below.
 - All this was done using git version control and detailed commits were written for each P-request
-- The teams programmed the code such that multiple test cases pass without fail and merged their changes to main branch.
-- cpplinting and checking was done for both the packages
+- The team will program the code such that multiple test cases pass without fail and merge their changes to main branch.
+- cpplinting and checking will be done for the package
 - The code will be standardly documented using Doxygen
 
 
