@@ -34,5 +34,6 @@ class HumanClassifier {
      * 
      * @return rectandconfidence is cv::rect2d and scores for the prediction
      */
+
     rectandconfidence detect();
 }
