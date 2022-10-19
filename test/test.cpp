@@ -1,11 +1,11 @@
 #include <gtest/gtest.h>
-#include <"../include/ReadData.hpp">
+#include "../include/ReadData.hpp"
 
 // TEST(dummy, should_pass) {
 //   EXPECT_EQ(1, 1);
 // }
 
-DataReader data;
+ReadData data;
 std::string path = "../test_data/Lenna.png";
 
 TEST(DataReader, read_success) {
