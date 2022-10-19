@@ -4,13 +4,14 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "/home/bharadwaj/ENPM808X/ENPM808X Midterm project/app/main.cpp" "/home/bharadwaj/ENPM808X/ENPM808X Midterm project/build/app/CMakeFiles/shell-app.dir/main.cpp.o"
+  "/home/sairamp/ENPM808X_Midterm_project/app/main.cpp" "/home/sairamp/ENPM808X_Midterm_project/build/app/CMakeFiles/shell-app.dir/main.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 
 # The include file search paths:
 set(CMAKE_CXX_TARGET_INCLUDE_PATH
   "../include"
+  "/home/sairamp/installation/OpenCV/installation/OpenCV/include/opencv4"
   )
 
 # Targets to which this target links.

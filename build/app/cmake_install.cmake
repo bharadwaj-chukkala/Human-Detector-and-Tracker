@@ -1,4 +1,4 @@
-# Install script for directory: /home/bharadwaj/ENPM808X/ENPM808X Midterm project/app
+# Install script for directory: /home/sairamp/ENPM808X_Midterm_project/app
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)

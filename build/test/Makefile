@@ -48,10 +48,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = "/home/bharadwaj/ENPM808X/ENPM808X Midterm project"
+CMAKE_SOURCE_DIR = /home/sairamp/ENPM808X_Midterm_project
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = "/home/bharadwaj/ENPM808X/ENPM808X Midterm project/build"
+CMAKE_BINARY_DIR = /home/sairamp/ENPM808X_Midterm_project/build
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -115,8 +115,8 @@ rebuild_cache/fast: rebuild_cache
 
 # Special rule for the target edit_cache
 edit_cache:
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "No interactive CMake dialog available..."
-	/usr/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake cache editor..."
+	/usr/bin/cmake-gui -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
 .PHONY : edit_cache
 
 # Special rule for the target edit_cache
@@ -126,14 +126,14 @@ edit_cache/fast: edit_cache
 
 # The main all target
 all: cmake_check_build_system
-	cd "/home/bharadwaj/ENPM808X/ENPM808X Midterm project/build" && $(CMAKE_COMMAND) -E cmake_progress_start "/home/bharadwaj/ENPM808X/ENPM808X Midterm project/build/CMakeFiles" "/home/bharadwaj/ENPM808X/ENPM808X Midterm project/build/test/CMakeFiles/progress.marks"
-	cd "/home/bharadwaj/ENPM808X/ENPM808X Midterm project/build" && $(MAKE) -f CMakeFiles/Makefile2 test/all
-	$(CMAKE_COMMAND) -E cmake_progress_start "/home/bharadwaj/ENPM808X/ENPM808X Midterm project/build/CMakeFiles" 0
+	cd /home/sairamp/ENPM808X_Midterm_project/build && $(CMAKE_COMMAND) -E cmake_progress_start /home/sairamp/ENPM808X_Midterm_project/build/CMakeFiles /home/sairamp/ENPM808X_Midterm_project/build/test/CMakeFiles/progress.marks
+	cd /home/sairamp/ENPM808X_Midterm_project/build && $(MAKE) -f CMakeFiles/Makefile2 test/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/sairamp/ENPM808X_Midterm_project/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	cd "/home/bharadwaj/ENPM808X/ENPM808X Midterm project/build" && $(MAKE) -f CMakeFiles/Makefile2 test/clean
+	cd /home/sairamp/ENPM808X_Midterm_project/build && $(MAKE) -f CMakeFiles/Makefile2 test/clean
 .PHONY : clean
 
 # The main clean target
@@ -143,22 +143,22 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	cd "/home/bharadwaj/ENPM808X/ENPM808X Midterm project/build" && $(MAKE) -f CMakeFiles/Makefile2 test/preinstall
+	cd /home/sairamp/ENPM808X_Midterm_project/build && $(MAKE) -f CMakeFiles/Makefile2 test/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	cd "/home/bharadwaj/ENPM808X/ENPM808X Midterm project/build" && $(MAKE) -f CMakeFiles/Makefile2 test/preinstall
+	cd /home/sairamp/ENPM808X_Midterm_project/build && $(MAKE) -f CMakeFiles/Makefile2 test/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	cd "/home/bharadwaj/ENPM808X/ENPM808X Midterm project/build" && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+	cd /home/sairamp/ENPM808X_Midterm_project/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
 # Convenience name for target.
 test/CMakeFiles/cpp-test.dir/rule:
-	cd "/home/bharadwaj/ENPM808X/ENPM808X Midterm project/build" && $(MAKE) -f CMakeFiles/Makefile2 test/CMakeFiles/cpp-test.dir/rule
+	cd /home/sairamp/ENPM808X_Midterm_project/build && $(MAKE) -f CMakeFiles/Makefile2 test/CMakeFiles/cpp-test.dir/rule
 .PHONY : test/CMakeFiles/cpp-test.dir/rule
 
 # Convenience name for target.
@@ -168,8 +168,35 @@ cpp-test: test/CMakeFiles/cpp-test.dir/rule
 
 # fast build rule for target.
 cpp-test/fast:
-	cd "/home/bharadwaj/ENPM808X/ENPM808X Midterm project/build" && $(MAKE) -f test/CMakeFiles/cpp-test.dir/build.make test/CMakeFiles/cpp-test.dir/build
+	cd /home/sairamp/ENPM808X_Midterm_project/build && $(MAKE) -f test/CMakeFiles/cpp-test.dir/build.make test/CMakeFiles/cpp-test.dir/build
 .PHONY : cpp-test/fast
+
+__/app/ReadData.o: __/app/ReadData.cpp.o
+
+.PHONY : __/app/ReadData.o
+
+# target to build an object file
+__/app/ReadData.cpp.o:
+	cd /home/sairamp/ENPM808X_Midterm_project/build && $(MAKE) -f test/CMakeFiles/cpp-test.dir/build.make test/CMakeFiles/cpp-test.dir/__/app/ReadData.cpp.o
+.PHONY : __/app/ReadData.cpp.o
+
+__/app/ReadData.i: __/app/ReadData.cpp.i
+
+.PHONY : __/app/ReadData.i
+
+# target to preprocess a source file
+__/app/ReadData.cpp.i:
+	cd /home/sairamp/ENPM808X_Midterm_project/build && $(MAKE) -f test/CMakeFiles/cpp-test.dir/build.make test/CMakeFiles/cpp-test.dir/__/app/ReadData.cpp.i
+.PHONY : __/app/ReadData.cpp.i
+
+__/app/ReadData.s: __/app/ReadData.cpp.s
+
+.PHONY : __/app/ReadData.s
+
+# target to generate assembly for a file
+__/app/ReadData.cpp.s:
+	cd /home/sairamp/ENPM808X_Midterm_project/build && $(MAKE) -f test/CMakeFiles/cpp-test.dir/build.make test/CMakeFiles/cpp-test.dir/__/app/ReadData.cpp.s
+.PHONY : __/app/ReadData.cpp.s
 
 main.o: main.cpp.o
 
@@ -177,7 +204,7 @@ main.o: main.cpp.o
 
 # target to build an object file
 main.cpp.o:
-	cd "/home/bharadwaj/ENPM808X/ENPM808X Midterm project/build" && $(MAKE) -f test/CMakeFiles/cpp-test.dir/build.make test/CMakeFiles/cpp-test.dir/main.cpp.o
+	cd /home/sairamp/ENPM808X_Midterm_project/build && $(MAKE) -f test/CMakeFiles/cpp-test.dir/build.make test/CMakeFiles/cpp-test.dir/main.cpp.o
 .PHONY : main.cpp.o
 
 main.i: main.cpp.i
@@ -186,7 +213,7 @@ main.i: main.cpp.i
 
 # target to preprocess a source file
 main.cpp.i:
-	cd "/home/bharadwaj/ENPM808X/ENPM808X Midterm project/build" && $(MAKE) -f test/CMakeFiles/cpp-test.dir/build.make test/CMakeFiles/cpp-test.dir/main.cpp.i
+	cd /home/sairamp/ENPM808X_Midterm_project/build && $(MAKE) -f test/CMakeFiles/cpp-test.dir/build.make test/CMakeFiles/cpp-test.dir/main.cpp.i
 .PHONY : main.cpp.i
 
 main.s: main.cpp.s
@@ -195,7 +222,7 @@ main.s: main.cpp.s
 
 # target to generate assembly for a file
 main.cpp.s:
-	cd "/home/bharadwaj/ENPM808X/ENPM808X Midterm project/build" && $(MAKE) -f test/CMakeFiles/cpp-test.dir/build.make test/CMakeFiles/cpp-test.dir/main.cpp.s
+	cd /home/sairamp/ENPM808X_Midterm_project/build && $(MAKE) -f test/CMakeFiles/cpp-test.dir/build.make test/CMakeFiles/cpp-test.dir/main.cpp.s
 .PHONY : main.cpp.s
 
 test.o: test.cpp.o
@@ -204,7 +231,7 @@ test.o: test.cpp.o
 
 # target to build an object file
 test.cpp.o:
-	cd "/home/bharadwaj/ENPM808X/ENPM808X Midterm project/build" && $(MAKE) -f test/CMakeFiles/cpp-test.dir/build.make test/CMakeFiles/cpp-test.dir/test.cpp.o
+	cd /home/sairamp/ENPM808X_Midterm_project/build && $(MAKE) -f test/CMakeFiles/cpp-test.dir/build.make test/CMakeFiles/cpp-test.dir/test.cpp.o
 .PHONY : test.cpp.o
 
 test.i: test.cpp.i
@@ -213,7 +240,7 @@ test.i: test.cpp.i
 
 # target to preprocess a source file
 test.cpp.i:
-	cd "/home/bharadwaj/ENPM808X/ENPM808X Midterm project/build" && $(MAKE) -f test/CMakeFiles/cpp-test.dir/build.make test/CMakeFiles/cpp-test.dir/test.cpp.i
+	cd /home/sairamp/ENPM808X_Midterm_project/build && $(MAKE) -f test/CMakeFiles/cpp-test.dir/build.make test/CMakeFiles/cpp-test.dir/test.cpp.i
 .PHONY : test.cpp.i
 
 test.s: test.cpp.s
@@ -222,7 +249,7 @@ test.s: test.cpp.s
 
 # target to generate assembly for a file
 test.cpp.s:
-	cd "/home/bharadwaj/ENPM808X/ENPM808X Midterm project/build" && $(MAKE) -f test/CMakeFiles/cpp-test.dir/build.make test/CMakeFiles/cpp-test.dir/test.cpp.s
+	cd /home/sairamp/ENPM808X_Midterm_project/build && $(MAKE) -f test/CMakeFiles/cpp-test.dir/build.make test/CMakeFiles/cpp-test.dir/test.cpp.s
 .PHONY : test.cpp.s
 
 # Help Target
@@ -238,6 +265,9 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... edit_cache"
 	@echo "... cpp-test"
+	@echo "... __/app/ReadData.o"
+	@echo "... __/app/ReadData.i"
+	@echo "... __/app/ReadData.s"
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"
@@ -255,6 +285,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	cd "/home/bharadwaj/ENPM808X/ENPM808X Midterm project/build" && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+	cd /home/sairamp/ENPM808X_Midterm_project/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

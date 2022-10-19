@@ -105,28 +105,28 @@
 				{
 					"directoryIndex" : 2,
 					"id" : "cpp-test::@36f028580bb02cc8272a",
-					"jsonFile" : "target-cpp-test-Debug-2faefa5eaaa24455d42c.json",
+					"jsonFile" : "target-cpp-test-Debug-9d122de7e7bedc5389a6.json",
 					"name" : "cpp-test",
 					"projectIndex" : 0
 				},
 				{
 					"directoryIndex" : 3,
 					"id" : "gtest::@7686eca10ca0980a481c",
-					"jsonFile" : "target-gtest-Debug-9b5f11c39dd66d168f91.json",
+					"jsonFile" : "target-gtest-Debug-01f7b7bbf87940183a79.json",
 					"name" : "gtest",
 					"projectIndex" : 1
 				},
 				{
 					"directoryIndex" : 3,
 					"id" : "gtest_main::@7686eca10ca0980a481c",
-					"jsonFile" : "target-gtest_main-Debug-ef08403c0503c801c2f6.json",
+					"jsonFile" : "target-gtest_main-Debug-a6cad681365c4bd17562.json",
 					"name" : "gtest_main",
 					"projectIndex" : 1
 				},
 				{
 					"directoryIndex" : 1,
 					"id" : "shell-app::@5f5a17c01335469806cb",
-					"jsonFile" : "target-shell-app-Debug-c43493373136bb3d2541.json",
+					"jsonFile" : "target-shell-app-Debug-17dccd0985e5fbc27210.json",
 					"name" : "shell-app",
 					"projectIndex" : 0
 				}
@@ -136,8 +136,8 @@
 	"kind" : "codemodel",
 	"paths" : 
 	{
-		"build" : "/home/bharadwaj/ENPM808X/ENPM808X Midterm project/build",
-		"source" : "/home/bharadwaj/ENPM808X/ENPM808X Midterm project"
+		"build" : "/home/sairamp/ENPM808X_Midterm_project/build",
+		"source" : "/home/sairamp/ENPM808X_Midterm_project"
 	},
 	"version" : 
 	{

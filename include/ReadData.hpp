@@ -24,7 +24,7 @@ class ReadData{
      * @brief Construct a new Read Data object which initializes the frame with an empty image
      * 
      */
-    ReadData(cv::Mat);
+    ReadData();
 
     /**
      * @brief Destroy the Read Data object
@@ -39,4 +39,4 @@ class ReadData{
      * @return cv::Mat image(frame)
      */
     cv::Mat readFrame(std::string path);
-}
+};

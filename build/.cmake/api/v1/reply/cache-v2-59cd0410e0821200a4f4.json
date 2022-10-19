@@ -67,7 +67,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "/home/bharadwaj/ENPM808X/ENPM808X Midterm project/build"
+			"value" : "/home/sairamp/ENPM808X_Midterm_project/build"
 		},
 		{
 			"name" : "CMAKE_CACHE_MAJOR_VERSION",
@@ -430,6 +430,18 @@
 			"value" : "CMAKE_DLLTOOL-NOTFOUND"
 		},
 		{
+			"name" : "CMAKE_EDIT_COMMAND",
+			"properties" : 
+			[
+				{
+					"name" : "HELPSTRING",
+					"value" : "Path to cache edit program executable."
+				}
+			],
+			"type" : "INTERNAL",
+			"value" : "/usr/bin/cmake-gui"
+		},
+		{
 			"name" : "CMAKE_EXECUTABLE_FORMAT",
 			"properties" : 
 			[
@@ -655,7 +667,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "/home/bharadwaj/ENPM808X/ENPM808X Midterm project"
+			"value" : "/home/sairamp/ENPM808X_Midterm_project"
 		},
 		{
 			"name" : "CMAKE_INSTALL_PREFIX",
@@ -1182,16 +1194,16 @@
 			"value" : "FALSE"
 		},
 		{
-			"name" : "COVERAGE",
+			"name" : "FIND_PACKAGE_MESSAGE_DETAILS_OpenCV",
 			"properties" : 
 			[
 				{
 					"name" : "HELPSTRING",
-					"value" : "Generate Coverage Data"
+					"value" : "Details about finding OpenCV"
 				}
 			],
-			"type" : "BOOL",
-			"value" : "OFF"
+			"type" : "INTERNAL",
+			"value" : "[/home/sairamp/installation/OpenCV/installation/OpenCV][v4.5.4()]"
 		},
 		{
 			"name" : "FIND_PACKAGE_MESSAGE_DETAILS_PythonInterp",
@@ -1203,7 +1215,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "[/usr/bin/python3.8][v3.8.10()]"
+			"value" : "[/home/sairamp/anaconda3/bin/python][v3.9.12()]"
 		},
 		{
 			"name" : "FIND_PACKAGE_MESSAGE_DETAILS_Threads",
@@ -1231,7 +1243,7 @@
 				}
 			],
 			"type" : "FILEPATH",
-			"value" : "/usr/bin/python3.8"
+			"value" : "/home/sairamp/anaconda3/bin/python"
 		},
 		{
 			"name" : "gtest_BINARY_DIR",
@@ -1243,7 +1255,7 @@
 				}
 			],
 			"type" : "STATIC",
-			"value" : "/home/bharadwaj/ENPM808X/ENPM808X Midterm project/build/vendor/googletest/googletest"
+			"value" : "/home/sairamp/ENPM808X_Midterm_project/build/vendor/googletest/googletest"
 		},
 		{
 			"name" : "gtest_LIB_DEPENDS",
@@ -1267,7 +1279,7 @@
 				}
 			],
 			"type" : "STATIC",
-			"value" : "/home/bharadwaj/ENPM808X/ENPM808X Midterm project/vendor/googletest/googletest"
+			"value" : "/home/sairamp/ENPM808X_Midterm_project/vendor/googletest/googletest"
 		},
 		{
 			"name" : "gtest_build_samples",
@@ -1351,7 +1363,7 @@
 				}
 			],
 			"type" : "STATIC",
-			"value" : "/home/bharadwaj/ENPM808X/ENPM808X Midterm project/build"
+			"value" : "/home/sairamp/ENPM808X_Midterm_project/build"
 		},
 		{
 			"name" : "scratch_SOURCE_DIR",
@@ -1363,7 +1375,7 @@
 				}
 			],
 			"type" : "STATIC",
-			"value" : "/home/bharadwaj/ENPM808X/ENPM808X Midterm project"
+			"value" : "/home/sairamp/ENPM808X_Midterm_project"
 		}
 	],
 	"kind" : "cache",

@@ -1,4 +1,4 @@
-# Install script for directory: /home/bharadwaj/ENPM808X/ENPM808X Midterm project
+# Install script for directory: /home/sairamp/ENPM808X_Midterm_project
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -39,9 +39,9 @@ endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for each subdirectory.
-  include("/home/bharadwaj/ENPM808X/ENPM808X Midterm project/build/app/cmake_install.cmake")
-  include("/home/bharadwaj/ENPM808X/ENPM808X Midterm project/build/test/cmake_install.cmake")
-  include("/home/bharadwaj/ENPM808X/ENPM808X Midterm project/build/vendor/googletest/googletest/cmake_install.cmake")
+  include("/home/sairamp/ENPM808X_Midterm_project/build/app/cmake_install.cmake")
+  include("/home/sairamp/ENPM808X_Midterm_project/build/test/cmake_install.cmake")
+  include("/home/sairamp/ENPM808X_Midterm_project/build/vendor/googletest/googletest/cmake_install.cmake")
 
 endif()
 
@@ -53,5 +53,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "/home/bharadwaj/ENPM808X/ENPM808X Midterm project/build/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "/home/sairamp/ENPM808X_Midterm_project/build/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")

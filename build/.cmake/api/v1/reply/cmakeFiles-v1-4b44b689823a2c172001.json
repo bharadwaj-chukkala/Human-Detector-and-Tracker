@@ -132,6 +132,32 @@
 			"path" : "/usr/share/cmake-3.16/Modules/CMakeCommonLanguageInclude.cmake"
 		},
 		{
+			"isExternal" : true,
+			"path" : "/home/sairamp/installation/OpenCV/installation/OpenCV/lib/cmake/opencv4/OpenCVConfig-version.cmake"
+		},
+		{
+			"isExternal" : true,
+			"path" : "/home/sairamp/installation/OpenCV/installation/OpenCV/lib/cmake/opencv4/OpenCVConfig.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "/usr/share/cmake-3.16/Modules/FindPackageHandleStandardArgs.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "/usr/share/cmake-3.16/Modules/FindPackageMessage.cmake"
+		},
+		{
+			"isExternal" : true,
+			"path" : "/home/sairamp/installation/OpenCV/installation/OpenCV/lib/cmake/opencv4/OpenCVModules.cmake"
+		},
+		{
+			"isExternal" : true,
+			"path" : "/home/sairamp/installation/OpenCV/installation/OpenCV/lib/cmake/opencv4/OpenCVModules-release.cmake"
+		},
+		{
 			"path" : "app/CMakeLists.txt"
 		},
 		{
@@ -192,8 +218,8 @@
 	"kind" : "cmakeFiles",
 	"paths" : 
 	{
-		"build" : "/home/bharadwaj/ENPM808X/ENPM808X Midterm project/build",
-		"source" : "/home/bharadwaj/ENPM808X/ENPM808X Midterm project"
+		"build" : "/home/sairamp/ENPM808X_Midterm_project/build",
+		"source" : "/home/sairamp/ENPM808X_Midterm_project"
 	},
 	"version" : 
 	{

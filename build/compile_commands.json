@@ -1,27 +1,32 @@
 [
 {
-  "directory": "/home/bharadwaj/ENPM808X/ENPM808X Midterm project/build/app",
-  "command": "/usr/bin/g++   -I\"/home/bharadwaj/ENPM808X/ENPM808X Midterm project/include\"  -Wall -Wextra -Wpedantic -g -g   -std=gnu++14 -o CMakeFiles/shell-app.dir/main.cpp.o -c \"/home/bharadwaj/ENPM808X/ENPM808X Midterm project/app/main.cpp\"",
-  "file": "/home/bharadwaj/ENPM808X/ENPM808X Midterm project/app/main.cpp"
+  "directory": "/home/sairamp/ENPM808X_Midterm_project/build/app",
+  "command": "/usr/bin/g++   -I/home/sairamp/ENPM808X_Midterm_project/include -isystem /home/sairamp/installation/OpenCV/installation/OpenCV/include/opencv4  -g   -std=gnu++14 -o CMakeFiles/shell-app.dir/main.cpp.o -c /home/sairamp/ENPM808X_Midterm_project/app/main.cpp",
+  "file": "/home/sairamp/ENPM808X_Midterm_project/app/main.cpp"
 },
 {
-  "directory": "/home/bharadwaj/ENPM808X/ENPM808X Midterm project/build/test",
-  "command": "/usr/bin/g++   -I\"/home/bharadwaj/ENPM808X/ENPM808X Midterm project/test/../vendor/googletest/googletest/include\" -I\"/home/bharadwaj/ENPM808X/ENPM808X Midterm project/include\" -I\"/home/bharadwaj/ENPM808X/ENPM808X Midterm project/vendor/googletest/googletest/include\"  -Wall -Wextra -Wpedantic -g -g   -std=gnu++14 -o CMakeFiles/cpp-test.dir/main.cpp.o -c \"/home/bharadwaj/ENPM808X/ENPM808X Midterm project/test/main.cpp\"",
-  "file": "/home/bharadwaj/ENPM808X/ENPM808X Midterm project/test/main.cpp"
+  "directory": "/home/sairamp/ENPM808X_Midterm_project/build/test",
+  "command": "/usr/bin/g++   -I/home/sairamp/ENPM808X_Midterm_project/test/../vendor/googletest/googletest/include -I/home/sairamp/ENPM808X_Midterm_project/include -I/home/sairamp/ENPM808X_Midterm_project/vendor/googletest/googletest/include -isystem /home/sairamp/installation/OpenCV/installation/OpenCV/include/opencv4  -g   -std=gnu++14 -o CMakeFiles/cpp-test.dir/main.cpp.o -c /home/sairamp/ENPM808X_Midterm_project/test/main.cpp",
+  "file": "/home/sairamp/ENPM808X_Midterm_project/test/main.cpp"
 },
 {
-  "directory": "/home/bharadwaj/ENPM808X/ENPM808X Midterm project/build/test",
-  "command": "/usr/bin/g++   -I\"/home/bharadwaj/ENPM808X/ENPM808X Midterm project/test/../vendor/googletest/googletest/include\" -I\"/home/bharadwaj/ENPM808X/ENPM808X Midterm project/include\" -I\"/home/bharadwaj/ENPM808X/ENPM808X Midterm project/vendor/googletest/googletest/include\"  -Wall -Wextra -Wpedantic -g -g   -std=gnu++14 -o CMakeFiles/cpp-test.dir/test.cpp.o -c \"/home/bharadwaj/ENPM808X/ENPM808X Midterm project/test/test.cpp\"",
-  "file": "/home/bharadwaj/ENPM808X/ENPM808X Midterm project/test/test.cpp"
+  "directory": "/home/sairamp/ENPM808X_Midterm_project/build/test",
+  "command": "/usr/bin/g++   -I/home/sairamp/ENPM808X_Midterm_project/test/../vendor/googletest/googletest/include -I/home/sairamp/ENPM808X_Midterm_project/include -I/home/sairamp/ENPM808X_Midterm_project/vendor/googletest/googletest/include -isystem /home/sairamp/installation/OpenCV/installation/OpenCV/include/opencv4  -g   -std=gnu++14 -o CMakeFiles/cpp-test.dir/test.cpp.o -c /home/sairamp/ENPM808X_Midterm_project/test/test.cpp",
+  "file": "/home/sairamp/ENPM808X_Midterm_project/test/test.cpp"
 },
 {
-  "directory": "/home/bharadwaj/ENPM808X/ENPM808X Midterm project/build/vendor/googletest/googletest",
-  "command": "/usr/bin/g++   -I\"/home/bharadwaj/ENPM808X/ENPM808X Midterm project/vendor/googletest/googletest/include\" -I\"/home/bharadwaj/ENPM808X/ENPM808X Midterm project/vendor/googletest/googletest\"  -Wall -Wextra -Wpedantic -g -g   -Wall -Wextra -Wpedantic -g -Wall -Wshadow -DGTEST_HAS_PTHREAD=1 -fexceptions -Wextra -Wno-unused-parameter -Wno-missing-field-initializers -std=gnu++14 -o CMakeFiles/gtest_main.dir/src/gtest_main.cc.o -c \"/home/bharadwaj/ENPM808X/ENPM808X Midterm project/vendor/googletest/googletest/src/gtest_main.cc\"",
-  "file": "/home/bharadwaj/ENPM808X/ENPM808X Midterm project/vendor/googletest/googletest/src/gtest_main.cc"
+  "directory": "/home/sairamp/ENPM808X_Midterm_project/build/test",
+  "command": "/usr/bin/g++   -I/home/sairamp/ENPM808X_Midterm_project/test/../vendor/googletest/googletest/include -I/home/sairamp/ENPM808X_Midterm_project/include -I/home/sairamp/ENPM808X_Midterm_project/vendor/googletest/googletest/include -isystem /home/sairamp/installation/OpenCV/installation/OpenCV/include/opencv4  -g   -std=gnu++14 -o CMakeFiles/cpp-test.dir/__/app/ReadData.cpp.o -c /home/sairamp/ENPM808X_Midterm_project/app/ReadData.cpp",
+  "file": "/home/sairamp/ENPM808X_Midterm_project/app/ReadData.cpp"
 },
 {
-  "directory": "/home/bharadwaj/ENPM808X/ENPM808X Midterm project/build/vendor/googletest/googletest",
-  "command": "/usr/bin/g++   -I\"/home/bharadwaj/ENPM808X/ENPM808X Midterm project/vendor/googletest/googletest/include\" -I\"/home/bharadwaj/ENPM808X/ENPM808X Midterm project/vendor/googletest/googletest\"  -Wall -Wextra -Wpedantic -g -g   -Wall -Wextra -Wpedantic -g -Wall -Wshadow -DGTEST_HAS_PTHREAD=1 -fexceptions -Wextra -Wno-unused-parameter -Wno-missing-field-initializers -std=gnu++14 -o CMakeFiles/gtest.dir/src/gtest-all.cc.o -c \"/home/bharadwaj/ENPM808X/ENPM808X Midterm project/vendor/googletest/googletest/src/gtest-all.cc\"",
-  "file": "/home/bharadwaj/ENPM808X/ENPM808X Midterm project/vendor/googletest/googletest/src/gtest-all.cc"
+  "directory": "/home/sairamp/ENPM808X_Midterm_project/build/vendor/googletest/googletest",
+  "command": "/usr/bin/g++   -I/home/sairamp/installation/OpenCV/installation/OpenCV/include/opencv4 -I/home/sairamp/ENPM808X_Midterm_project/vendor/googletest/googletest/include -I/home/sairamp/ENPM808X_Midterm_project/vendor/googletest/googletest  -g    -Wall -Wshadow -DGTEST_HAS_PTHREAD=1 -fexceptions -Wextra -Wno-unused-parameter -Wno-missing-field-initializers -std=gnu++14 -o CMakeFiles/gtest_main.dir/src/gtest_main.cc.o -c /home/sairamp/ENPM808X_Midterm_project/vendor/googletest/googletest/src/gtest_main.cc",
+  "file": "/home/sairamp/ENPM808X_Midterm_project/vendor/googletest/googletest/src/gtest_main.cc"
+},
+{
+  "directory": "/home/sairamp/ENPM808X_Midterm_project/build/vendor/googletest/googletest",
+  "command": "/usr/bin/g++   -I/home/sairamp/installation/OpenCV/installation/OpenCV/include/opencv4 -I/home/sairamp/ENPM808X_Midterm_project/vendor/googletest/googletest/include -I/home/sairamp/ENPM808X_Midterm_project/vendor/googletest/googletest  -g    -Wall -Wshadow -DGTEST_HAS_PTHREAD=1 -fexceptions -Wextra -Wno-unused-parameter -Wno-missing-field-initializers -std=gnu++14 -o CMakeFiles/gtest.dir/src/gtest-all.cc.o -c /home/sairamp/ENPM808X_Midterm_project/vendor/googletest/googletest/src/gtest-all.cc",
+  "file": "/home/sairamp/ENPM808X_Midterm_project/vendor/googletest/googletest/src/gtest-all.cc"
 }
 ]
