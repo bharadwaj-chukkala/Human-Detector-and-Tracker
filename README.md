@@ -41,11 +41,13 @@ SOFTWARE.
 ```
 ---
 ### Team
+The Members are Graduate students at The University of Maryland, College Park. The members each have a Bachelors in Mechanical Engineering from prestigious universities in India. Their Graduate Study is in the field of Robotics with each of them having a specialization. Bharadwaj is pursuing a career in Control systems and Path planning, Sairam aims to build his career in Deep Learning and Computer Vision and Shelvin is developing expertise in SLAM and Autonomous Vehicles.
+
 | `Bharadwaj Chukkala`  | `Venkata Sairam Polina` | `Shelvin Pauly` |
 | ------------- | ------------- |------------- |
 | 118341705 | 118436579 | 118426556 |
 | Navigator | Driver |  Design Keeper |
-The Members are Graduate students at The University of Maryland, College Park. The members each have a Bachelors in Mechanical Engineering from prestigious universities in India. Their Graduate Study is in the field of Robotics with each of them having a specialization. Bharadwaj is pursuing a career in Control systems and Path planning, Sairam aims to build his career in Deep Learning and Computer Vision and Shelvin is developing expertise in SLAM and Autonous Vehicles.
+
 ---
 ## Content Tree
 
@@ -127,8 +129,8 @@ sudo apt-get install doxygen
 
 
 ## Project Videos
-### Sprint 1 Video
-### Proposal Video(https://drive.google.com/file/d/1BUSOc8T6gLknhAt8TJ6uW9MLCY49dpPH/view?usp=sharing)
+### [Sprint 1 Video]
+### [Proposal Video](https://drive.google.com/file/d/1BUSOc8T6gLknhAt8TJ6uW9MLCY49dpPH/view?usp=sharing)
 
 
 
