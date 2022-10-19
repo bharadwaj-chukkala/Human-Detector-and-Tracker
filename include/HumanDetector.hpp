@@ -66,7 +66,7 @@
      * @param cv:Rect2d bounding box points
        @return Centroid point
      */
-    Point calculateCentroid(cv:Rect2d);
+    std::pair calculateCentroid(cv::Rect2d);
 
     /**
      * @brief Moving from 2d Image coordinate system to 3d Robot coordinate system and display it
@@ -74,7 +74,7 @@
      * @param Point Centroid for the bounding box
      * @return 
      */
-    void transform(Point);
+    void transform(std::pair);
 
     
     /**
