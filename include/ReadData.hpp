@@ -9,7 +9,6 @@
  * 
  */
 #include <iostream>
-#include <array>
 #include <string>
 #include <opencv2/opencv.hpp>
 
@@ -22,7 +21,7 @@ class ReadData{
 
     public:
     /**
-     * @brief Construct a new Read Data object
+     * @brief Construct a new Read Data object which initializes the frame with an empty image
      * 
      */
     ReadData(cv::Mat);
@@ -39,5 +38,5 @@ class ReadData{
      * 
      * @return cv::Mat image(frame)
      */
-    //cv::Mat readFrame(std::string path);
+    cv::Mat readFrame(std::string path);
 }
