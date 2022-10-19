@@ -22,6 +22,12 @@ ReadData::~ReadData() {
     std::cout<<"Destructor of class ReadDatat";
 }
 
+/**
+ * @brief readFrame 
+ * 
+ * @param filename 
+ * @return cv::Mat 
+ */
 cv::Mat ReadData::readFrame(std::string filename) {
     cv::Mat frame = cv::imread(filename);
     cv::imshow("Frame", frame);
