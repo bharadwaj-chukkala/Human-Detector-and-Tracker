@@ -9,8 +9,6 @@
  * 
  */
 
-
-
 /**
  * @brief This class acts as a user defined datatype to store SVM detector output
  * 

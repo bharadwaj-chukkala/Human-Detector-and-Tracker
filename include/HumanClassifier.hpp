@@ -10,6 +10,7 @@
  */
 
 #include <opencv2/opencv.hpp>
+#include <RectandConfidence.hpp>
 
 typedef cv::HOGDescriptor classifier
 
