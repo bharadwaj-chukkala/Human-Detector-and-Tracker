@@ -19,7 +19,7 @@ ReadData::~ReadData(cv::Mat frame) {
 }
 
 cv::Mat ReadData::ReadFrame(std::string filename) {
-    //cv::Mat frame = cv::imread(filename);
-    //cv::imshow("Frame", frame);
+    cv::Mat frame = cv::imread(filename);
+    cv::imshow("Frame", frame);
     return frame;
 }
