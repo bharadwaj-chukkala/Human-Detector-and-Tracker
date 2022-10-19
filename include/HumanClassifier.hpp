@@ -31,10 +31,22 @@ class HumanClassifier {
     ~HumanClassifier();
 
     /**
+     * @brief Set the Model Params object
+     * 
+     * @return classifier cv::HOGDescriptor
+     */
+
+    classifier setModelParams(){
+
+    }
+
+    /**
      * @brief This method predicts the person in the frame,.e., it will detect humans in the frame.
      * 
      * @return rectandconfidence is cv::rect2d and scores for the prediction
      */
 
-    rectandconfidence detect();
+    rectandconfidence detect(cv::Mat frame);
+
+
 }
