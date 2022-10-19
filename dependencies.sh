@@ -13,14 +13,13 @@ sudo apt-get install libfaac-dev libmp3lame-dev libtheora-dev
 sudo apt-get install libvorbis-dev libxvidcore-dev
 sudo apt-get install libopencore-amrnb-dev libopencore-amrwb-dev
 sudo apt-get install x264 v4l-utils
+
 ### For opencv
 git clone https://github.com/opencv/opencv.git
 cd opencv 
-git checkout 3.3.0 
 cd ..
 git clone https://github.com/opencv/opencv_contrib.git
 cd opencv_contrib
-git checkout 3.3.0
 cd ..
 cd opencv
 mkdir build
@@ -34,9 +33,7 @@ cmake -D CMAKE_BUILD_TYPE=RELEASE \
       -D OPENCV_EXTRA_MODULES_PATH=../../opencv_contrib/modules \
       -D BUILD_EXAMPLES=ON \
       -D WITH_CUDA=OFF ..
-## find out number of CPU cores in your machine
-# nproc
-## substitute 4 by output of nproc
+
 make -j4
 sudo make install
 sudo sh -c 'echo "/usr/local/lib" >> /etc/ld.so.conf.d/opencv.conf'
