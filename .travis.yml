@@ -23,8 +23,8 @@ matrix:
 before_install:
   - pip install --user cpp-coveralls
 install:
-  - sudo chmod +x install_dependencies.sh
-  - ./install_dependencies.sh
+  - sudo chmod +x dependencies.sh
+  - ./dependencies.sh
 script:
   - export CXX=$COMPILER;
   - mkdir build
