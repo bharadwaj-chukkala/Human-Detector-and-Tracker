@@ -160,9 +160,7 @@ sudo apt-get install doxygen-gui
 ### Build and Code Coverage
 ```
 # Clone
-git clone --recursive https://github.com/anubhavparas/human-detector-and-tracker.git
-
-# Build
+git clone https://github.com/bharadwaj-chukkala/ENPM808X_Midterm_project.git
 cd <path to repository>
 mkdir build
 cd build
