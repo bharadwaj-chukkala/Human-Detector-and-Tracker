@@ -34,23 +34,20 @@
  */
 
 #include "../include/ReadData.hpp"
-using std::cout;
 
-ReadData::ReadData() {
-}
+ReadData::ReadData() {}
 
-ReadData::~ReadData() {
-    cout << "Destructor of class ReadDatat";
-}
+ReadData::~ReadData() {}
 
 /**
  * @brief readFrame 
  * 
- * @param filename 
+ * @param path 
  * @return cv::Mat 
  */
-cv::Mat ReadData::readFrame(std::string filename) {
-    cv::Mat frame = cv::imread(filename);
-    cv::imshow("Frame", frame);
+cv::Mat ReadData::readFrame(std::string path) {
+    cv::Mat frame = cv::imread(path);
+    // cv::imshow("Frame", frame);
+    // cv::waitKey(100);
     return frame;
 }
