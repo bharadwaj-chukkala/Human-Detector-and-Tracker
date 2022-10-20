@@ -34,7 +34,7 @@ script:
   - make code_coverage
 
 after_success:
-  - coveralls --root .. -E ".*external.*" -E ".*CMakeFiles.*" -E ".*test/.*.cpp.*"
+  - coveralls --root .. -E ".*external.*" -E ".*CMakeFiles.*" -E ".*test/.*.cpp.*" -E ".*app/ReadData.cpp" -E ".*opencv*"
 
 notifications:
   email: false
