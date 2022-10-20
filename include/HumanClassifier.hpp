@@ -1,3 +1,5 @@
+#ifndef INCLUDE_HUMAN_CLASSIFIER_HPP
+#define INCLUDE_HUMAN_CLASSIFIER_HPP
 /**
  * MIT License
 
@@ -36,12 +38,10 @@
 #include <opencv2/opencv.hpp>
 #include <RectandConfidence.hpp>
 
-typedef cv::HOGDescriptor classifier
+typedef cv::HOGDescriptor classifier;
 
 
 class HumanClassifier {
-
-    
     /**
      * @brief This constructor initializes the model with a trained people detector( SVM Human classifier)
      * 
@@ -60,8 +60,7 @@ class HumanClassifier {
      * @return classifier cv::HOGDescriptor
      */
 
-    classifier setModelParams(){
-
+    classifier setModelParams() {
     }
 
     /**
@@ -71,6 +70,6 @@ class HumanClassifier {
      */
 
     rectandconfidence detect(cv::Mat frame);
+};
+#endif  // INCLUDE_HUMAN_CLASSIFIER_HPP
 
-
-}

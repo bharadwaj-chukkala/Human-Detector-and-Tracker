@@ -1,3 +1,5 @@
+#ifndef INCLUDE_READ_DATA_HPP
+#define INCLUDE_READ_DATA_HPP
 /**
  * MIT License
 
@@ -42,9 +44,8 @@
  * 
  */
 class ReadData{
-    cv::Mat frame;
-
-    public:
+cv::Mat frame;
+ public:
     /**
      * @brief Construct a new Read Data object which initializes the frame with an empty image
      * 
@@ -57,7 +58,6 @@ class ReadData{
      */
 
     ~ReadData();
-    
     /**
      * @brief method which reads an image from the path
      * 
@@ -65,3 +65,5 @@ class ReadData{
      */
     cv::Mat readFrame(std::string path);
 };
+#endif  // INCLUDE_READ_DATA_HPP
+

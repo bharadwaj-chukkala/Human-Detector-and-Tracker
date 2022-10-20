@@ -1,3 +1,5 @@
+#ifndef INCLUDE_RECT_AND_CONFIDENCE_HPP
+#define INCLUDE_RECT_AND_CONFIDENCE_HPP
 /**
  * MIT License
 
@@ -32,31 +34,30 @@
  * @copyright Copyright (c) 2022
  * 
  */
+
+#include <utility>
 /**
  * @brief This class acts as a user defined datatype to store SVM detector output
  * 
  */
-class RectandConfidence{
-
-    std::pair p1;
-    std::pair p2;
+class RectandConfidence {
+ public:
+    std::pair<double, double> p1;
+    std::pair<double, double> p2;
     double score;
-
-
     /**
-     * @brief Construct a new Rectand Confidence object
-     * 
-     */
-    RectandConfidence(p1_,p2_,score_):p1(_p1),p2(p2_),score(score_) {
-
-    } 
-
-    /**
-     * @brief Destroy the Rectand Confidence object
-     * 
-     */
-    ~RectandConfidence(){
-
+    * @brief Construct a new Rectand Confidence object
+    * 
+    */
+    RectandConfidence(p1, p2, score):p1(p1_), p2(p2_), score(score_) {
     }
 
+    /**
+    * @brief Destroy the Rectand Confidence object
+    * 
+    */
+    ~RectandConfidence(){
+    }
 };
+#endif  // INCLUDE_RECT_AND_CONFIDENCE_HPP
+

@@ -1,3 +1,5 @@
+#ifndef INCLUDE_HUMAN_DETECTOR_HPP
+#define INCLUDE_HUMAN_DETECTOR_HPP
 /**
  * MIT License
 
@@ -33,19 +35,20 @@
  * 
  */
 
- # include <iostream>
- # include <opencv2/opencv.hpp>
- # include <string>
- # include <"HumanClassifier.hpp">
+# include <iostream>
+# include <string>
+#include <algorithm>
+#include <utility>
+# include <opencv2/opencv.hpp>
+# include <HumanClassifier.hpp>
 
 /**
  * @brief class HumanDetector
  * This class uses a pre-trained SVM model to detect humans and 
  * returns co-ordinates of bounding box surrounding detected human
  */
- class HumanDetector:Public HumanClassifier{
-    public:
-    
+class HumanDetector:public HumanClassifier {
+ public:
     /**
      * @brief Construct a new Human Detector object
      * 
@@ -59,14 +62,13 @@
      * 
      */
     cv::Rect2d drawBoundingBox();
-    
     /**
      * @brief Finds the centroid of the bounding box
      * 
      * @param cv:Rect2d bounding box points
        @return Centroid point
      */
-    std::pair calculateCentroid(cv::Rect2d);
+    std::pair<double, double> calculateCentroid(cv::Rect2d);
 
     /**
      * @brief Moving from 2d Image coordinate system to 3d Robot coordinate system and display it
@@ -74,14 +76,11 @@
      * @param Point Centroid for the bounding box
      * @return 
      */
-    void transform(std::pair);
-
-    
+    void transform(std::pair<double, double>);
     /**
     * @brief Destroys the Human Detector object
     * 
     */
     ~HumanDetector();
-
- }
-
+};
+#endif  // HUMAN_DETECTOR_HPP

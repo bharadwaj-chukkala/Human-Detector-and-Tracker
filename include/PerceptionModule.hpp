@@ -1,3 +1,5 @@
+#ifndef INCLUDE_PERCEPTION_MODULE
+#define INCLUDE_PERCEPTION_MODULE
 /**
  * MIT License
 
@@ -34,8 +36,8 @@
  */
 
 # include <iostream>
-# include <opencv2/opencv.hpp>
 #include <string>
+# include <opencv2/opencv.hpp>
 #include <ReadData.hpp>
 #include <HumanDetector.hpp>
 #include <HumanClassifier.hpp>
@@ -48,23 +50,19 @@
  * 
  */
 class PerceptionModule {
-
     int number;
     std::string str;
-    
     /**
      * @brief Construct a new Perception Module object which asks the
      * user for input type and input path
      * 
      */
-    PerceptionModule():
-    
+    PerceptionModule();
     /**
      * @brief Destroy the Perception Module object
      * 
      */
-    ~PerceptionModule():
-    
+    ~PerceptionModule();
     /**
      * @brief This will run the entire module till the final frame
      * and call the required child classes and their methods with 
@@ -73,5 +71,6 @@ class PerceptionModule {
      * and run the detection pipeline.
      * 
      */
-    void detector(int, string):
-}
+    void detector(int, std::string);
+};
+#endif  // INCLUDE_PERCEPTION_MODULE

@@ -25,7 +25,7 @@
  * @author Bharadwaj Chukkala (bchukkal@umd.edu)
  * @author Venkata Sairam Polina (sairamp@umd.edu)
  * @author Shelvin Pauly (spauly@umd.edu)
- * @brief Reads the data and process it
+ * @brief Reads the continuous input data, processes it and returns an output
  * @version 0.1
  * @date 2022-10-15
  * 
@@ -34,17 +34,13 @@
  */
 
 #include "../include/ReadData.hpp"
+using std::cout;
 
-// ReadData::ReadData(): this->frame(300, 500, CV_8UC3, Scalar(0, 0, 0)) {
-
-// }
-
-ReadData::ReadData(){
-
+ReadData::ReadData() {
 }
 
 ReadData::~ReadData() {
-    std::cout<<"Destructor of class ReadDatat";
+    cout << "Destructor of class ReadDatat";
 }
 
 /**
