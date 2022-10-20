@@ -1,5 +1,5 @@
-#ifndef INCLUDE_READ_DATA_HPP
-#define INCLUDE_READ_DATA_HPP
+#ifndef INCLUDE_READDATA_HPP_
+#define INCLUDE_READDATA_HPP_
 /**
  * MIT License
 
@@ -65,5 +65,5 @@ cv::Mat frame;
      */
     cv::Mat readFrame(std::string path);
 };
-#endif  // INCLUDE_READ_DATA_HPP
+#endif  // INCLUDE_READDATA_HPP_
 

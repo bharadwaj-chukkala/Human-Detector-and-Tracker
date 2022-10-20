@@ -1,5 +1,5 @@
-#ifndef INCLUDE_HUMAN_CLASSIFIER_HPP
-#define INCLUDE_HUMAN_CLASSIFIER_HPP
+#ifndef INCLUDE_HUMANCLASSIFIER_HPP_
+#define INCLUDE_HUMANCLASSIFIER_HPP_
 /**
  * MIT License
 
@@ -71,5 +71,5 @@ class HumanClassifier {
 
     rectandconfidence detect(cv::Mat frame);
 };
-#endif  // INCLUDE_HUMAN_CLASSIFIER_HPP
+#endif  // INCLUDE_HUMANCLASSIFIER_HPP_
 

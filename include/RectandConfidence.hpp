@@ -1,5 +1,5 @@
-#ifndef INCLUDE_RECT_AND_CONFIDENCE_HPP
-#define INCLUDE_RECT_AND_CONFIDENCE_HPP
+#ifndef INCLUDE_RECTANDCONFIDENCE_HPP_
+#define INCLUDE_RECTANDCONFIDENCE_HPP_
 /**
  * MIT License
 
@@ -59,5 +59,5 @@ class RectandConfidence {
     ~RectandConfidence(){
     }
 };
-#endif  // INCLUDE_RECT_AND_CONFIDENCE_HPP
+#endif  // INCLUDE_RECTANDCONFIDENCE_HPP_
 

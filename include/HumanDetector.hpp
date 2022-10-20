@@ -1,5 +1,5 @@
-#ifndef INCLUDE_HUMAN_DETECTOR_HPP
-#define INCLUDE_HUMAN_DETECTOR_HPP
+#ifndef INCLUDE_HUMANDETECTOR_HPP_
+#define INCLUDE_HUMANDETECTOR_HPP_
 /**
  * MIT License
 
@@ -83,4 +83,5 @@ class HumanDetector:public HumanClassifier {
     */
     ~HumanDetector();
 };
-#endif  // HUMAN_DETECTOR_HPP
+#endif  // INCLUDE_HUMANDETECTOR_HPP_
+

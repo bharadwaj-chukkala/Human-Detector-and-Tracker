@@ -1,5 +1,5 @@
-#ifndef INCLUDE_PERCEPTION_MODULE
-#define INCLUDE_PERCEPTION_MODULE
+#ifndef INCLUDE_PERCEPTIONMODULE_HPP_
+#define INCLUDE_PERCEPTIONMODULE_HPP_
 /**
  * MIT License
 
@@ -73,4 +73,4 @@ class PerceptionModule {
      */
     void detector(int, std::string);
 };
-#endif  // INCLUDE_PERCEPTION_MODULE
+#endif  // INCLUDE_PERCEPTIONMODULE_HPP_
