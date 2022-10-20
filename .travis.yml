@@ -23,6 +23,7 @@ matrix:
 before_install:
   - pip install --user cpp-coveralls
 install:
+  - sudo apt-get install lcov
   - sudo chmod +x dependencies.sh
   - ./dependencies.sh
 script:
@@ -32,6 +33,7 @@ script:
   - cmake -DCOVERAGE=ON -DCMAKE_BUILD_TYPE=Debug ../
   - make
   - make code_coverage
+  - test/cpp-test
 
 after_success:
   - coveralls --root .. -E ".*external.*" -E ".*CMakeFiles.*" -E ".*test/.*.cpp.*" -E ".*app/ReadData.cpp" -E ".*opencv*"
