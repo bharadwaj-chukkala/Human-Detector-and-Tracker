@@ -205,6 +205,8 @@ doxywizard
 
 ---
 ## Project Videos
-### [Sprint 1 Video]
+### [Sprint 1 Video](https://drive.google.com/file/d/1hh5f50VzA4mIPJmc9IJAOi4N9bs-uyPp/view?usp=sharing)
+Note: The Microphone had some issue, apologies beforehand,
 ### [Proposal Video](https://drive.google.com/file/d/1BUSOc8T6gLknhAt8TJ6uW9MLCY49dpPH/view?usp=sharing)
+
 
