@@ -33,27 +33,27 @@
  * 
  */
 
-#include "../include/HumanDetector.hpp"
-#include "../include/ReadData.hpp"
+#include "HumanDetector.hpp"
+#include "ReadData.hpp"
+
 
 HumanDetector::HumanDetector() {
-    std::cout<<" Enter Filepath";
-    std::getline(std::cin, file);
-    ReadData read;
-    read.readFrame(file);
-}
-
-HumanDetector::drawBoundingBox() { 
-    HumanClassifier classifier;
-    model = classifier.setModelParams();
-    pointsAndScores = detect(model, frame); //frame not set
-    return pointsAndScores;
-}
-//transform should come before centroid right
-std::pair<double, double> calculateCentroid(cv::Rect2d pointsAndScores) {
-
-}
-
-void HumanDetector::transform(std::pair<double, double>): {
     
 }
+
+HumanDetector::~HumanDetector() {}
+
+// HumanDetector::drawBoundingBox() { 
+//     HumanClassifier classifier;
+//     model = classifier.setModelParams();
+//     pointsAndScores = detect(model, frame); //frame not set
+//     return pointsAndScores;
+// }
+// //transform should come before centroid right
+// std::pair<double, double> calculateCentroid(cv::Rect2d pointsAndScores) {
+
+// }
+
+// void HumanDetector::transform(std::pair<double, double>): {
+    
+// }

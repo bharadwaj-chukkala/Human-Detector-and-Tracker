@@ -1,4 +1,5 @@
-add_executable(shell-app main.cpp)
+add_executable(shell-app main.cpp HumanDetector.cpp 
+ReadData.cpp HumanClassifier.cpp PerceptionModule.cpp)
 include_directories(
     ${CMAKE_SOURCE_DIR}/include
 )

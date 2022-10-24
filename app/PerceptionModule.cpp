@@ -36,9 +36,18 @@
 #include "../include/PerceptionModule.hpp"
 #include "../include/HumanDetector.hpp"
 
-PerceptionModule::PerceptionModule(int i = 0, std::string str = '\0'):number{i}, path{str} {}
-
-void PerceptionModule::detector(int n, std::string str) {
-    HumanDetector Detector();
-    //detect and stuff
+PerceptionModule::PerceptionModule(int i, std::string str):number(i), path(str) {
+    std::cout<<" Enter Filepath: ";
+    std::string fileName;
+    std::getline(std::cin, fileName);
+    ReadData read;
+    cv::Mat returnedFrame=read.readFrame(fileName);
+    cv::imshow("window",returnedFrame);
+    cv::waitKey(0);
+    cv::destroyAllWindows();
 }
+
+// void PerceptionModule::detector(int n, std::string str) {
+//     HumanDetector Detector();
+    //detect and stuff
+// }

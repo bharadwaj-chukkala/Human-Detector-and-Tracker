@@ -33,7 +33,7 @@
  * 
  */
 
-#include "../include/ReadData.hpp"
+#include "ReadData.hpp"
 
 ReadData::ReadData() {}
 
@@ -47,7 +47,5 @@ ReadData::~ReadData() {}
  */
 cv::Mat ReadData::readFrame(std::string path) {
     cv::Mat frame = cv::imread(path);
-    // cv::imshow("Frame", frame);
-    // cv::waitKey(100);
     return frame;
 }

@@ -32,7 +32,8 @@
  * 
  */
 
-#include <ReadData.hpp>
+#include "ReadData.hpp"
+#include "HumanDetector.hpp"
 #include <string>
 
 int main() {
