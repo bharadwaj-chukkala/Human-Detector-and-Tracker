@@ -25,17 +25,35 @@
  * @author Bharadwaj Chukkala (bchukkal@umd.edu)
  * @author Venkata Sairam Polina (sairamp@umd.edu)
  * @author Shelvin Pauly (spauly@umd.edu)
- * @brief Reads the data and process it
+ * @brief Header file for HumanDetector.cpp
  * @version 0.1
- * @date 2022-10-15
+ * @date 2022-10-23
  * 
+ * @copyright Copyright (c) 2022
  * 
  */
 
-// #include <iostream>
-// #include <lib.hpp>
+#include "../include/HumanDetector.hpp"
+#include "../include/ReadData.hpp"
 
-int main() {
-    // dummy();
-    return 0;
+HumanDetector::HumanDetector() {
+    std::cout<<" Enter Filepath";
+    std::getline(std::cin, file);
+    ReadData read;
+    read.readFrame(file);
+}
+
+HumanDetector::drawBoundingBox() { 
+    HumanClassifier classifier;
+    model = classifier.setModelParams();
+    pointsAndScores = detect(model, frame); //frame not set
+    return pointsAndScores;
+}
+//transform should come before centroid right
+std::pair<double, double> calculateCentroid(cv::Rect2d pointsAndScores) {
+
+}
+
+void HumanDetector::transform(std::pair<double, double>): {
+    
 }
