@@ -48,7 +48,7 @@ class RectandConfidence {
     * @brief Construct a new Rectand Confidence object
     * 
     */
-    RectandConfidence(cv::Rect &rectangle_, double &score_):, score(score_) {
+    RectandConfidence(cv::Rect &rectangle_, double &score_):rectangle(rectangle_), score(score_) {
     }
 
     /**
