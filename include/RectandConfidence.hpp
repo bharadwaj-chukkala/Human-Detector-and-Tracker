@@ -42,14 +42,13 @@
  */
 class RectandConfidence {
  public:
-    std::pair<double, double> p1;
-    std::pair<double, double> p2;
+    cv::Rect rectangle;
     double score;
     /**
     * @brief Construct a new Rectand Confidence object
     * 
     */
-    RectandConfidence(std::pair<double, double> p1_,std::pair<double, double> p2_, double score_):p1(p1_), p2(p2_), score(score_) {
+    RectandConfidence(cv::Rect &rectangle_, double &score_):, score(score_) {
     }
 
     /**
