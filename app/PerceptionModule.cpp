@@ -36,18 +36,13 @@
 #include "../include/PerceptionModule.hpp"
 #include "../include/HumanDetector.hpp"
 
-PerceptionModule::PerceptionModule(int i, std::string str):number(i), path(str) {
-    std::cout<<" Enter Filepath: ";
-    std::string fileName;
-    std::getline(std::cin, fileName);
-    ReadData read;
-    cv::Mat returnedFrame=read.readFrame(fileName);
-    cv::imshow("window",returnedFrame);
-    cv::waitKey(0);
-    cv::destroyAllWindows();
+PerceptionModule::PerceptionModule(std::string &path_,int &fileOption_):path(path_),fileOption(fileOption_) {
+       
 }
 
-// void PerceptionModule::detector(int n, std::string str) {
-//     HumanDetector Detector();
-    //detect and stuff
-// }
+void PerceptionModule::detector() {
+    HumanDetector acmeDetector(path,fileOption);
+    
+    // detect and stuff retun 
+    // transformed robot co-ordinates
+}

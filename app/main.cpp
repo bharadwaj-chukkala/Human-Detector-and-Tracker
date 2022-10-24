@@ -32,15 +32,24 @@
  * 
  */
 
-#include "ReadData.hpp"
-#include "HumanDetector.hpp"
+#include "PerceptionModule.hpp"
 #include <string>
 
 int main() {
 
-    std::string file;
-    std::cout<<" ACME PERCEPTION MODULE \n";
-    //std::string test_data = "../testdata/pos";
-    HumanDetector detector;
+    std::string filePath;
+    int option;
+
+    std::cout<<" ACME PERCEPTION MODULE \n"<<std::endl;
+    std::cout<<"**** Enter filepath on on which detection should be carried****: "<<std::endl;
+    std::getline(std::cin,filePath);
+
+    std::cout<< "Enter the file Option: "<<std::endl
+    <<"1.For Video Detection: press 0"<<std::endl<<"2.For Picture Detection: press 1"<<std::endl;
+    std::cin>>option;
+
+    PerceptionModule acmeModule(filePath,option);
+
+    acmeModule.detector();
     
 }

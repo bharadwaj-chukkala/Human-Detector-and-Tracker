@@ -37,8 +37,13 @@
 #include "ReadData.hpp"
 
 
-HumanDetector::HumanDetector() {
-    
+HumanDetector::HumanDetector(std::string &path,int &option){
+    ReadData read;
+    cv::Mat returnedFrame=read.readFrame(path);
+    std::cout<<" hi bro";
+    cv::imshow("window",returnedFrame);
+    cv::waitKey(0);
+    cv::destroyAllWindows();
 }
 
 HumanDetector::~HumanDetector() {}
