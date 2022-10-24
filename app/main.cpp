@@ -48,8 +48,8 @@ int main() {
     <<"1.For Video Detection: press 0"<<std::endl<<"2.For Picture Detection: press 1"<<std::endl;
     std::cin>>option;
 
-    PerceptionModule acmeModule(filePath,option);
+    PerceptionModule acmePerceptionModule(filePath,option);
 
-    acmeModule.detector();
+    acmePerceptionModule.detector();
     
 }
