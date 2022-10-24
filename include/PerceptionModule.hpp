@@ -50,19 +50,20 @@
  * 
  */
 class PerceptionModule {
-    int number;
-    std::string str;
+    std::string path;
+    int fileOption;
+    public:
     /**
      * @brief Construct a new Perception Module object which asks the
      * user for input type and input path
      * 
      */
-    PerceptionModule();
+    PerceptionModule(std::string &,int &);
     /**
      * @brief Destroy the Perception Module object
      * 
      */
-    ~PerceptionModule();
+    ~PerceptionModule() {}
     /**
      * @brief This will run the entire module till the final frame
      * and call the required child classes and their methods with 
@@ -71,6 +72,6 @@ class PerceptionModule {
      * and run the detection pipeline.
      * 
      */
-    void detector(int, std::string);
+    void detector();
 };
 #endif  // INCLUDE_PERCEPTIONMODULE_HPP_

@@ -49,7 +49,7 @@ class RectandConfidence {
     * @brief Construct a new Rectand Confidence object
     * 
     */
-    RectandConfidence(p1, p2, score):p1(p1_), p2(p2_), score(score_) {
+    RectandConfidence(std::pair<double, double> p1_,std::pair<double, double> p2_, double score_):p1(p1_), p2(p2_), score(score_) {
     }
 
     /**

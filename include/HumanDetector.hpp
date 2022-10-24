@@ -47,13 +47,22 @@
  * This class uses a pre-trained SVM model to detect humans and 
  * returns co-ordinates of bounding box surrounding detected human
  */
-class HumanDetector:public HumanClassifier {
- public:
+// class HumanDetector:public HumanClassifier {
+
+class HumanDetector{
+  public:
     /**
      * @brief Construct a new Human Detector object
      * 
      */
-    HumanDetector();
+    HumanDetector(std::string &,int &);
+
+    /**
+    * @brief Destroys the Human Detector object
+    * 
+    */
+    ~HumanDetector();
+
 
     /**
      * @brief This function calls predict function from the classifier. The 2d image points for the bounding box
@@ -61,27 +70,22 @@ class HumanDetector:public HumanClassifier {
      * @return Rect2d points of the bounding box.
      * 
      */
-    cv::Rect2d drawBoundingBox();
-    /**
-     * @brief Finds the centroid of the bounding box
-     * 
-     * @param cv:Rect2d bounding box points
-       @return Centroid point
-     */
-    std::pair<double, double> calculateCentroid(cv::Rect2d);
+    // cv::Rect2d drawBoundingBox();
+    // /**
+    //  * @brief Finds the centroid of the bounding box
+    //  * 
+    //  * @param cv:Rect2d bounding box points
+    //    @return Centroid point
+    //  */
+    // std::pair<double, double> calculateCentroid(cv::Rect2d);
 
-    /**
-     * @brief Moving from 2d Image coordinate system to 3d Robot coordinate system and display it
-     * 
-     * @param Point Centroid for the bounding box
-     * @return 
-     */
-    void transform(std::pair<double, double>);
-    /**
-    * @brief Destroys the Human Detector object
-    * 
-    */
-    ~HumanDetector();
+    // /**
+    //  * @brief Moving from 2d Image coordinate system to 3d Robot coordinate system and display it
+    //  * 
+    //  * @param Point Centroid for the bounding box
+    //  * @return 
+    //  */
+    // void transform(std::pair<double, double>);
 };
 #endif  // INCLUDE_HUMANDETECTOR_HPP_
 

@@ -42,6 +42,7 @@ typedef cv::HOGDescriptor classifier;
 
 
 class HumanClassifier {
+    public:
     /**
      * @brief This constructor initializes the model with a trained people detector( SVM Human classifier)
      * 
@@ -60,8 +61,7 @@ class HumanClassifier {
      * @return classifier cv::HOGDescriptor
      */
 
-    classifier setModelParams() {
-    }
+    classifier setModelParams();
 
     /**
      * @brief This method predicts the person in the frame,.e., it will detect humans in the frame.
@@ -69,7 +69,7 @@ class HumanClassifier {
      * @return rectandconfidence is cv::rect2d and scores for the prediction
      */
 
-    rectandconfidence detect(cv::Mat frame);
+    RectandConfidence detect(cv::Mat frame);
 };
 #endif  // INCLUDE_HUMANCLASSIFIER_HPP_
 
