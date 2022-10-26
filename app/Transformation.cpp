@@ -22,7 +22,7 @@ Transformation::doTransform(cv::Point imageCord){
 
     Eigen::MatrixXf xdash=(3,1); 
 
-    xdash<<imageCord.x,imageCors.y,1>>;
+    xdash<<imageCord.x,imageCord.y,1>>;
 
     Eigen::MatrixXf X=PSeudo*xdash;
 
