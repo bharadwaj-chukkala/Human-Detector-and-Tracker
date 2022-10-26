@@ -35,5 +35,15 @@
 
 #include <HumanClassifier.hpp>
 
-HumanClassifier::HumanClassifier() {}
+HumanClassifier::HumanClassifier() {
+    classifier.setSVMDetector(cv::HOGDescriptor::getDefaultPeopleDetector());
+}
 HumanClassifier::~HumanClassifier() {}
+
+RectsandConfidences HumanClassifier::predict(cv::Mat frame) { 
+    std::vector<cv::Rect> boundingBoxes;
+    std::vector<double> scores;
+    classifier.detectMultiScale(frame, boundingBoxes, scores);
+    RectsandConfidences classification(boundingBoxes, scores);
+    return classification;
+}
