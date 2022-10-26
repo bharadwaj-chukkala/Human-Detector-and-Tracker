@@ -48,16 +48,14 @@ class RectsandConfidences {
     * @brief Construct a new Rectand Confidence object
     * 
     */
-    RectsandConfidences(const std::vector<cv::Rect> &rectangles_, const std::vector<double> &confidences_):
-    rectangles(rectangles_), confidences(confidences_) {
-    }
-
+    RectsandConfidences(const std::vector<cv::Rect> &rectangles_, const std::vector<double> &confidences_);
+   
     /**
     * @brief Destroy the Rectand Confidence object
     * 
     */
-    ~RectandConfidence(){
-    }
+    ~RectandConfidence();
+    
 };
 #endif  // INCLUDE_RECTANDCONFIDENCE_HPP_
 
