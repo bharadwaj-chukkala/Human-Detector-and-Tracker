@@ -48,7 +48,7 @@ class RectsandConfidences {
     * @brief Construct a new Rectand Confidence object
     * 
     */
-    RectandConfidence(const std::vector<cv::Rect> &rectangles_, const std::vector<double> &confidences_):
+    RectsandConfidences(const std::vector<cv::Rect> &rectangles_, const std::vector<double> &confidences_):
     rectangles(rectangles_), confidences(confidences_) {
     }
 
