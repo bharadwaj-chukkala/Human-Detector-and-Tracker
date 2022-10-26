@@ -38,11 +38,11 @@
 #include <opencv2/opencv.hpp>
 #include <RectandConfidence.hpp>
 
-typedef cv::HOGDescriptor classifier;
-
-
 class HumanClassifier {
     public:
+
+    cv::HOGDescriptor classifier
+
     /**
      * @brief This constructor initializes the model with a trained people detector( SVM Human classifier)
      * 
@@ -56,20 +56,12 @@ class HumanClassifier {
     ~HumanClassifier();
 
     /**
-     * @brief Set the Model Params object
-     * 
-     * @return classifier cv::HOGDescriptor
-     */
-
-    classifier setModelParams();
-
-    /**
      * @brief This method predicts the person in the frame,.e., it will detect humans in the frame.
      * 
      * @return rectandconfidence is cv::rect2d and scores for the prediction
      */
 
-    RectandConfidence detect(cv::Mat frame);
+    RectandConfidence predict(cv::Mat frame);
 };
 #endif  // INCLUDE_HUMANCLASSIFIER_HPP_
 
