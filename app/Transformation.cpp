@@ -13,7 +13,7 @@ Transformation::Transformation(){
    
 }
 
-Transformaton::doTransform(cv::Point imageCord){
+Transformation::doTransform(cv::Point imageCord){
     Eigen::MatrixXf PT=P.transpose()
 
     Eigen::MatrixXf PSeudo=PT*(P*PT).inverse()
