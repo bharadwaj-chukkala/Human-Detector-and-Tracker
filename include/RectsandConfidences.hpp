@@ -42,13 +42,14 @@
  */
 class RectandConfidence {
  public:
-    cv::Rect rectangle;
-    double score;
+    std::vector<cv::Rect> rectangles;
+    std::vector<double> confidences;
     /**
     * @brief Construct a new Rectand Confidence object
     * 
     */
-    RectandConfidence(cv::Rect &rectangle_, double &score_):rectangle(rectangle_), score(score_) {
+    RectandConfidence(const std::vector<cv::Rect> &rectangles_, const std::vector<double> &confidences_):
+    rectangles(rectangles_), confidences(confidences_) {
     }
 
     /**
