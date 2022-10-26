@@ -61,7 +61,7 @@ class HumanClassifier {
      * @return rectandconfidence is cv::rect2d and scores for the prediction
      */
 
-    RectandConfidence predict(cv::Mat frame);
+    RectsandConfidences predict(cv::Mat frame);
 };
 #endif  // INCLUDE_HUMANCLASSIFIER_HPP_
 
