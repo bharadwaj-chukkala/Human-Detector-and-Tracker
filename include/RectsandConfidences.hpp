@@ -40,7 +40,7 @@
  * @brief This class acts as a user defined datatype to store SVM detector output
  * 
  */
-class RectandConfidence {
+class RectsandConfidences {
  public:
     std::vector<cv::Rect> rectangles;
     std::vector<double> confidences;
