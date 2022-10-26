@@ -35,29 +35,82 @@
 
 #include "HumanDetector.hpp"
 #include "ReadData.hpp"
+#include "Transformation.hpp"
 
 
-HumanDetector::HumanDetector(std::string &path,int &option){
-    ReadData read;
-    cv::Mat returnedFrame=read.readFrame(path);
-    cv::imshow("window",returnedFrame);
-    cv::waitKey(0);
-    cv::destroyAllWindows();
-}
+// HumanDetector::HumanDetector(std::string &path,int &option){
+//     ReadData read;
+//     cv::Mat returnedFrame=read.readFrame(path);
+//     cv::imshow("window",returnedFrame);
+//     cv::waitKey(0);
+//     cv::destroyAllWindows();
+// }
 
+HumanDetector::HumanDetector() {}
 HumanDetector::~HumanDetector() {}
 
-// HumanDetector::drawBoundingBox() { 
-//     HumanClassifier classifier;
-//     model = classifier.setModelParams();
-//     pointsAndScores = detect(model, frame); //frame not set
-//     return pointsAndScores;
-// }
-// //transform should come before centroid right
-// std::pair<double, double> calculateCentroid(cv::Rect2d pointsAndScores) {
 
-// }
+std::vector<cv::Point> HumanDetector::&calculateCenters(const std::vector<cv::Rect> &boundingBoxes){
+    std::vector<cv::Point> centers;
 
-// void HumanDetector::transform(std::pair<double, double>): {
+    for (const cv::Rect &boudingBox: boundingBoxes){
+        cv::Point center;
+        center.x=(boundingBox.tl().x+boundingBox.br().x)/2;
+        center.y=(boundingBox.tl().y+boundingBox.br().y)/2;
+        centers.push_back(center);
+    }
+
+    return centers;
+}
+
+
+std::vector<cv::Point3d> HumanDetector::calculateRobotCordSysPoints(const std::vector<cv::Point> &centers){
+
+    std::vector<cv::Point3d> robotCordSysPoints;
+    Transformation  transform;
+    for (const cv::Point &center: centers){
+
+        cv::Point3d robotCordSysPoint=transform.doTransform(center);
+
+        std::cout<< "Human found at Location:"<< robotCordSysPoint<<std::endl;
+
+        robotCordSysPoints.push_back(robotCordSysPoint);
+    }
+
+    return robotCordSysPoints;
+
+}
+
+void HumanDetector::drawBoundingBox(cv::Mat returnedFrame,
+    const std::vector<cv::Rect> &boundingBoxes,const std::vector<double> &Confidences){
+        int i=0;
+        for(const cv::Rect &box:boundingBoxes){
+            cv::rectangle(returnedFrame,box.tl(),box.br(),cv::Scalar(0,0,255),3);
+
+            std::string displayIDandConfidence= "ID:"+ std::to_string(i++)+ "Confidence: "+ std::to_string(Confidences[i]);;
+           
+            cv::putText(returnedFrame,displayIDandConfidence,cv::Point(box.tl().x+30,box.tl().y),
+            cv::FONT_HERSHEY_DUPLEX,cv::Scalar(0,0,255));
     
-// }
+        }
+        
+}
+
+
+HumanDetector::detectHumans(cv::Mat returnedFrame){
+
+    RectsandConfidences classifierOutput = humanClassifier.predict(returnedFrame);
+
+    std::vector<cv::Point> boundingBoxes = classifierOutput.rectangles;
+    std::vector<double> Confidences=classifierOutput.confidences;
+
+
+    std::vector<cv::Point> centers=calculateCenters(boundingBoxes);
+
+    std::vector<cv::Point3d> robotcordSysPoints=calculateRobotCordSysPoints(centers);
+
+    drawBoundingBox(returnedFrame,boundingBoxes,Confidences);
+    
+}
+
+
