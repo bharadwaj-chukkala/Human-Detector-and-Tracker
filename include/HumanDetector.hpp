@@ -46,9 +46,9 @@
 /**
  * @brief class HumanDetector
  * This class uses a pre-trained SVM model to detect humans and 
- * returns co-ordinates of bounding box surrounding detected human
+ * uses co-ordinates of bounding box surrounding detected human
+ * to find humans in robot Cordinate system.
  */
-// class HumanDetector:public HumanClassifier {
 
 class HumanDetector{
 
