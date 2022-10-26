@@ -36,12 +36,12 @@
  */
 
 #include <opencv2/opencv.hpp>
-#include <RectandConfidence.hpp>
+#include "RectsandConfidences.hpp"
 
 class HumanClassifier {
     public:
 
-    cv::HOGDescriptor classifier
+    cv::HOGDescriptor classifier;
 
     /**
      * @brief This constructor initializes the model with a trained people detector( SVM Human classifier)
