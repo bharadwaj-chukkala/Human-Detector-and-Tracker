@@ -41,6 +41,7 @@
 #include <utility>
 # include <opencv2/opencv.hpp>
 # include <HumanClassifier.hpp>
+# include <RectsandConfidences.hpp>
 
 /**
  * @brief class HumanDetector
@@ -50,12 +51,46 @@
 // class HumanDetector:public HumanClassifier {
 
 class HumanDetector{
+
+  HumanClassifier humanClassifier;
+
+
+
+    /**
+     * @brief Finds the centers of all boundingBoxes in an image
+     * 
+     * @param boundingBoxes 
+     * @return std::vector<cv::Point>& Center Points.
+     */
+    std::vector<cv::Point> &calculateCenters(const std::vector<cv::Rect> &boundingBoxes);
+
+
+    /**
+     * @brief Moving from 2d Image coordinate system to 3d Robot coordinate system and displaying 
+     * detected humans position in robot Coordinate System.
+     * 
+     * @param centers returned from calculateCenters method.
+     * @return std::vector<cv::Point3d> Locations where humans are detected in 
+     * robot Coordinate system.
+     */
+    std::vector<cv::Point3d> &calculateRobotCordSysPoints(const std::vector<cv::Point> &centers);
+
+    /**
+     * @brief This function draws bounding boxes around detected humans.
+     * 
+     * @param returnedFrame image
+     * @param boundingBoxes  Vector of rectangle Coordinates returned by HumanClassifier.
+     * @param Confidences Prediction Confidence scores returned by HumanClassifier
+     */
+    void drawBoundingBox(cv::Mat returnedFrame,
+    const std::vector<cv::Rect> &boundingBoxes,const std::vector<double> &Confidences);
+
   public:
     /**
      * @brief Construct a new Human Detector object
      * 
      */
-    HumanDetector(std::string &,int &);
+    HumanDetector();
 
     /**
     * @brief Destroys the Human Detector object
@@ -64,28 +99,22 @@ class HumanDetector{
     ~HumanDetector();
 
 
+  
     /**
-     * @brief This function calls predict function from the classifier. The 2d image points for the bounding box
-     * is displayed.
-     * @return Rect2d points of the bounding box.
+     * @brief This method carries out the detection pipeline.
+     * It calls Humanclassifier to detect humans, which returns 
+     * RectsandConfidences.
      * 
+     * RectsandConfidences is split in to boundingBoxes and confidences.
+     * 
+     * 
+     * centers are calculated from boundingBoxes which are further transformed
+     * to robotCoordinate system.
+     * 
+     * @param returnedFrame original Image
+     * @return None
      */
-    // cv::Rect2d drawBoundingBox();
-    // /**
-    //  * @brief Finds the centroid of the bounding box
-    //  * 
-    //  * @param cv:Rect2d bounding box points
-    //    @return Centroid point
-    //  */
-    // std::pair<double, double> calculateCentroid(cv::Rect2d);
-
-    // /**
-    //  * @brief Moving from 2d Image coordinate system to 3d Robot coordinate system and display it
-    //  * 
-    //  * @param Point Centroid for the bounding box
-    //  * @return 
-    //  */
-    // void transform(std::pair<double, double>);
+    void detectHumans(cv::Mat returnedFrame);
 };
 #endif  // INCLUDE_HUMANDETECTOR_HPP_
 
