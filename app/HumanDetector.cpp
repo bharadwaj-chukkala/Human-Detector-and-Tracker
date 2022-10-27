@@ -50,10 +50,10 @@ HumanDetector::HumanDetector() {}
 HumanDetector::~HumanDetector() {}
 
 
-std::vector<cv::Point> HumanDetector::&calculateCenters(const std::vector<cv::Rect> &boundingBoxes){
+std::vector<cv::Point> HumanDetector::calculateCenters(const std::vector<cv::Rect> &boundingBoxes){
     std::vector<cv::Point> centers;
 
-    for (const cv::Rect &boudingBox: boundingBoxes){
+    for (const cv::Rect &boundingBox: boundingBoxes){
         cv::Point center;
         center.x=(boundingBox.tl().x+boundingBox.br().x)/2;
         center.y=(boundingBox.tl().y+boundingBox.br().y)/2;
@@ -87,21 +87,23 @@ void HumanDetector::drawBoundingBox(cv::Mat returnedFrame,
         for(const cv::Rect &box:boundingBoxes){
             cv::rectangle(returnedFrame,box.tl(),box.br(),cv::Scalar(0,0,255),3);
 
-            std::string displayIDandConfidence= "ID:"+ std::to_string(i++)+ "Confidence: "+ std::to_string(Confidences[i]);;
+            std::string displayIDandConfidence= "ID:"+ std::to_string(i+1)+ "Confidence: "+ std::to_string(Confidences[i]);;
            
             cv::putText(returnedFrame,displayIDandConfidence,cv::Point(box.tl().x+30,box.tl().y),
             cv::FONT_HERSHEY_DUPLEX,cv::Scalar(0,0,255));
+            i++;
+
     
         }
         
 }
 
 
-HumanDetector::detectHumans(cv::Mat returnedFrame){
+void HumanDetector::detectHumans(cv::Mat returnedFrame){
 
     RectsandConfidences classifierOutput = humanClassifier.predict(returnedFrame);
 
-    std::vector<cv::Point> boundingBoxes = classifierOutput.rectangles;
+    std::vector<cv::Rect> boundingBoxes = classifierOutput.rectangles;
     std::vector<double> Confidences=classifierOutput.confidences;
 
 
