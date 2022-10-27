@@ -33,12 +33,16 @@ SET(OpenCV_DIR /home/sairamp/installation/OpenCV/installation/OpenCV/lib/cmake/o
 # MAKE SURE OPENCV IS INSTALLED CORRECTLY
 find_package( OpenCV REQUIRED )
 
+find_package( Eigen3 REQUIRED)
+
 # # INCLUDE OPENCV DIRECTORIES
 # include_directories( ${OpenCV_INCLUDE_DIRS})
 
 # INCLUDE OPENCV DIRECTORIES
 include_directories( 
-    ${OpenCV_INCLUDE_DIRS})
+    ${OpenCV_INCLUDE_DIRS}/usr/include/eigen3)
+
+
 
 add_subdirectory(app)
 add_subdirectory(test)
