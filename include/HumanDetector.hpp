@@ -62,7 +62,7 @@ class HumanDetector{
      * @param boundingBoxes 
      * @return std::vector<cv::Point>& Center Points.
      */
-    std::vector<cv::Point> &calculateCenters(const std::vector<cv::Rect> &boundingBoxes);
+    std::vector<cv::Point> calculateCenters(const std::vector<cv::Rect> &boundingBoxes);
 
 
     /**
@@ -73,7 +73,7 @@ class HumanDetector{
      * @return std::vector<cv::Point3d> Locations where humans are detected in 
      * robot Coordinate system.
      */
-    std::vector<cv::Point3d> &calculateRobotCordSysPoints(const std::vector<cv::Point> &centers);
+    std::vector<cv::Point3d> calculateRobotCordSysPoints(const std::vector<cv::Point> &centers);
 
     /**
      * @brief This function draws bounding boxes around detected humans.
@@ -83,7 +83,7 @@ class HumanDetector{
      * @param Confidences Prediction Confidence scores returned by HumanClassifier
      */
     void drawBoundingBox(cv::Mat returnedFrame,
-    const std::vector<cv::Rect> &boundingBoxes,const std::vector<double> &Confidences);
+    const std::vector<cv::Rect> boundingBoxes,const std::vector<double> &Confidences);
 
   public:
     /**
