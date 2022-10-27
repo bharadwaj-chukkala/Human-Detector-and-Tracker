@@ -5,4 +5,4 @@ RectsandConfidences::RectsandConfidences(const std::vector<cv::Rect> &rectangles
  rectangles(rectangles_), confidences(confidences_) {
     }
 
-RectsandConfidences::~RectandConfidence(){}
+RectsandConfidences::~RectsandConfidences(){}
