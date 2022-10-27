@@ -50,6 +50,12 @@ int main() {
 
     PerceptionModule acmePerceptionModule(filePath,option);
 
-    acmePerceptionModule.detector();
+    cv::Mat returnedFrame=acmePerceptionModule.frame.readFrame(filePath);
+
+    acmePerceptionModule.acmeDetector.detectHumans(returnedFrame);
+
+
+
+    // acmePerceptionModule.detector();
     
 }

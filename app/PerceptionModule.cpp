@@ -33,16 +33,16 @@
  * 
  */
 
-#include "../include/PerceptionModule.hpp"
-#include "../include/HumanDetector.hpp"
+#include "PerceptionModule.hpp"
+#include "HumanDetector.hpp"
 
 PerceptionModule::PerceptionModule(std::string &path_,int &fileOption_):path(path_),fileOption(fileOption_) {
        
 }
 
-void PerceptionModule::detector() {
-    HumanDetector acmeDetector(path,fileOption);
+// void PerceptionModule::detector() {
     
-    // detect and stuff retun 
-    // transformed robot co-ordinates
-}
+    
+//     // detect and stuff retun 
+//     // transformed robot co-ordinates
+// }

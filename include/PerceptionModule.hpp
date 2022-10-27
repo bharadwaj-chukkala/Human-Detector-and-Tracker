@@ -52,7 +52,10 @@
 class PerceptionModule {
     std::string path;
     int fileOption;
+    
     public:
+    ReadData frame;
+    HumanDetector acmeDetector;
     /**
      * @brief Construct a new Perception Module object which asks the
      * user for input type and input path

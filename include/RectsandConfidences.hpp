@@ -54,7 +54,7 @@ class RectsandConfidences {
     * @brief Destroy the Rectand Confidence object
     * 
     */
-    ~RectandConfidence();
+    ~RectsandConfidences();
     
 };
 #endif  // INCLUDE_RECTANDCONFIDENCE_HPP_

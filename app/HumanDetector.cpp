@@ -67,10 +67,10 @@ std::vector<cv::Point> HumanDetector::calculateCenters(const std::vector<cv::Rec
 std::vector<cv::Point3d> HumanDetector::calculateRobotCordSysPoints(const std::vector<cv::Point> &centers){
 
     std::vector<cv::Point3d> robotCordSysPoints;
-    Transformation  transform;
+    Transformation  myTransform;
     for (const cv::Point &center: centers){
 
-        cv::Point3d robotCordSysPoint=transform.doTransform(center);
+        cv::Point3d robotCordSysPoint=myTransform.doTransform(center);
 
         std::cout<< "Human found at Location:"<< robotCordSysPoint<<std::endl;
 
@@ -90,7 +90,7 @@ void HumanDetector::drawBoundingBox(cv::Mat returnedFrame,
             std::string displayIDandConfidence= "ID:"+ std::to_string(i+1)+ "Confidence: "+ std::to_string(Confidences[i]);;
            
             cv::putText(returnedFrame,displayIDandConfidence,cv::Point(box.tl().x+30,box.tl().y),
-            cv::FONT_HERSHEY_DUPLEX,cv::Scalar(0,0,255));
+            cv::FONT_HERSHEY_DUPLEX,2,cv::Scalar(0,0,255));
             i++;
 
     

@@ -40,7 +40,7 @@ find_package( Eigen3 REQUIRED)
 
 # INCLUDE OPENCV DIRECTORIES
 include_directories( 
-    ${OpenCV_INCLUDE_DIRS}/usr/include/eigen3)
+    ${OpenCV_INCLUDE_DIRS} /usr/include/eigen3)
 
 
 

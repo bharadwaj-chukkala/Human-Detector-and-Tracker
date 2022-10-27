@@ -36,7 +36,7 @@
  */
 # include <Eigen/Dense>
 
-class Transformaton {
+class Transformation {
     Eigen::MatrixXf K;
     Eigen::MatrixXf RT;
     Eigen::MatrixXf P;
