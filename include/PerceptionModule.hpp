@@ -38,9 +38,9 @@
 # include <iostream>
 #include <string>
 # include <opencv2/opencv.hpp>
-#include <ReadData.hpp>
-#include <HumanDetector.hpp>
-#include <HumanClassifier.hpp>
+#include "ReadData.hpp"
+#include "HumanDetector.hpp"
+#include "HumanClassifier.hpp"
 
 
 /**
