@@ -37,7 +37,7 @@
 #include "HumanDetector.hpp"
 
 PerceptionModule::PerceptionModule(std::string &path_,int &fileOption_):path(path_),fileOption(fileOption_) {
-       
+      
 }
 
 // void PerceptionModule::detector() {
