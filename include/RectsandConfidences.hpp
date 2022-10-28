@@ -36,6 +36,8 @@
  */
 
 #include <utility>
+# include <vector>
+# include <opencv2/opencv.hpp>
 /**
  * @brief This class acts as a user defined datatype to store SVM detector output
  * 
