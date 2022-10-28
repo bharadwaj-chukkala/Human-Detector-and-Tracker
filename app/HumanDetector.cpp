@@ -38,14 +38,6 @@
 #include "Transformation.hpp"
 
 
-// HumanDetector::HumanDetector(std::string &path,int &option){
-//     ReadData read;
-//     cv::Mat returnedFrame=read.readFrame(path);
-//     cv::imshow("window",returnedFrame);
-//     cv::waitKey(0);
-//     cv::destroyAllWindows();
-// }
-
 HumanDetector::HumanDetector() {}
 HumanDetector::~HumanDetector() {}
 
@@ -95,6 +87,10 @@ void HumanDetector::drawBoundingBox(cv::Mat returnedFrame,
 
     
         }
+
+        cv::imshow("window",returnedFrame);
+        cv::waitKey(0);
+        cv::destroyAllWindows();
         
 }
 
