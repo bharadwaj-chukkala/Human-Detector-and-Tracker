@@ -35,11 +35,12 @@
  * 
  */
 # include <Eigen/Dense>
+#include <opencv2/opencv.hpp>
 
 class Transformation {
-    Eigen::MatrixXf K;
-    Eigen::MatrixXf RT;
+
     Eigen::MatrixXf P;
+
  public:
     Transformation();
 
