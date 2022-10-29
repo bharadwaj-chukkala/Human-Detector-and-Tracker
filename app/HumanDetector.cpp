@@ -58,26 +58,33 @@ std::vector<cv::Point> HumanDetector::calculateCenters(const std::vector<cv::Rec
 }
 
 
-std::vector<cv::Point3d> HumanDetector::calculateRobotCordSysPoints(const std::vector<cv::Point> &centers){
+std::vector<cv::Point3d> HumanDetector::calculateRobotCordSysPoints(const std::vector<cv::Point> &centers,std::vector<double> &confidences){
 
     std::vector<cv::Point3d> robotCordSysPoints;
     Transformation  myTransform;
+
+    int i=0;
     for (const cv::Point &center: centers){
 
-        cv::Point3d robotCordSysPoint=myTransform.doTransform(center);
+        if (confidences[i]>=0.8){
+        
 
-        std::cout<< "Human found at Location:"<< robotCordSysPoint<<std::endl;
+            cv::Point3d robotCordSysPoint=myTransform.doTransform(center);
 
-        robotCordSysPoints.push_back(robotCordSysPoint);
+            std::cout<< "Human found at Location:"<< robotCordSysPoint<<std::endl;
+
+            robotCordSysPoints.push_back(robotCordSysPoint);
+        }
+
+        i++;
     }
-
     return robotCordSysPoints;
 
 }
 
-void HumanDetector::drawBoundingBox(cv::Mat returnedFrame,
+int HumanDetector::drawBoundingBox(cv::Mat returnedFrame,
     const std::vector<cv::Rect> &boundingBoxes,const std::vector<double> &Confidences){
-        int i=0;
+        int i=0, flag=0;
         for(const cv::Rect &box:boundingBoxes){
 
             if (Confidences[i]>=0.8){
@@ -91,25 +98,28 @@ void HumanDetector::drawBoundingBox(cv::Mat returnedFrame,
                 int height=box.height;
                 
                 std::string displayConfidences="C: "+ confidence;
-            
+
                 cv::putText(returnedFrame,displayID,cv::Point(box.tl().x,box.tl().y-10),
                 cv::FONT_HERSHEY_DUPLEX,0.5,cv::Scalar(0,255,255));
 
                 
                 cv::putText(returnedFrame,displayConfidences,cv::Point(box.tl().x,box.tl().y+height-5),
                 cv::FONT_HERSHEY_DUPLEX,0.5,cv::Scalar(0,255,255));
-                i++;
             }
-    
+            i++;
         }
 
         cv::imshow("window",returnedFrame);
         cv::waitKey(2);
+        if (i!=0)
+            return 1;
+        else
+            return 0;
         
 }
 
 
-void HumanDetector::detectHumans(cv::Mat returnedFrame){
+int HumanDetector::detectHumans(cv::Mat returnedFrame){
 
     RectsandConfidences classifierOutput = humanClassifier.predict(returnedFrame);
 
@@ -119,9 +129,9 @@ void HumanDetector::detectHumans(cv::Mat returnedFrame){
 
     std::vector<cv::Point> centers=calculateCenters(boundingBoxes);
 
-    std::vector<cv::Point3d> robotcordSysPoints=calculateRobotCordSysPoints(centers);
+    std::vector<cv::Point3d> robotcordSysPoints=calculateRobotCordSysPoints(centers,Confidences);
 
-    drawBoundingBox(returnedFrame,boundingBoxes,Confidences);
+    return drawBoundingBox(returnedFrame,boundingBoxes,Confidences);
     
 }
 
