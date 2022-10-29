@@ -7,10 +7,10 @@ RectsandConfidences::RectsandConfidences(const std::vector<cv::Rect> &rectangles
 
 RectsandConfidences::~RectsandConfidences(){}
 
-RectsandConfidences::getRectangles(){
+std::vector<cv::Rect> RectsandConfidences::getRectangles(){
         return rectangles;
     }
 
-RectsandConfidences::getConfidences(){
+std::vector<double> RectsandConfidences::getConfidences(){
         return confidences;
     }
