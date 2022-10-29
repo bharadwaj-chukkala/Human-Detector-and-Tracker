@@ -62,13 +62,13 @@ class RectsandConfidences {
      * @brief Get the Rectangles datamember
      * 
      */
-    getRectangles();
+    std::vector<cv::Rect> getRectangles();
 
     /**
      * @brief Get the Confidences datamember
      * 
      */
-    getConfidences();
+    std::vector<double> getConfidences();
 
  private:
     std::vector<cv::Rect> rectangles;
