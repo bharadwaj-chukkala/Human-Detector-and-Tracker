@@ -74,7 +74,7 @@ cv::Point3d Transformation::doTransform(cv::Point imageCord){
         return XRobot;
     }
     
-    XRobot.x=X(0,0)/X(3,0);
+    XRobot.x=abs(X(0,0)/X(3,0));
     XRobot.y=abs(X(1,0)/X(3,0));
     XRobot.z=abs(X(2,0)/X(3,0));
    
