@@ -84,7 +84,7 @@ std::vector<cv::Point3d> HumanDetector::calculateRobotCordSysPoints(const std::v
 
 int HumanDetector::drawBoundingBox(cv::Mat returnedFrame,
     const std::vector<cv::Rect> &boundingBoxes,const std::vector<double> &Confidences){
-        int i=0, flag=0;
+        int i=0;
         for(const cv::Rect &box:boundingBoxes){
 
             if (Confidences[i]>=0.8){
