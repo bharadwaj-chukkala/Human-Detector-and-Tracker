@@ -36,11 +36,13 @@
 #include <gtest/gtest.h>
 #include <string>
 #include "../include/HumanDetector.hpp"
+#include "../include/ReadData.hpp"
 
 TEST(HumanDetector_Test, Human_Detection_Pass) {
-    std::string test_path =
-            "";
-    cv::Mat image = cv::imread(test_path);
+    ReadData input_reader;
+    cv::Mat frame = input_reader.readFrame("/home/bharadwaj/ENPM808X_Midterm_project/test_data/image1.png");
+    int test_out = 1;
     HumanDetector Object;
-    Ob
+
+    EXPECT_EQ(Object.detectHumans(frame), test_out);
 }
