@@ -51,7 +51,7 @@ int main() {
     PerceptionModule acmePerceptionModule(filePath,option);
 
     if (option==0){
-        cv::VideoCapture cap(0);
+        cv::VideoCapture cap(filePath);
     
         if(!cap.isOpened()){
             std::cout << "Error Loading video" << std::endl;
@@ -96,8 +96,16 @@ int main() {
     else{
         cv::Mat returnedFrame=acmePerceptionModule.frame.readFrame(filePath);
 
+        // int down_width = 852;
+        // int down_height = 480;
+        // cv::Mat returnedFrame1;
+        // //resize down
+        // cv::resize(returnedFrame, returnedFrame1, cv::Size(down_width, down_height), cv::INTER_LINEAR);
+
+
         acmePerceptionModule.acmeDetector.detectHumans(returnedFrame);
         
+        cv::waitKey(0);
         cv::destroyAllWindows();
 
 
