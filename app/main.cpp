@@ -34,6 +34,8 @@
 
 #include "PerceptionModule.hpp"
 #include <string>
+# include "Transformation.hpp"
+
 
 int main() {
 
@@ -49,6 +51,7 @@ int main() {
     <<"1.For Video Detection: press 0"<<std::endl<<"2.For Picture Detection: press 1"<<std::endl;
     std::cin>>option;
 
+    int out = 0;
 
     PerceptionModule acmePerceptionModule(filePath,option);
 
@@ -78,7 +81,7 @@ int main() {
 
             // Display the resulting frame
             cv::imshow( "Frame", returnedFrame1 );
-            acmePerceptionModule.acmeDetector.detectHumans(returnedFrame1);
+            out = acmePerceptionModule.acmeDetector.detectHumans(returnedFrame1);
 
             // Press  ESC on keyboard to exit
             char c=(char)cv::waitKey(25);
@@ -92,19 +95,21 @@ int main() {
         // Closes all the frames
         cv::destroyAllWindows();
 
-        return 0;
-
         }
     else{
         cv::Mat returnedFrame=acmePerceptionModule.frame.readFrame(filePath);
 
-        acmePerceptionModule.acmeDetector.detectHumans(returnedFrame);
+        out = acmePerceptionModule.acmeDetector.detectHumans(returnedFrame);
         
         cv::waitKey(0);
         cv::destroyAllWindows();
 
 
     }
-
-    
+    if(out == 0){
+        std::cout<<" No Humans in th frame";
+        return 0;
+    }
+    else
+        return 1;
 }
