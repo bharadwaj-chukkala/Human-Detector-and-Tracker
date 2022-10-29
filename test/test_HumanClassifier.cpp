@@ -25,25 +25,35 @@
  * @author Bharadwaj Chukkala (bchukkal@umd.edu)
  * @author Venkata Sairam Polina (sairamp@umd.edu)
  * @author Shelvin Pauly (spauly@umd.edu)
- * @brief test cpp file to create individual test cases
+ * @brief test cpp file 
  * @version 0.1
  * @date 2022-10-15
  * 
  * @copyright Copyright (c) 2022
  * 
  */
+
+
 #include <gtest/gtest.h>
-#include <ReadData.hpp>
+#include <string>
+#include <vector>
+#include <opencv2/opencv.hpp>
+#include "../include/HumanClassifier.hpp"
 
-// TEST(dummy, should_pass) {
-//   EXPECT_EQ(1, 1);
-// }
 
+TEST(HumanClassifier_Test, Human_Classified) {
+    HumanClassifier Model;
 
-TEST(readDataTest, read_success) {
-  ReadData data1;
-  std::string path = "../test_data/Lenna.png";
-  cv::Mat frame;
-  frame = data1.readFrame(path);
-  EXPECT_FALSE(frame.empty());
+    std::string test_path =
+            "<provide_path";
+    cv::Mat image = cv::imread(test_path);
+
+    RectsandConfidences detectedOutput = Model.predict(image);
+    std::vector<cv::Rect> boundingBoxes = detectedOutput.rectangles;
+    std::vector<double> confidences = detectedOutput.confidences;
+    EXPECT_EQ(boundingBoxes.size(), confidences.size());
+
+    //EXPECT_GT((boundingBoxes.size()), 0);
+    //EXPECT_EQ(boundingBoxes.size(), confidences.size());
+
 }

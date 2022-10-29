@@ -3,8 +3,15 @@ set(GTEST_SHUFFLE 1)
 add_executable(
     cpp-test
     main.cpp
-    test.cpp
-    ../app/ReadData.cpp
+    test_ReadData.cpp
+    test_HumanClassifier.cpp
+    test_HumanDetector.cpp
+    test_PerceptionModule.cpp
+    test_RectsandConfidences.cpp
+    test_Transformation.cpp
+
+
+
 )
 
 target_include_directories(cpp-test PUBLIC ../vendor/googletest/googletest/include 
