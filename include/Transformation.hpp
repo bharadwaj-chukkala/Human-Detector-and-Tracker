@@ -23,11 +23,11 @@
  * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
  * SOFTWARE.
  *  
- * @file HumanClassifier.hpp
+ * @file Transformation.hpp
  * @author Bharadwaj Chukkala (bchukkal@umd.edu)
  * @author Venkata Sairam Polina (sairamp@umd.edu)
  * @author Shelvin Pauly (spauly@umd.edu)
- * @brief Header file for TRansformation.hpp
+ * @brief Header file for Transformation.hpp
  * @version 0.1
  * @date 2022-10-25
  * 

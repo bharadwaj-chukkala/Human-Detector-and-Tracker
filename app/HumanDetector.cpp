@@ -21,11 +21,11 @@
  * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
  * SOFTWARE.
  *  
- * @file HumanClassifier.hpp
+ * @file HumanDetector.cpp
  * @author Bharadwaj Chukkala (bchukkal@umd.edu)
  * @author Venkata Sairam Polina (sairamp@umd.edu)
  * @author Shelvin Pauly (spauly@umd.edu)
- * @brief Header file for HumanDetector.cpp
+ * @brief Implementation file for HumanDetector.hpp
  * @version 0.1
  * @date 2022-10-23
  * 

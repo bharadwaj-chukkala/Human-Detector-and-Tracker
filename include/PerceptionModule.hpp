@@ -23,7 +23,7 @@
  * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
  * SOFTWARE.
  *  
- * @file HumanClassifier.hpp
+ * @file PerceptionModule.hpp
  * @author Bharadwaj Chukkala (bchukkal@umd.edu)
  * @author Venkata Sairam Polina (sairamp@umd.edu)
  * @author Shelvin Pauly (spauly@umd.edu)

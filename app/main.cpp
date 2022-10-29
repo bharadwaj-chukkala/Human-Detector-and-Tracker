@@ -21,11 +21,11 @@
  * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
  * SOFTWARE.
  *  
- * @file HumanClassifier.hpp
+ * @file main.cpp
  * @author Bharadwaj Chukkala (bchukkal@umd.edu)
  * @author Venkata Sairam Polina (sairamp@umd.edu)
  * @author Shelvin Pauly (spauly@umd.edu)
- * @brief Reads the data and process it
+ * @brief The final app implementation
  * @version 0.1
  * @date 2022-10-15
  * 
@@ -41,12 +41,14 @@ int main() {
     int option;
 
     std::cout<<" ACME PERCEPTION MODULE \n"<<std::endl;
-    std::cout<<"**** Enter filepath on on which detection should be carried****: "<<std::endl;
+
+    std::cout<<"**** Enter filepath on which detection should be carried****: "<<std::endl;
     std::getline(std::cin,filePath);
 
     std::cout<< "Enter the file Option: "<<std::endl
     <<"1.For Video Detection: press 0"<<std::endl<<"2.For Picture Detection: press 1"<<std::endl;
     std::cin>>option;
+
 
     PerceptionModule acmePerceptionModule(filePath,option);
 
@@ -95,13 +97,6 @@ int main() {
         }
     else{
         cv::Mat returnedFrame=acmePerceptionModule.frame.readFrame(filePath);
-
-        // int down_width = 852;
-        // int down_height = 480;
-        // cv::Mat returnedFrame1;
-        // //resize down
-        // cv::resize(returnedFrame, returnedFrame1, cv::Size(down_width, down_height), cv::INTER_LINEAR);
-
 
         acmePerceptionModule.acmeDetector.detectHumans(returnedFrame);
         

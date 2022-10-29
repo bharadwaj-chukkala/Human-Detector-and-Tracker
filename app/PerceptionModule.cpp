@@ -21,11 +21,11 @@
  * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
  * SOFTWARE.
  *  
- * @file HumanClassifier.hpp
+ * @file PerceptionModule.cpp
  * @author Bharadwaj Chukkala (bchukkal@umd.edu)
  * @author Venkata Sairam Polina (sairamp@umd.edu)
  * @author Shelvin Pauly (spauly@umd.edu)
- * @brief Header file for PerceptionModule.cpp
+ * @brief Implementation file for PerceptionModule.hpp
  * @version 0.1
  * @date 2022-10-22
  * 
@@ -40,9 +40,3 @@ PerceptionModule::PerceptionModule(std::string &path_,int &fileOption_):path(pat
       
 }
 
-// void PerceptionModule::detector() {
-    
-    
-//     // detect and stuff retun 
-//     // transformed robot co-ordinates
-// }

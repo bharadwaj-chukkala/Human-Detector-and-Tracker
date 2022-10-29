@@ -25,7 +25,7 @@
  * @author Bharadwaj Chukkala (bchukkal@umd.edu)
  * @author Venkata Sairam Polina (sairamp@umd.edu)
  * @author Shelvin Pauly (spauly@umd.edu)
- * @brief implementation for Transformation.hpp
+ * @brief Implementation file for Transformation.hpp
  * @version 0.1
  * @date 2022-10-25
  * 
@@ -34,6 +34,7 @@
  */
 # include "Transformation.hpp"
 # include <opencv2/opencv.hpp>
+# include <stdlib.h>
 
 Transformation::Transformation() {
     Eigen::MatrixXf K;
@@ -74,8 +75,8 @@ cv::Point3d Transformation::doTransform(cv::Point imageCord){
     }
     
     XRobot.x=X(0,0)/X(3,0);
-    XRobot.y=X(1,0)/X(3,0);
-    XRobot.z=X(2,0)/X(3,0);
+    XRobot.y=abs(X(1,0)/X(3,0));
+    XRobot.z=abs(X(2,0)/X(3,0));
    
     return XRobot;
    
