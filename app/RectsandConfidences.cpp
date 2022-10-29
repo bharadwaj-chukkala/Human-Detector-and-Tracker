@@ -6,3 +6,11 @@ RectsandConfidences::RectsandConfidences(const std::vector<cv::Rect> &rectangles
     }
 
 RectsandConfidences::~RectsandConfidences(){}
+
+RectsandConfidences::getRectangles(){
+        return rectangles;
+    }
+
+RectsandConfidences::getConfidences(){
+        return confidences;
+    }
