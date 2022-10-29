@@ -34,3 +34,12 @@
  */
 
 #include <gtest/gtest.h>
+#include "../include/PerceptionModule.hpp"
+
+TEST(Perception_Module_Test_Suite, Check_Pass) {
+    std::string filepath = "fsfg";
+    int option = 0;
+    PerceptionModule Object(filepath, option);
+    EXPECT_FALSE(filepath.empty());
+    EXPECT_TRUE(option == 0);
+}
