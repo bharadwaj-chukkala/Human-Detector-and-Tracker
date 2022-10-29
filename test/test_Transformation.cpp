@@ -40,7 +40,7 @@
 TEST(Test_Frame_Transformation, Frame_Transformation_Pass) {
     Transformation FT_Object;
     cv::Point x(0, 0);
-    cv::Point3d expected_X(-79.26, 187.78, 108.62);
+    cv::Point3d expected_X(34.2002, 81.0004, 47.0002);
     cv::Point3d computed_X = FT_Object.doTransform(x);
     EXPECT_NEAR(computed_X.x, expected_X.x, 0.1);
     EXPECT_NEAR(computed_X.y, expected_X.y, 0.1);
