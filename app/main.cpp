@@ -50,12 +50,58 @@ int main() {
 
     PerceptionModule acmePerceptionModule(filePath,option);
 
-    cv::Mat returnedFrame=acmePerceptionModule.frame.readFrame(filePath);
+    if (option==0){
+        cv::VideoCapture cap(0);
+    
+        if(!cap.isOpened()){
+            std::cout << "Error Loading video" << std::endl;
+            return -1;
+        }
+    
+        while(1){
 
-    acmePerceptionModule.acmeDetector.detectHumans(returnedFrame);
+            cv::Mat returnedFrame;
+            // Capture frame-by-frame
+            cap >> returnedFrame;
+
+            int down_width = 650;
+            int down_height = 700;
+            cv::Mat returnedFrame1;
+            //resize down
+            cv::resize(returnedFrame, returnedFrame1, cv::Size(down_width, down_height), cv::INTER_LINEAR);
+
+            // If the frame is empty, break immediately
+            if (returnedFrame1.empty())
+                break;
+
+            // Display the resulting frame
+            cv::imshow( "Frame", returnedFrame1 );
+            acmePerceptionModule.acmeDetector.detectHumans(returnedFrame1);
+
+            // Press  ESC on keyboard to exit
+            char c=(char)cv::waitKey(25);
+            if(c==27)
+                break;
+        }
+
+        // When everything done, release the video capture object
+        cap.release();
+
+        // Closes all the frames
+        cv::destroyAllWindows();
+
+        return 0;
+
+        }
+    else{
+        cv::Mat returnedFrame=acmePerceptionModule.frame.readFrame(filePath);
+
+        acmePerceptionModule.acmeDetector.detectHumans(returnedFrame);
+        
+        cv::destroyAllWindows();
 
 
+    }
 
-    // acmePerceptionModule.detector();
     
 }
