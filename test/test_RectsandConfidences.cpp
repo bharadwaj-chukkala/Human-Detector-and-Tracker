@@ -34,3 +34,24 @@
  */
 
 #include <gtest/gtest.h>
+#include "../include/RectsandConfidences.hpp"
+#include "../include/ReadData.hpp"
+#include "../include/HumanClassifier.hpp"
+
+TEST(Testing_type, RectsnScores_Test) {
+    ReadData input_reader;
+    cv::Mat frame = input_reader.readFrame("/home/bharadwaj/ENPM808X_Midterm_project/test_data/image1.png");
+    //
+    HumanClassifier classifier;
+    RectsandConfidences test_Object = classifier.predict(frame);
+    int size = test_Object.getRectangles().size();
+    for (int i = 1; i < size ; i++) {
+        if (test_Object.getConfidences()[i] >= 1.8) {
+            EXPECT_EQ(232, test_Object.getRectangles()[i].tl().x);
+            EXPECT_EQ(249, test_Object.getRectangles()[i].tl().y);
+            EXPECT_EQ(356, test_Object.getRectangles()[i].br().x);
+            EXPECT_EQ(496, test_Object.getRectangles()[i].br().y);
+        }
+    }
+}
+
