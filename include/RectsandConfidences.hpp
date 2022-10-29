@@ -43,9 +43,9 @@
  * 
  */
 class RectsandConfidences {
+   
  public:
-    std::vector<cv::Rect> rectangles;
-    std::vector<double> confidences;
+    
     /**
     * @brief Construct a new Rectand Confidence object
     * 
@@ -57,6 +57,22 @@ class RectsandConfidences {
     * 
     */
     ~RectsandConfidences();
+
+    /**
+     * @brief Get the Rectangles datamember
+     * 
+     */
+    getRectangles();
+
+    /**
+     * @brief Get the Confidences datamember
+     * 
+     */
+    getConfidences();
+
+ private:
+    std::vector<cv::Rect> rectangles;
+    std::vector<double> confidences;
     
 };
 #endif  // INCLUDE_RECTANDCONFIDENCE_HPP_
