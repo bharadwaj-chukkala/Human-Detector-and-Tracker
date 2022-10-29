@@ -73,7 +73,7 @@ class HumanDetector{
      * @return std::vector<cv::Point3d> Locations where humans are detected in 
      * robot Coordinate system.
      */
-    std::vector<cv::Point3d> calculateRobotCordSysPoints(const std::vector<cv::Point> &centers);
+    std::vector<cv::Point3d> calculateRobotCordSysPoints(const std::vector<cv::Point> &centers,std::vector<double> &confidences);
 
     /**
      * @brief This function draws bounding boxes around detected humans.
@@ -82,7 +82,7 @@ class HumanDetector{
      * @param boundingBoxes  Vector of rectangle Coordinates returned by HumanClassifier.
      * @param Confidences Prediction Confidence scores returned by HumanClassifier
      */
-    void drawBoundingBox(cv::Mat returnedFrame,
+    int drawBoundingBox(cv::Mat returnedFrame,
     const std::vector<cv::Rect> &boundingBoxes,const std::vector<double> &Confidences);
 
   public:
@@ -114,7 +114,7 @@ class HumanDetector{
      * @param returnedFrame original Image
      * @return None
      */
-    void detectHumans(cv::Mat returnedFrame);
+    int detectHumans(cv::Mat returnedFrame);
 };
 #endif  // INCLUDE_HUMANDETECTOR_HPP_
 
