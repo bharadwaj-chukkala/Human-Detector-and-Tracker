@@ -25,7 +25,7 @@
  * @author Bharadwaj Chukkala (bchukkal@umd.edu)
  * @author Venkata Sairam Polina (sairamp@umd.edu)
  * @author Shelvin Pauly (spauly@umd.edu)
- * @brief test cpp file 
+ * @brief test cpp file for human classifier
  * @version 0.1
  * @date 2022-10-15
  * 
@@ -36,24 +36,52 @@
 
 #include <gtest/gtest.h>
 #include <string>
-#include <vector>
 #include <opencv2/opencv.hpp>
 #include "../include/HumanClassifier.hpp"
+#include "../include/ReadData.hpp"
 
 
 TEST(HumanClassifier_Test, Human_Classified) {
     HumanClassifier Model;
 
-    std::string test_path =
-            "<provide_path";
-    cv::Mat image = cv::imread(test_path);
+    ReadData input_reader;
+    cv::Mat frame = input_reader.readFrame("/home/bharadwaj/ENPM808X_Midterm_project/test_data/image1.png");
 
-    RectsandConfidences detectedOutput = Model.predict(image);
-    std::vector<cv::Rect> boundingBoxes = detectedOutput.rectangles;
-    std::vector<double> confidences = detectedOutput.confidences;
+    RectsandConfidences detectedOutput = Model.predict(frame);
+    std::vector<cv::Rect> boundingBoxes = detectedOutput.getRectangles();
+    std::vector<double> confidences = detectedOutput.getConfidences();
     EXPECT_EQ(boundingBoxes.size(), confidences.size());
+}
 
-    //EXPECT_GT((boundingBoxes.size()), 0);
-    //EXPECT_EQ(boundingBoxes.size(), confidences.size());
+TEST(check_prediction, testing_predict_pass) {
+    //
+    ReadData input_reader;
+    cv::Mat frame = input_reader.readFrame("/home/bharadwaj/ENPM808X_Midterm_project/test_data/image1.png");
+    //
+    HumanClassifier classifier;
+    
+    RectsandConfidences test_Object1 = classifier.predict(frame);
+    
 
+    std::vector<cv::Rect> rectangles;
+    std::vector<double> scores;
+
+    cv::Rect rectangle1(468, 249, 124, 247);
+    rectangles.push_back(rectangle1);
+    cv::Rect rectangle2(308, 257, 430-308, 500-257);
+    rectangles.push_back(rectangle2);
+    double score = 0.739757;
+    scores.push_back(score);
+    score = 1.88305;
+    scores.push_back(score);
+    score = 1.69962;
+    scores.push_back(score);
+    score = 0.106604;
+    scores.push_back(score);
+
+
+    RectsandConfidences test_Object2(rectangles, scores);
+
+    EXPECT_EQ(scores[0], test_Object2.getConfidences()[0]);
+    EXPECT_EQ(test_Object1.getRectangles()[0].tl().x, test_Object2.getRectangles()[0].tl().x);
 }
