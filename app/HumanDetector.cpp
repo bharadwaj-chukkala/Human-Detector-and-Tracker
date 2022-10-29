@@ -32,7 +32,9 @@
  * @copyright Copyright (c) 2022
  * 
  */
-
+#include<iomanip>
+#include<iostream>
+#include<cmath>
 #include "HumanDetector.hpp"
 #include "ReadData.hpp"
 #include "Transformation.hpp"
@@ -77,20 +79,32 @@ void HumanDetector::drawBoundingBox(cv::Mat returnedFrame,
     const std::vector<cv::Rect> &boundingBoxes,const std::vector<double> &Confidences){
         int i=0;
         for(const cv::Rect &box:boundingBoxes){
-            cv::rectangle(returnedFrame,box.tl(),box.br(),cv::Scalar(0,0,255),2);
 
-            std::string displayIDandConfidence= "ID:"+ std::to_string(i+1);
-            // + "Confidence: "+ std::to_string(Confidences[i]);;
-           
-            cv::putText(returnedFrame,displayIDandConfidence,cv::Point(box.tl().x+30,box.tl().y+30),
-            cv::FONT_HERSHEY_DUPLEX,1,cv::Scalar(0,0,255));
-            i++;
+            if (Confidences[i]>=0.8){
 
+                cv::rectangle(returnedFrame,box.tl(),box.br(),cv::Scalar(0,0,255),2);
+
+                std::string displayID= "ID:"+ std::to_string(i+1);
+
+                std::string confidence=cv::format("%0.2f",Confidences[i]);
+
+                int height=box.height;
+                
+                std::string displayConfidences="C: "+ confidence;
+            
+                cv::putText(returnedFrame,displayID,cv::Point(box.tl().x,box.tl().y-10),
+                cv::FONT_HERSHEY_DUPLEX,0.5,cv::Scalar(0,255,255));
+
+                
+                cv::putText(returnedFrame,displayConfidences,cv::Point(box.tl().x,box.tl().y+height-5),
+                cv::FONT_HERSHEY_DUPLEX,0.5,cv::Scalar(0,255,255));
+                i++;
+            }
     
         }
 
         cv::imshow("window",returnedFrame);
-        cv::waitKey(25);
+        cv::waitKey(2);
         
 }
 
