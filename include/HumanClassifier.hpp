@@ -38,6 +38,12 @@
 #include <opencv2/opencv.hpp>
 #include "../include/RectsandConfidences.hpp"
 
+/**
+ * @brief class HumanClassifier
+ * This class gets a pre-trained SVM model to detect humans and 
+ * classifies the sent frame, while returing the bounding
+ * box and scores for that speciffic classificaation
+ */
 class HumanClassifier {
  public:
     cv::HOGDescriptor classifier;

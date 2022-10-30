@@ -37,12 +37,41 @@
 #include <Eigen/Dense>
 #include <opencv2/opencv.hpp>
 
+/**
+ * @brief Class transformation for transforming
+ * from image coordinates to robot world
+ * coordinates.
+ * 
+ */
 class Transformation {
+    /**
+     * @brief Private data member for storing the
+     * Projection Matrix
+     * 
+     */
     Eigen::MatrixXf P;
 
  public:
+    /**
+     * @brief Construct a new Transformation object
+     * 
+     */
     Transformation();
 
+    /**
+     * @brief Destroy the Transformation object
+     * 
+     */
+    ~Transformation() {
+    }
+    /**
+     * @brief Computes the 3d robot system coordinates,
+     * using homogenous transformation
+     * 
+     * @param imageCoord The 2D image coordinates
+     * @return cv::Point3d 3D robot system coordinates
+     */
     cv::Point3d doTransform(cv::Point imageCoord);
+
 };
 #endif  // INCLUDE_TRANSFORMATION_HPP_

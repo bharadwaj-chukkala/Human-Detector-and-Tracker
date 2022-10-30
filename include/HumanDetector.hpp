@@ -73,6 +73,7 @@ class HumanDetector{
      * @return std::vector<cv::Point3d> Locations where humans are detected in 
      * robot Coordinate system.
      */
+
     std::vector<cv::Point3d> calculateRobotCordSysPoints(
       const std::vector<cv::Point> &centers,
     std::vector<double> &confidences);

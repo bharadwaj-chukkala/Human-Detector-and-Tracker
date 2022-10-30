@@ -68,7 +68,17 @@ class RectsandConfidences {
     std::vector<double> getConfidences();
 
  private:
+    /**
+     * @brief Private data member for vector of cv::Rect,
+     * catches the bounding boxes of the classification
+     * 
+     */
     std::vector<cv::Rect> rectangles;
+    /**
+     * @brief Private datamember for vector of double,
+     * catches the scores of the classification
+     * 
+     */
     std::vector<double> confidences;
 };
 #endif  // INCLUDE_RECTSANDCONFIDENCES_HPP_
