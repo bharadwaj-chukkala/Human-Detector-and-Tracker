@@ -40,7 +40,7 @@
 # include <opencv2/opencv.hpp>
 #include "../include/ReadData.hpp"
 #include "../include/HumanDetector.hpp"
-#include "../incluude/HumanClassifier.hpp"
+#include "../include/HumanClassifier.hpp"
 
 
 /**
