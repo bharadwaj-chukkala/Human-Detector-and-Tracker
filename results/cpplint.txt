@@ -1,10 +1,21 @@
+Done processing ./app/HumanClassifier.cpp
+Done processing ./app/HumanDetector.cpp
+Done processing ./app/PerceptionModule.cpp
 Done processing ./app/ReadData.cpp
+Done processing ./app/RectsandConfidences.cpp
+Done processing ./app/Transformation.cpp
 Done processing ./app/main.cpp
 Done processing ./include/HumanClassifier.hpp
 Done processing ./include/HumanDetector.hpp
 Done processing ./include/PerceptionModule.hpp
 Done processing ./include/ReadData.hpp
-Done processing ./include/RectandConfidence.hpp
+Done processing ./include/RectsandConfidences.hpp
+Done processing ./include/Transformation.hpp
 Done processing ./test/main.cpp
-Done processing ./test/tempCodeRunnerFile.cpp
-Done processing ./test/test.cpp
+Done processing ./test/test_HumanClassifier.cpp
+Done processing ./test/test_HumanDetector.cpp
+Done processing ./test/test_PerceptionModule.cpp
+Done processing ./test/test_ReadData.cpp
+Done processing ./test/test_RectsandConfidences.cpp
+Done processing ./test/test_Transformation.cpp
+Total errors found: 0

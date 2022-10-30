@@ -38,10 +38,11 @@
 # include <iostream>
 # include <string>
 #include <algorithm>
-#include <utility>
+# include <utility>
+# include <vector>
 # include <opencv2/opencv.hpp>
-# include <HumanClassifier.hpp>
-# include <RectsandConfidences.hpp>
+# include <../include/HumanClassifier.hpp>
+# include <../include/RectsandConfidences.hpp>
 
 /**
  * @brief class HumanDetector
@@ -49,9 +50,7 @@
  * uses co-ordinates of bounding box surrounding detected human
  * to find humans in robot Cordinate system.
  */
-
 class HumanDetector{
-
   HumanClassifier humanClassifier;
 
 
@@ -62,7 +61,8 @@ class HumanDetector{
      * @param boundingBoxes 
      * @return std::vector<cv::Point>& Center Points.
      */
-    std::vector<cv::Point> calculateCenters(const std::vector<cv::Rect> &boundingBoxes);
+    std::vector<cv::Point> calculateCenters(
+      const std::vector<cv::Rect> &boundingBoxes);
 
 
     /**
@@ -73,7 +73,9 @@ class HumanDetector{
      * @return std::vector<cv::Point3d> Locations where humans are detected in 
      * robot Coordinate system.
      */
-    std::vector<cv::Point3d> calculateRobotCordSysPoints(const std::vector<cv::Point> &centers,std::vector<double> &confidences);
+    std::vector<cv::Point3d> calculateRobotCordSysPoints(
+      const std::vector<cv::Point> &centers,
+    std::vector<double> &confidences);
 
     /**
      * @brief This function draws bounding boxes around detected humans.
@@ -83,9 +85,10 @@ class HumanDetector{
      * @param Confidences Prediction Confidence scores returned by HumanClassifier
      */
     int drawBoundingBox(cv::Mat returnedFrame,
-    const std::vector<cv::Rect> &boundingBoxes,const std::vector<double> &Confidences);
+      const std::vector<cv::Rect> &boundingBoxes,
+      const std::vector<double> &Confidences);
 
-  public:
+ public:
     /**
      * @brief Construct a new Human Detector object
      * 
@@ -99,7 +102,7 @@ class HumanDetector{
     ~HumanDetector();
 
 
-  
+
     /**
      * @brief This method carries out the detection pipeline.
      * It calls Humanclassifier to detect humans, which returns 

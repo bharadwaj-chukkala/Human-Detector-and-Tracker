@@ -33,7 +33,7 @@
  * 
  */
 #include <gtest/gtest.h>
-#include <ReadData.hpp>
+#include <../include/ReadData.hpp>
 
 
 TEST(readDataTest, read_success) {

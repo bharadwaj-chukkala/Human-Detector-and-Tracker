@@ -1,5 +1,5 @@
-#ifndef INCLUDE_RECTANDCONFIDENCE_HPP_
-#define INCLUDE_RECTANDCONFIDENCE_HPP_
+#ifndef INCLUDE_RECTSANDCONFIDENCES_HPP_
+#define INCLUDE_RECTSANDCONFIDENCES_HPP_
 /**
  * MIT License
 
@@ -43,15 +43,12 @@
  * 
  */
 class RectsandConfidences {
-   
  public:
-    
     /**
     * @brief Construct a new Rectand Confidence object
     * 
     */
     RectsandConfidences(const std::vector<cv::Rect> &rectangles_, const std::vector<double> &confidences_);
-   
     /**
     * @brief Destroy the Rectand Confidence object
     * 
@@ -73,7 +70,6 @@ class RectsandConfidences {
  private:
     std::vector<cv::Rect> rectangles;
     std::vector<double> confidences;
-    
 };
-#endif  // INCLUDE_RECTANDCONFIDENCE_HPP_
+#endif  // INCLUDE_RECTSANDCONFIDENCES_HPP_
 

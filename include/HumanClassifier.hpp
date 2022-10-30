@@ -36,11 +36,10 @@
  */
 
 #include <opencv2/opencv.hpp>
-#include "RectsandConfidences.hpp"
+#include "../include/RectsandConfidences.hpp"
 
 class HumanClassifier {
-    public:
-
+ public:
     cv::HOGDescriptor classifier;
 
     /**

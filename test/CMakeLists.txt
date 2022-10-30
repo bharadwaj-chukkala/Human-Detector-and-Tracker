@@ -31,3 +31,5 @@ include_directories(
 include_directories(
     ${CMAKE_SOURCE_DIR}/app
 )
+
+set(OpenCV_SOURCE_DIR "/home/bharadwaj/opencv")

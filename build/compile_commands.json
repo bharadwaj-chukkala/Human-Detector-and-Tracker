@@ -1,0 +1,112 @@
+[
+{
+  "directory": "/home/bharadwaj/ENPM808X_Midterm_project/build/app",
+  "command": "/usr/bin/g++   -I/usr/include/eigen3 -I/home/bharadwaj/ENPM808X_Midterm_project/include -isystem /usr/local/include/opencv4  -Wall -Wextra -Wpedantic -g -g   -std=gnu++14 -o CMakeFiles/shell-app.dir/main.cpp.o -c /home/bharadwaj/ENPM808X_Midterm_project/app/main.cpp",
+  "file": "/home/bharadwaj/ENPM808X_Midterm_project/app/main.cpp"
+},
+{
+  "directory": "/home/bharadwaj/ENPM808X_Midterm_project/build/app",
+  "command": "/usr/bin/g++   -I/usr/include/eigen3 -I/home/bharadwaj/ENPM808X_Midterm_project/include -isystem /usr/local/include/opencv4  -Wall -Wextra -Wpedantic -g -g   -std=gnu++14 -o CMakeFiles/shell-app.dir/HumanClassifier.cpp.o -c /home/bharadwaj/ENPM808X_Midterm_project/app/HumanClassifier.cpp",
+  "file": "/home/bharadwaj/ENPM808X_Midterm_project/app/HumanClassifier.cpp"
+},
+{
+  "directory": "/home/bharadwaj/ENPM808X_Midterm_project/build/app",
+  "command": "/usr/bin/g++   -I/usr/include/eigen3 -I/home/bharadwaj/ENPM808X_Midterm_project/include -isystem /usr/local/include/opencv4  -Wall -Wextra -Wpedantic -g -g   -std=gnu++14 -o CMakeFiles/shell-app.dir/HumanDetector.cpp.o -c /home/bharadwaj/ENPM808X_Midterm_project/app/HumanDetector.cpp",
+  "file": "/home/bharadwaj/ENPM808X_Midterm_project/app/HumanDetector.cpp"
+},
+{
+  "directory": "/home/bharadwaj/ENPM808X_Midterm_project/build/app",
+  "command": "/usr/bin/g++   -I/usr/include/eigen3 -I/home/bharadwaj/ENPM808X_Midterm_project/include -isystem /usr/local/include/opencv4  -Wall -Wextra -Wpedantic -g -g   -std=gnu++14 -o CMakeFiles/shell-app.dir/PerceptionModule.cpp.o -c /home/bharadwaj/ENPM808X_Midterm_project/app/PerceptionModule.cpp",
+  "file": "/home/bharadwaj/ENPM808X_Midterm_project/app/PerceptionModule.cpp"
+},
+{
+  "directory": "/home/bharadwaj/ENPM808X_Midterm_project/build/app",
+  "command": "/usr/bin/g++   -I/usr/include/eigen3 -I/home/bharadwaj/ENPM808X_Midterm_project/include -isystem /usr/local/include/opencv4  -Wall -Wextra -Wpedantic -g -g   -std=gnu++14 -o CMakeFiles/shell-app.dir/ReadData.cpp.o -c /home/bharadwaj/ENPM808X_Midterm_project/app/ReadData.cpp",
+  "file": "/home/bharadwaj/ENPM808X_Midterm_project/app/ReadData.cpp"
+},
+{
+  "directory": "/home/bharadwaj/ENPM808X_Midterm_project/build/app",
+  "command": "/usr/bin/g++   -I/usr/include/eigen3 -I/home/bharadwaj/ENPM808X_Midterm_project/include -isystem /usr/local/include/opencv4  -Wall -Wextra -Wpedantic -g -g   -std=gnu++14 -o CMakeFiles/shell-app.dir/RectsandConfidences.cpp.o -c /home/bharadwaj/ENPM808X_Midterm_project/app/RectsandConfidences.cpp",
+  "file": "/home/bharadwaj/ENPM808X_Midterm_project/app/RectsandConfidences.cpp"
+},
+{
+  "directory": "/home/bharadwaj/ENPM808X_Midterm_project/build/app",
+  "command": "/usr/bin/g++   -I/usr/include/eigen3 -I/home/bharadwaj/ENPM808X_Midterm_project/include -isystem /usr/local/include/opencv4  -Wall -Wextra -Wpedantic -g -g   -std=gnu++14 -o CMakeFiles/shell-app.dir/Transformation.cpp.o -c /home/bharadwaj/ENPM808X_Midterm_project/app/Transformation.cpp",
+  "file": "/home/bharadwaj/ENPM808X_Midterm_project/app/Transformation.cpp"
+},
+{
+  "directory": "/home/bharadwaj/ENPM808X_Midterm_project/build/test",
+  "command": "/usr/bin/g++   -I/usr/include/eigen3 -I/home/bharadwaj/ENPM808X_Midterm_project/test/../vendor/googletest/googletest/include -I/home/bharadwaj/ENPM808X_Midterm_project/include -I/home/bharadwaj/ENPM808X_Midterm_project/app -I/home/bharadwaj/ENPM808X_Midterm_project/vendor/googletest/googletest/include -isystem /usr/local/include/opencv4  -Wall -Wextra -Wpedantic -g -g   -std=gnu++14 -o CMakeFiles/cpp-test.dir/main.cpp.o -c /home/bharadwaj/ENPM808X_Midterm_project/test/main.cpp",
+  "file": "/home/bharadwaj/ENPM808X_Midterm_project/test/main.cpp"
+},
+{
+  "directory": "/home/bharadwaj/ENPM808X_Midterm_project/build/test",
+  "command": "/usr/bin/g++   -I/usr/include/eigen3 -I/home/bharadwaj/ENPM808X_Midterm_project/test/../vendor/googletest/googletest/include -I/home/bharadwaj/ENPM808X_Midterm_project/include -I/home/bharadwaj/ENPM808X_Midterm_project/app -I/home/bharadwaj/ENPM808X_Midterm_project/vendor/googletest/googletest/include -isystem /usr/local/include/opencv4  -Wall -Wextra -Wpedantic -g -g   -std=gnu++14 -o CMakeFiles/cpp-test.dir/test_ReadData.cpp.o -c /home/bharadwaj/ENPM808X_Midterm_project/test/test_ReadData.cpp",
+  "file": "/home/bharadwaj/ENPM808X_Midterm_project/test/test_ReadData.cpp"
+},
+{
+  "directory": "/home/bharadwaj/ENPM808X_Midterm_project/build/test",
+  "command": "/usr/bin/g++   -I/usr/include/eigen3 -I/home/bharadwaj/ENPM808X_Midterm_project/test/../vendor/googletest/googletest/include -I/home/bharadwaj/ENPM808X_Midterm_project/include -I/home/bharadwaj/ENPM808X_Midterm_project/app -I/home/bharadwaj/ENPM808X_Midterm_project/vendor/googletest/googletest/include -isystem /usr/local/include/opencv4  -Wall -Wextra -Wpedantic -g -g   -std=gnu++14 -o CMakeFiles/cpp-test.dir/__/app/ReadData.cpp.o -c /home/bharadwaj/ENPM808X_Midterm_project/app/ReadData.cpp",
+  "file": "/home/bharadwaj/ENPM808X_Midterm_project/app/ReadData.cpp"
+},
+{
+  "directory": "/home/bharadwaj/ENPM808X_Midterm_project/build/test",
+  "command": "/usr/bin/g++   -I/usr/include/eigen3 -I/home/bharadwaj/ENPM808X_Midterm_project/test/../vendor/googletest/googletest/include -I/home/bharadwaj/ENPM808X_Midterm_project/include -I/home/bharadwaj/ENPM808X_Midterm_project/app -I/home/bharadwaj/ENPM808X_Midterm_project/vendor/googletest/googletest/include -isystem /usr/local/include/opencv4  -Wall -Wextra -Wpedantic -g -g   -std=gnu++14 -o CMakeFiles/cpp-test.dir/test_HumanClassifier.cpp.o -c /home/bharadwaj/ENPM808X_Midterm_project/test/test_HumanClassifier.cpp",
+  "file": "/home/bharadwaj/ENPM808X_Midterm_project/test/test_HumanClassifier.cpp"
+},
+{
+  "directory": "/home/bharadwaj/ENPM808X_Midterm_project/build/test",
+  "command": "/usr/bin/g++   -I/usr/include/eigen3 -I/home/bharadwaj/ENPM808X_Midterm_project/test/../vendor/googletest/googletest/include -I/home/bharadwaj/ENPM808X_Midterm_project/include -I/home/bharadwaj/ENPM808X_Midterm_project/app -I/home/bharadwaj/ENPM808X_Midterm_project/vendor/googletest/googletest/include -isystem /usr/local/include/opencv4  -Wall -Wextra -Wpedantic -g -g   -std=gnu++14 -o CMakeFiles/cpp-test.dir/__/app/HumanClassifier.cpp.o -c /home/bharadwaj/ENPM808X_Midterm_project/app/HumanClassifier.cpp",
+  "file": "/home/bharadwaj/ENPM808X_Midterm_project/app/HumanClassifier.cpp"
+},
+{
+  "directory": "/home/bharadwaj/ENPM808X_Midterm_project/build/test",
+  "command": "/usr/bin/g++   -I/usr/include/eigen3 -I/home/bharadwaj/ENPM808X_Midterm_project/test/../vendor/googletest/googletest/include -I/home/bharadwaj/ENPM808X_Midterm_project/include -I/home/bharadwaj/ENPM808X_Midterm_project/app -I/home/bharadwaj/ENPM808X_Midterm_project/vendor/googletest/googletest/include -isystem /usr/local/include/opencv4  -Wall -Wextra -Wpedantic -g -g   -std=gnu++14 -o CMakeFiles/cpp-test.dir/test_HumanDetector.cpp.o -c /home/bharadwaj/ENPM808X_Midterm_project/test/test_HumanDetector.cpp",
+  "file": "/home/bharadwaj/ENPM808X_Midterm_project/test/test_HumanDetector.cpp"
+},
+{
+  "directory": "/home/bharadwaj/ENPM808X_Midterm_project/build/test",
+  "command": "/usr/bin/g++   -I/usr/include/eigen3 -I/home/bharadwaj/ENPM808X_Midterm_project/test/../vendor/googletest/googletest/include -I/home/bharadwaj/ENPM808X_Midterm_project/include -I/home/bharadwaj/ENPM808X_Midterm_project/app -I/home/bharadwaj/ENPM808X_Midterm_project/vendor/googletest/googletest/include -isystem /usr/local/include/opencv4  -Wall -Wextra -Wpedantic -g -g   -std=gnu++14 -o CMakeFiles/cpp-test.dir/__/app/HumanDetector.cpp.o -c /home/bharadwaj/ENPM808X_Midterm_project/app/HumanDetector.cpp",
+  "file": "/home/bharadwaj/ENPM808X_Midterm_project/app/HumanDetector.cpp"
+},
+{
+  "directory": "/home/bharadwaj/ENPM808X_Midterm_project/build/test",
+  "command": "/usr/bin/g++   -I/usr/include/eigen3 -I/home/bharadwaj/ENPM808X_Midterm_project/test/../vendor/googletest/googletest/include -I/home/bharadwaj/ENPM808X_Midterm_project/include -I/home/bharadwaj/ENPM808X_Midterm_project/app -I/home/bharadwaj/ENPM808X_Midterm_project/vendor/googletest/googletest/include -isystem /usr/local/include/opencv4  -Wall -Wextra -Wpedantic -g -g   -std=gnu++14 -o CMakeFiles/cpp-test.dir/test_PerceptionModule.cpp.o -c /home/bharadwaj/ENPM808X_Midterm_project/test/test_PerceptionModule.cpp",
+  "file": "/home/bharadwaj/ENPM808X_Midterm_project/test/test_PerceptionModule.cpp"
+},
+{
+  "directory": "/home/bharadwaj/ENPM808X_Midterm_project/build/test",
+  "command": "/usr/bin/g++   -I/usr/include/eigen3 -I/home/bharadwaj/ENPM808X_Midterm_project/test/../vendor/googletest/googletest/include -I/home/bharadwaj/ENPM808X_Midterm_project/include -I/home/bharadwaj/ENPM808X_Midterm_project/app -I/home/bharadwaj/ENPM808X_Midterm_project/vendor/googletest/googletest/include -isystem /usr/local/include/opencv4  -Wall -Wextra -Wpedantic -g -g   -std=gnu++14 -o CMakeFiles/cpp-test.dir/__/app/PerceptionModule.cpp.o -c /home/bharadwaj/ENPM808X_Midterm_project/app/PerceptionModule.cpp",
+  "file": "/home/bharadwaj/ENPM808X_Midterm_project/app/PerceptionModule.cpp"
+},
+{
+  "directory": "/home/bharadwaj/ENPM808X_Midterm_project/build/test",
+  "command": "/usr/bin/g++   -I/usr/include/eigen3 -I/home/bharadwaj/ENPM808X_Midterm_project/test/../vendor/googletest/googletest/include -I/home/bharadwaj/ENPM808X_Midterm_project/include -I/home/bharadwaj/ENPM808X_Midterm_project/app -I/home/bharadwaj/ENPM808X_Midterm_project/vendor/googletest/googletest/include -isystem /usr/local/include/opencv4  -Wall -Wextra -Wpedantic -g -g   -std=gnu++14 -o CMakeFiles/cpp-test.dir/test_RectsandConfidences.cpp.o -c /home/bharadwaj/ENPM808X_Midterm_project/test/test_RectsandConfidences.cpp",
+  "file": "/home/bharadwaj/ENPM808X_Midterm_project/test/test_RectsandConfidences.cpp"
+},
+{
+  "directory": "/home/bharadwaj/ENPM808X_Midterm_project/build/test",
+  "command": "/usr/bin/g++   -I/usr/include/eigen3 -I/home/bharadwaj/ENPM808X_Midterm_project/test/../vendor/googletest/googletest/include -I/home/bharadwaj/ENPM808X_Midterm_project/include -I/home/bharadwaj/ENPM808X_Midterm_project/app -I/home/bharadwaj/ENPM808X_Midterm_project/vendor/googletest/googletest/include -isystem /usr/local/include/opencv4  -Wall -Wextra -Wpedantic -g -g   -std=gnu++14 -o CMakeFiles/cpp-test.dir/__/app/RectsandConfidences.cpp.o -c /home/bharadwaj/ENPM808X_Midterm_project/app/RectsandConfidences.cpp",
+  "file": "/home/bharadwaj/ENPM808X_Midterm_project/app/RectsandConfidences.cpp"
+},
+{
+  "directory": "/home/bharadwaj/ENPM808X_Midterm_project/build/test",
+  "command": "/usr/bin/g++   -I/usr/include/eigen3 -I/home/bharadwaj/ENPM808X_Midterm_project/test/../vendor/googletest/googletest/include -I/home/bharadwaj/ENPM808X_Midterm_project/include -I/home/bharadwaj/ENPM808X_Midterm_project/app -I/home/bharadwaj/ENPM808X_Midterm_project/vendor/googletest/googletest/include -isystem /usr/local/include/opencv4  -Wall -Wextra -Wpedantic -g -g   -std=gnu++14 -o CMakeFiles/cpp-test.dir/test_Transformation.cpp.o -c /home/bharadwaj/ENPM808X_Midterm_project/test/test_Transformation.cpp",
+  "file": "/home/bharadwaj/ENPM808X_Midterm_project/test/test_Transformation.cpp"
+},
+{
+  "directory": "/home/bharadwaj/ENPM808X_Midterm_project/build/test",
+  "command": "/usr/bin/g++   -I/usr/include/eigen3 -I/home/bharadwaj/ENPM808X_Midterm_project/test/../vendor/googletest/googletest/include -I/home/bharadwaj/ENPM808X_Midterm_project/include -I/home/bharadwaj/ENPM808X_Midterm_project/app -I/home/bharadwaj/ENPM808X_Midterm_project/vendor/googletest/googletest/include -isystem /usr/local/include/opencv4  -Wall -Wextra -Wpedantic -g -g   -std=gnu++14 -o CMakeFiles/cpp-test.dir/__/app/Transformation.cpp.o -c /home/bharadwaj/ENPM808X_Midterm_project/app/Transformation.cpp",
+  "file": "/home/bharadwaj/ENPM808X_Midterm_project/app/Transformation.cpp"
+},
+{
+  "directory": "/home/bharadwaj/ENPM808X_Midterm_project/build/vendor/googletest/googletest",
+  "command": "/usr/bin/g++   -I/usr/local/include/opencv4 -I/usr/include/eigen3 -I/home/bharadwaj/ENPM808X_Midterm_project/vendor/googletest/googletest/include -I/home/bharadwaj/ENPM808X_Midterm_project/vendor/googletest/googletest  -Wall -Wextra -Wpedantic -g -g   -Wall -Wextra -Wpedantic -g -Wall -Wshadow -DGTEST_HAS_PTHREAD=1 -fexceptions -Wextra -Wno-unused-parameter -Wno-missing-field-initializers -std=gnu++14 -o CMakeFiles/gtest_main.dir/src/gtest_main.cc.o -c /home/bharadwaj/ENPM808X_Midterm_project/vendor/googletest/googletest/src/gtest_main.cc",
+  "file": "/home/bharadwaj/ENPM808X_Midterm_project/vendor/googletest/googletest/src/gtest_main.cc"
+},
+{
+  "directory": "/home/bharadwaj/ENPM808X_Midterm_project/build/vendor/googletest/googletest",
+  "command": "/usr/bin/g++   -I/usr/local/include/opencv4 -I/usr/include/eigen3 -I/home/bharadwaj/ENPM808X_Midterm_project/vendor/googletest/googletest/include -I/home/bharadwaj/ENPM808X_Midterm_project/vendor/googletest/googletest  -Wall -Wextra -Wpedantic -g -g   -Wall -Wextra -Wpedantic -g -Wall -Wshadow -DGTEST_HAS_PTHREAD=1 -fexceptions -Wextra -Wno-unused-parameter -Wno-missing-field-initializers -std=gnu++14 -o CMakeFiles/gtest.dir/src/gtest-all.cc.o -c /home/bharadwaj/ENPM808X_Midterm_project/vendor/googletest/googletest/src/gtest-all.cc",
+  "file": "/home/bharadwaj/ENPM808X_Midterm_project/vendor/googletest/googletest/src/gtest-all.cc"
+}
+]

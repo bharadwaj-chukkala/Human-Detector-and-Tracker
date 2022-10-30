@@ -45,7 +45,8 @@ TEST(HumanClassifier_Test, Human_Classified) {
     HumanClassifier Model;
 
     ReadData input_reader;
-    cv::Mat frame = input_reader.readFrame("/home/bharadwaj/ENPM808X_Midterm_project/test_data/image1.png");
+    std::string filepath = "/home/bharadwaj/ENPM808X_Midterm_project/test_data/image1.png";
+    cv::Mat frame = input_reader.readFrame(filepath);
 
     RectsandConfidences detectedOutput = Model.predict(frame);
     std::vector<cv::Rect> boundingBoxes = detectedOutput.getRectangles();
@@ -56,12 +57,12 @@ TEST(HumanClassifier_Test, Human_Classified) {
 TEST(check_prediction, testing_predict_pass) {
     //
     ReadData input_reader;
-    cv::Mat frame = input_reader.readFrame("/home/bharadwaj/ENPM808X_Midterm_project/test_data/image1.png");
+    std::string filepath = "/home/bharadwaj/ENPM808X_Midterm_project/test_data/image1.png";
+    cv::Mat frame = input_reader.readFrame(filepath);
     //
     HumanClassifier classifier;
-    
     RectsandConfidences test_Object1 = classifier.predict(frame);
-    
+
 
     std::vector<cv::Rect> rectangles;
     std::vector<double> scores;
@@ -83,5 +84,6 @@ TEST(check_prediction, testing_predict_pass) {
     RectsandConfidences test_Object2(rectangles, scores);
 
     EXPECT_EQ(scores[0], test_Object2.getConfidences()[0]);
-    EXPECT_EQ(test_Object1.getRectangles()[0].tl().x, test_Object2.getRectangles()[0].tl().x);
+    EXPECT_EQ(test_Object1.getRectangles()[0].tl().x,
+    test_Object2.getRectangles()[0].tl().x);
 }

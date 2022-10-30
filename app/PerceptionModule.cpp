@@ -33,10 +33,10 @@
  * 
  */
 
-#include "PerceptionModule.hpp"
-#include "HumanDetector.hpp"
+#include "../include/PerceptionModule.hpp"
+#include "../include/HumanDetector.hpp"
 
-PerceptionModule::PerceptionModule(std::string &path_,int &fileOption_):path(path_),fileOption(fileOption_) {
-      
+PerceptionModule::PerceptionModule(std::string &path_, int &fileOption_) :
+path(path_), fileOption(fileOption_) {
 }
 

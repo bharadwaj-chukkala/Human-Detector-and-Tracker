@@ -32,52 +32,51 @@
  * @copyright Copyright (c) 2022
  * 
  */
-# include "Transformation.hpp"
-# include <opencv2/opencv.hpp>
+
 # include <stdlib.h>
+# include "../include/Transformation.hpp"
+# include <opencv2/opencv.hpp>
+
 
 Transformation::Transformation() {
     Eigen::MatrixXf K;
     Eigen::MatrixXf I;
     Eigen::MatrixXf RT;
-    
-    K = Eigen::MatrixXf(3,3);
-    K<< 950,0,650,0,950,490,0,0,1;
+
+    K = Eigen::MatrixXf(3, 3);
+    K<< 950, 0, 650, 0, 950, 490, 0, 0, 1;
 
     I = Eigen::MatrixXf(3, 4);
     I << 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0;
 
-    RT= Eigen::MatrixXf(4,4);
+    RT = Eigen::MatrixXf(4, 4);
 
-    RT<<0,0,1,5,-1,0,0,5,0,-1,0,5,0,0,0,1;
+    RT << 0, 0, 1, 5, -1, 0, 0, 5, 0, -1, 0, 5, 0, 0, 0, 1;
 
-    P=K*I*RT;
-   
+    P = K*I*RT;
 }
 
-cv::Point3d Transformation::doTransform(cv::Point imageCord){
-    Eigen::MatrixXf PT=P.transpose();
+cv::Point3d Transformation::doTransform(cv::Point imageCord) {
+    Eigen::MatrixXf PT = P.transpose();
 
-    Eigen::MatrixXf Pseudo=PT*(P*PT).inverse();
+    Eigen::MatrixXf Pseudo = PT*(P*PT).inverse();
 
     // construct imagecoordinates in Homogeneous coord system
 
-    Eigen::MatrixXf xdash(3,1); 
+    Eigen::MatrixXf xdash(3, 1);
 
-    xdash<<imageCord.x,imageCord.y,1;
+    xdash << imageCord.x, imageCord.y, 1;
 
-    Eigen::MatrixXf X=Pseudo*xdash;
+    Eigen::MatrixXf X = Pseudo * xdash;
 
-    cv::Point3d XRobot(0,0,0);
+    cv::Point3d XRobot(0, 0, 0);
 
-    if(X(3,0)==0){
+    if (X(3, 0) == 0) {
         return XRobot;
     }
-    
-    XRobot.x=abs(X(0,0)/X(3,0));
-    XRobot.y=abs(X(1,0)/X(3,0));
-    XRobot.z=abs(X(2,0)/X(3,0));
-   
+
+    XRobot.x = abs(X(0, 0)/X(3, 0));
+    XRobot.y = abs(X(1, 0)/X(3, 0));
+    XRobot.z = abs(X(2, 0)/X(3, 0));
     return XRobot;
-   
 }

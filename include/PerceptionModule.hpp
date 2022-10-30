@@ -38,9 +38,9 @@
 # include <iostream>
 #include <string>
 # include <opencv2/opencv.hpp>
-#include "ReadData.hpp"
-#include "HumanDetector.hpp"
-#include "HumanClassifier.hpp"
+#include "../include/ReadData.hpp"
+#include "../include/HumanDetector.hpp"
+#include "../incluude/HumanClassifier.hpp"
 
 
 /**
@@ -52,8 +52,8 @@
 class PerceptionModule {
     std::string path;
     int fileOption;
-    
-    public:
+
+ public:
     ReadData frame;
     HumanDetector acmeDetector;
     /**
@@ -61,20 +61,11 @@ class PerceptionModule {
      * user for input type and input path
      * 
      */
-    PerceptionModule(std::string &,int &);
+    PerceptionModule(std::string &, int &);
     /**
      * @brief Destroy the Perception Module object
      * 
      */
     ~PerceptionModule() {}
-    /**
-     * @brief This will run the entire module till the final frame
-     * and call the required child classes and their methods with 
-     * the required features depending upon the type of input.
-     * Essentially it will create an object of class HumanDEtector
-     * and run the detection pipeline.
-     * 
-     */
-    void detector();
 };
 #endif  // INCLUDE_PERCEPTIONMODULE_HPP_

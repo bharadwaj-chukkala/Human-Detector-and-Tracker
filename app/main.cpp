@@ -32,39 +32,38 @@
  * 
  */
 
-#include "PerceptionModule.hpp"
 #include <string>
-# include "Transformation.hpp"
+#include "../include/PerceptionModule.hpp"
+#include "../include/Transformation.hpp"
 
 
 int main() {
-
     std::string filePath;
     int option;
 
-    std::cout<<" ACME PERCEPTION MODULE \n"<<std::endl;
+    std::cout << " ACME PERCEPTION MODULE \n" << std::endl;
 
-    std::cout<<"**** Enter filepath on which detection should be carried****: "<<std::endl;
-    std::getline(std::cin,filePath);
+    std::cout << "**** Enter filepath on which detection should be carried****: " << std::endl;
+    std::getline(std::cin, filePath);
 
-    std::cout<< "Enter the file Option: "<<std::endl
-    <<"1.For Video Detection: press 0"<<std::endl<<"2.For Picture Detection: press 1"<<std::endl;
-    std::cin>>option;
+    std::cout << "Enter the file Option: " << std::endl
+    << "1.For Video Detection: press 0" << std::endl
+    << "2.For Picture Detection: press 1" << std::endl;
+    std::cin >> option;
 
     int out = 0;
 
-    PerceptionModule acmePerceptionModule(filePath,option);
+    PerceptionModule acmePerceptionModule(filePath, option);
 
-    if (option==0){
+    if (option == 0) {
         cv::VideoCapture cap(filePath);
-    
-        if(!cap.isOpened()){
+
+        if (!cap.isOpened()) {
             std::cout << "Error Loading video" << std::endl;
             return -1;
         }
-    
-        while(1){
 
+        while (1) {
             cv::Mat returnedFrame;
             // Capture frame-by-frame
             cap >> returnedFrame;
@@ -72,20 +71,21 @@ int main() {
             int down_width = 650;
             int down_height = 700;
             cv::Mat returnedFrame1;
-            //resize down
-            cv::resize(returnedFrame, returnedFrame1, cv::Size(down_width, down_height), cv::INTER_LINEAR);
+            // resize down
+            cv::resize(returnedFrame, returnedFrame1,
+            cv::Size(down_width, down_height), cv::INTER_LINEAR);
 
             // If the frame is empty, break immediately
             if (returnedFrame1.empty())
                 break;
 
             // Display the resulting frame
-            cv::imshow( "Frame", returnedFrame1 );
+            cv::imshow("Frame", returnedFrame1);
             out = acmePerceptionModule.acmeDetector.detectHumans(returnedFrame1);
 
             // Press  ESC on keyboard to exit
-            char c=(char)cv::waitKey(25);
-            if(c==27)
+            char c = (char)cv::waitKey(25);
+            if (c == 27)
                 break;
         }
 
@@ -94,22 +94,18 @@ int main() {
 
         // Closes all the frames
         cv::destroyAllWindows();
-
-        }
-    else{
-        cv::Mat returnedFrame=acmePerceptionModule.frame.readFrame(filePath);
+        } else {
+        cv::Mat returnedFrame = acmePerceptionModule.frame.readFrame(filePath);
 
         out = acmePerceptionModule.acmeDetector.detectHumans(returnedFrame);
-        
+
         cv::waitKey(0);
         cv::destroyAllWindows();
-
-
     }
-    if(out == 0){
-        std::cout<<" No Humans in th frame";
+    if (out == 0) {
+        std::cout << " No Humans in the frame";
         return 0;
-    }
-    else
+    } else {
         return 1;
+    }
 }

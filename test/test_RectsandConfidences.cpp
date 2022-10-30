@@ -40,7 +40,8 @@
 
 TEST(Testing_type, RectsnScores_Test) {
     ReadData input_reader;
-    cv::Mat frame = input_reader.readFrame("/home/bharadwaj/ENPM808X_Midterm_project/test_data/image1.png");
+    std::string filepath = "/home/bharadwaj/ENPM808X_Midterm_project/test_data/image1.png";
+    cv::Mat frame = input_reader.readFrame(filepath);
     //
     HumanClassifier classifier;
     RectsandConfidences test_Object = classifier.predict(frame);

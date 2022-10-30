@@ -34,11 +34,10 @@
  * @copyright Copyright (c) 2022
  * 
  */
-# include <Eigen/Dense>
+#include <Eigen/Dense>
 #include <opencv2/opencv.hpp>
 
 class Transformation {
-
     Eigen::MatrixXf P;
 
  public:

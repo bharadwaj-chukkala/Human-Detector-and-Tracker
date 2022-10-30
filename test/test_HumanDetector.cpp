@@ -40,7 +40,8 @@
 
 TEST(HumanDetector_Test, Human_Detection_Pass) {
     ReadData input_reader;
-    cv::Mat frame = input_reader.readFrame("/home/bharadwaj/ENPM808X_Midterm_project/test_data/image1.png");
+    std::string filepath = "/home/bharadwaj/ENPM808X_Midterm_project/test_data/image1.png";
+    cv::Mat frame = input_reader.readFrame(filepath);
     int test_out = 1;
     HumanDetector Object;
 

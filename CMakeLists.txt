@@ -30,13 +30,15 @@ set(CMAKE_CXX_STANDARD 14)
 ###SET PATH TO OPENCV CMAKE CONFIG FILES
 SET(OpenCV_DIR /home/sairamp/installation/OpenCV/installation/OpenCV/lib/cmake/opencv4)
 
+set(OpenCV_SOURCE_DIR "/home/bharadwaj/opencv")
+
 # MAKE SURE OPENCV IS INSTALLED CORRECTLY
 find_package( OpenCV REQUIRED )
 
 find_package( Eigen3 REQUIRED)
 
 # # INCLUDE OPENCV DIRECTORIES
-# include_directories( ${OpenCV_INCLUDE_DIRS})
+include_directories( ${OpenCV_INCLUDE_DIRS})
 
 # INCLUDE OPENCV DIRECTORIES
 include_directories( 
