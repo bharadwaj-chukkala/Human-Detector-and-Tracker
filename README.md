@@ -1,6 +1,11 @@
 # Human Obstacle Detection and Tracking
+
 [![Build Status](https://app.travis-ci.com/spauly98/ENPM808X_Midterm_project.svg?branch=phase2)](https://app.travis-ci.com/github/bharadwaj-chukkala/ENPM808X_Midterm_project)
 [![Coverage Status](https://coveralls.io/repos/github/spauly98/ENPM808X_Midterm_project/badge.svg?branch=phase2)](https://coveralls.io/github/spauly98/ENPM808X_Midterm_project?branch=phase2)
+=======
+[![Build Status](https://app.travis-ci.com/bharadwaj-chukkala/ENPM808X_Midterm_project.svg?branch=phase1)](https://app.travis-ci.com/github/bharadwaj-chukkala/ENPM808X_Midterm_project)
+[![Coverage Status](https://coveralls.io/repos/github/spauly98/ENPM808X_Midterm_project/badge.svg?branch=phase1)](https://coveralls.io/github/spauly98/ENPM808X_Midterm_project?branch=phase1)
+
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 ---
 
@@ -23,6 +28,7 @@ The Software Product will consist of 4 modules which will take a continuous vide
   <img width="500" height="300" src="https://user-images.githubusercontent.com/106445479/198857946-d84752f5-9db8-45dc-8b48-200fb6bf2f12.jpg">
 </p>
 <h4 align="center">Advanced AGV with Perception capabilities</h1>
+
 
 ---
 ## License
@@ -138,26 +144,6 @@ Agile Iterative Development Process will be used to develop the software along T
 sudo apt-get install -y -qq lcov
 ```
 
-## Development Aspects
-Agile Iterative Development Process will be used to develop the software along Test-Driven Development.
-
-### [Product Backlog and Sprint Sheet](https://docs.google.com/spreadsheets/d/18YPf_3DI0MOv161B0Y4bDmjeRzd9c_LTEvauJ4ByTYQ/edit#gid=0)
-### [Sprint Review Sheet](https://docs.google.com/document/d/1KK2tiQVW7YDc3A5AzL9GQOzPdxCIJ_7yfH8meOmB9ho/edit#heading=h.dawifg8c0hwe)
-
-### Software Dependencies
-- OpenCV 4.6.0 (covered under the open-source Apache 2 License)
-- Eigen 3.4 the Mozilla Public License 2.0
-- GTest BSD 3-Clause "New" or "Revised" License
-### Tools and Technologies
-`Ubuntu 18.04(LTS)` `C++ 14+` `CMake` `OpenCV` `TravisCI` `Coveralls`
-`Makefile` `CMake` `cpplint` `cppcheck` `clangd` `Valgrind` `GTest` `VScode`
-
-### Installation via Command Line
-```
-# Code Coverage
-sudo apt-get install -y -qq lcov
-```
-
 ```
 # OpenCV install
 sudo apt-get install -y build-essential
@@ -240,7 +226,6 @@ cd ..
 doxygen doxygen.config
 doxywizard
 ```
-
 ---
 ## Project Videos
 ### [Final Video](https://drive.google.com/drive/folders/1NprRueNb3u7tsn6D-Y5_eI7PGIxM4owS?usp=share_link)
@@ -248,5 +233,6 @@ Note: The Microphone had some issue, apologies beforehand
 ### [Sprint 1 Video](https://drive.google.com/file/d/1hh5f50VzA4mIPJmc9IJAOi4N9bs-uyPp/view?usp=sharing)
 Note: The Microphone had some issue, apologies beforehand
 ### [Proposal Video](https://drive.google.com/file/d/1BUSOc8T6gLknhAt8TJ6uW9MLCY49dpPH/view?usp=sharing)
+
 
 
