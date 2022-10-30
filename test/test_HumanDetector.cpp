@@ -38,6 +38,10 @@
 #include "../include/HumanDetector.hpp"
 #include "../include/ReadData.hpp"
 
+/**
+ * @brief Construct a new TEST object for detect Humans function
+ * 
+ */
 TEST(HumanDetector_Test, Human_Detection_Pass) {
     ReadData input_reader;
     std::string filepath = "/home/bharadwaj/ENPM808X_Midterm_project/test_data/image1.png";

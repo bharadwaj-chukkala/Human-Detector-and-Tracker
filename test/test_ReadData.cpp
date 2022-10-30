@@ -35,7 +35,10 @@
 #include <gtest/gtest.h>
 #include <../include/ReadData.hpp>
 
-
+/**
+ * @brief Construct a new TEST object to test whether input is being taken
+ * 
+ */
 TEST(readDataTest, read_success) {
   ReadData data1;
   std::string path = "../test_data/Lenna.png";

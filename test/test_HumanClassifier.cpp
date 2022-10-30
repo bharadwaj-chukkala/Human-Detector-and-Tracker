@@ -40,7 +40,10 @@
 #include "../include/HumanClassifier.hpp"
 #include "../include/ReadData.hpp"
 
-
+/**
+ * @brief Construct a new TEST object to test the predict function
+ * 
+ */
 TEST(HumanClassifier_Test, Human_Classified) {
     HumanClassifier Model;
 
@@ -54,6 +57,10 @@ TEST(HumanClassifier_Test, Human_Classified) {
     EXPECT_EQ(boundingBoxes.size(), confidences.size());
 }
 
+/**
+ * @brief Construct a new TEST object to check prediction output
+ * 
+ */
 TEST(check_prediction, testing_predict_pass) {
     //
     ReadData input_reader;

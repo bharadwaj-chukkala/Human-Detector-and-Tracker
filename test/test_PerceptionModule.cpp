@@ -36,6 +36,10 @@
 #include <gtest/gtest.h>
 #include "../include/PerceptionModule.hpp"
 
+/**
+ * @brief Construct a new TEST object to test the percpetion module
+ * 
+ */
 TEST(Perception_Module_Test_Suite, Check_Pass) {
     std::string filepath = "fsfg";
     int option = 0;

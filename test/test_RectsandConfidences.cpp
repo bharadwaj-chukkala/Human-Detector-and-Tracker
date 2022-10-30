@@ -38,6 +38,10 @@
 #include "../include/ReadData.hpp"
 #include "../include/HumanClassifier.hpp"
 
+/**
+ * @brief Construct a new TEST object to test classifying model predictions
+ * 
+ */
 TEST(Testing_type, RectsnScores_Test) {
     ReadData input_reader;
     std::string filepath = "/home/bharadwaj/ENPM808X_Midterm_project/test_data/image1.png";
