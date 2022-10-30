@@ -74,7 +74,7 @@ TEST(check_prediction, testing_predict_pass) {
     std::vector<cv::Rect> rectangles;
     std::vector<double> scores;
 
-    cv::Rect rectangle1(468, 249, 124, 247);
+    cv::Rect rectangle1(386, 249, 124, 247);
     rectangles.push_back(rectangle1);
     cv::Rect rectangle2(308, 257, 430-308, 500-257);
     rectangles.push_back(rectangle2);
