@@ -113,8 +113,8 @@ int HumanDetector::drawBoundingBox(cv::Mat returnedFrame,
             i++;
         }
 
-        cv::imshow("window", returnedFrame);
-        cv::waitKey(2);
+        //cv::imshow("window", returnedFrame);
+        //cv::waitKey(2);
         if (i != 0)
             return 1;
         else
