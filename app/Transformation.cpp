@@ -52,16 +52,17 @@ Transformation::Transformation() {
     RT = Eigen::MatrixXf(4, 4);
 
     RT << 0, 0, 1, 5, -1, 0, 0, 5, 0, -1, 0, 5, 0, 0, 0, 1;
-
+    // Computing Projection Matrix using Homogenous Transformation
     P = K*I*RT;
 }
 
 cv::Point3d Transformation::doTransform(cv::Point imageCord) {
     Eigen::MatrixXf PT = P.transpose();
 
+    // Pseudo Inverse
     Eigen::MatrixXf Pseudo = PT*(P*PT).inverse();
 
-    // construct imagecoordinates in Homogeneous coord system
+    // Solving Ax = B
 
     Eigen::MatrixXf xdash(3, 1);
 
@@ -75,6 +76,7 @@ cv::Point3d Transformation::doTransform(cv::Point imageCord) {
         return XRobot;
     }
 
+    // Diving by the third dimension, normalizing
     XRobot.x = abs(X(0, 0)/X(3, 0));
     XRobot.y = abs(X(1, 0)/X(3, 0));
     XRobot.z = abs(X(2, 0)/X(3, 0));

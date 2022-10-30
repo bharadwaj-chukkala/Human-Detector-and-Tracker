@@ -49,6 +49,8 @@ std::vector<cv::Point> HumanDetector::calculateCenters(
     const std::vector<cv::Rect> &boundingBoxes) {
     std::vector<cv::Point> centers;
 
+    // Computing the centers of the bounding box
+    // Using top left and bottom right corners
     for (const cv::Rect &boundingBox : boundingBoxes) {
         cv::Point center;
         center.x = (boundingBox.tl().x + boundingBox.br().x)/2;
@@ -66,6 +68,8 @@ std::vector<double> &confidences) {
     std::vector<cv::Point3d> robotCordSysPoints;
     Transformation  myTransform;
 
+    // Computing the transform between 2D and 3D points
+    // Using Homogenous Transformation
     int i = 0;
     for (const cv::Point &center : centers) {
         if (confidences[i] >= 0.8) {
@@ -85,6 +89,8 @@ int HumanDetector::drawBoundingBox(cv::Mat returnedFrame,
     const std::vector<cv::Rect> &boundingBoxes,
     const std::vector<double> &Confidences) {
         int i = 0;
+        // Appending the bounding box, scores and ID
+        // over the frame
         for (const cv::Rect &box : boundingBoxes) {
             if (Confidences[i] >= 0.8) {
                 cv::rectangle(returnedFrame, box.tl(),
@@ -123,7 +129,8 @@ int HumanDetector::detectHumans(cv::Mat returnedFrame) {
     std::vector<cv::Rect> boundingBoxes = classifierOutput.getRectangles();
     std::vector<double> Confidences = classifierOutput.getConfidences();
 
-
+    // Calling all the necessary functions afte the classification
+    // for tracking and disaplying final output
     std::vector<cv::Point> centers = calculateCenters(boundingBoxes);
 
     std::vector<cv::Point3d> robotcordSysPoints =

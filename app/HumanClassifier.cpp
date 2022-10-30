@@ -36,6 +36,7 @@
 #include "../include/HumanClassifier.hpp"
 
 HumanClassifier::HumanClassifier() {
+    // Gets the pre trained SVM people detector
     classifier.setSVMDetector(cv::HOGDescriptor::getDefaultPeopleDetector());
 }
 HumanClassifier::~HumanClassifier() {}
@@ -43,6 +44,7 @@ HumanClassifier::~HumanClassifier() {}
 RectsandConfidences HumanClassifier::predict(cv::Mat frame) {
     std::vector<cv::Rect> boundingBoxes;
     std::vector<double> Confidences;
+    // Gets the classified person's bouding box and scores
     classifier.detectMultiScale(frame, boundingBoxes, Confidences);
     RectsandConfidences classification(boundingBoxes, Confidences);
     return classification;
