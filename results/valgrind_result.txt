@@ -1,0 +1,153 @@
+==112341== Memcheck, a memory error detector
+==112341== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
+==112341== Using Valgrind-3.15.0-608cb11914-20190413 and LibVEX; rerun with -h for copyright info
+==112341== Command: ./app/shell-app
+==112341== 
+--112341-- Valgrind options:
+--112341--    --leak-check=full
+--112341--    -v
+--112341-- Contents of /proc/version:
+--112341--   Linux version 5.15.0-52-generic (buildd@lcy02-amd64-045) (gcc (Ubuntu 9.4.0-1ubuntu1~20.04.1) 9.4.0, GNU ld (GNU Binutils for Ubuntu) 2.34) #58~20.04.1-Ubuntu SMP Thu Oct 13 13:09:46 UTC 2022
+--112341-- 
+--112341-- Arch and hwcaps: AMD64, LittleEndian, amd64-cx16-lzcnt-rdtscp-sse3-ssse3-avx-avx2-bmi-f16c-rdrand
+--112341-- Page sizes: currently 4096, max supported 4096
+--112341-- Valgrind library directory: /usr/lib/x86_64-linux-gnu/valgrind
+--112341-- Reading syms from /home/sln/ENPM808X/apna/ENPM808X_Midterm_project/build/app/shell-app
+--112341-- Reading syms from /usr/lib/x86_64-linux-gnu/ld-2.31.so
+--112341--   Considering /usr/lib/debug/.build-id/45/87364908de169dec62ffa538170118c1c3a078.debug ..
+--112341--   .. build-id is valid
+--112341-- Reading syms from /usr/lib/x86_64-linux-gnu/valgrind/memcheck-amd64-linux
+--112341--    object doesn't have a symbol table
+--112341--    object doesn't have a dynamic symbol table
+--112341-- Scheduler: using generic scheduler lock implementation.
+--112341-- Reading suppressions file: /usr/lib/x86_64-linux-gnu/valgrind/default.supp
+==112341== embedded gdbserver: reading from /tmp/vgdb-pipe-from-vgdb-to-112341-by-sln-on-???
+==112341== embedded gdbserver: writing to   /tmp/vgdb-pipe-to-vgdb-from-112341-by-sln-on-???
+==112341== embedded gdbserver: shared mem   /tmp/vgdb-pipe-shared-mem-vgdb-112341-by-sln-on-???
+==112341== 
+==112341== TO CONTROL THIS PROCESS USING vgdb (which you probably
+==112341== don't want to do, unless you know exactly what you're doing,
+==112341== or are doing some strange experiment):
+==112341==   /usr/lib/x86_64-linux-gnu/valgrind/../../bin/vgdb --pid=112341 ...command...
+==112341== 
+==112341== TO DEBUG THIS PROCESS USING GDB: start GDB like this
+==112341==   /path/to/gdb ./app/shell-app
+==112341== and then give GDB the following command
+==112341==   target remote | /usr/lib/x86_64-linux-gnu/valgrind/../../bin/vgdb --pid=112341
+==112341== --pid is optional if only one valgrind process is running
+==112341== 
+--112341-- REDIR: 0x4022e20 (ld-linux-x86-64.so.2:strlen) redirected to 0x580c9ce2 (???)
+--112341-- REDIR: 0x4022bf0 (ld-linux-x86-64.so.2:index) redirected to 0x580c9cfc (???)
+--112341-- Reading syms from /usr/lib/x86_64-linux-gnu/valgrind/vgpreload_core-amd64-linux.so
+--112341--    object doesn't have a symbol table
+--112341-- Reading syms from /usr/lib/x86_64-linux-gnu/valgrind/vgpreload_memcheck-amd64-linux.so
+--112341--    object doesn't have a symbol table
+==112341== WARNING: new redirection conflicts with existing -- ignoring it
+--112341--     old: 0x04022e20 (strlen              ) R-> (0000.0) 0x580c9ce2 ???
+--112341--     new: 0x04022e20 (strlen              ) R-> (2007.0) 0x0483f060 strlen
+--112341-- REDIR: 0x401f600 (ld-linux-x86-64.so.2:strcmp) redirected to 0x483ffd0 (strcmp)
+--112341-- REDIR: 0x4023380 (ld-linux-x86-64.so.2:mempcpy) redirected to 0x4843a20 (mempcpy)
+--112341-- Reading syms from /usr/local/lib/libopencv_highgui.so.4.6.0
+--112341-- Reading syms from /usr/local/lib/libopencv_objdetect.so.4.6.0
+--112341-- Reading syms from /usr/local/lib/libopencv_videoio.so.4.6.0
+--112341-- Reading syms from /usr/local/lib/libopencv_imgcodecs.so.4.6.0
+--112341-- Reading syms from /usr/local/lib/libopencv_imgproc.so.4.6.0
+--112341-- Reading syms from /usr/local/lib/libopencv_core.so.4.6.0
+--112341-- Reading syms from /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.28
+--112341--    object doesn't have a symbol table
+--112341-- Reading syms from /usr/lib/x86_64-linux-gnu/libgcc_s.so.1
+--112341--    object doesn't have a symbol table
+--112341-- Reading syms from /usr/lib/x86_64-linux-gnu/libc-2.31.so
+--112341--   Considering /usr/lib/debug/.build-id/18/78e6b475720c7c51969e69ab2d276fae6d1dee.debug ..
+--112341--   .. build-id is valid
+--112341-- Reading syms from /usr/lib/x86_64-linux-gnu/libm-2.31.so
+--112341--   Considering /usr/lib/debug/.build-id/fe/91b4090ea04c1559ff71dd9290062776618891.debug ..
+--112341--   .. build-id is valid
+--112341-- Reading syms from /usr/local/lib/libopencv_dnn.so.4.6.0
+--112341-- Reading syms from /usr/local/lib/libopencv_calib3d.so.4.6.0
+--112341-- Reading syms from /usr/lib/x86_64-linux-gnu/libpthread-2.31.so
+--112341--   Considering /usr/lib/debug/.build-id/7b/4536f41cdaa5888408e82d0836e33dcf436466.debug ..
+--112341--   .. build-id is valid
+--112341-- Reading syms from /usr/lib/x86_64-linux-gnu/libz.so.1.2.11
+--112341--    object doesn't have a symbol table
+--112341-- Reading syms from /usr/lib/x86_64-linux-gnu/libdl-2.31.so
+--112341--   Considering /usr/lib/debug/.build-id/c0/f40155b3f8bf8c494fa800f9ab197ebe20ed6e.debug ..
+--112341--   .. build-id is valid
+--112341-- Reading syms from /usr/local/lib/libopencv_features2d.so.4.6.0
+--112341-- Reading syms from /usr/local/lib/libopencv_flann.so.4.6.0
+--112341-- REDIR: 0x7bc4480 (libc.so.6:memmove) redirected to 0x48311d0 (_vgnU_ifunc_wrapper)
+--112341-- REDIR: 0x7bc3780 (libc.so.6:strncpy) redirected to 0x48311d0 (_vgnU_ifunc_wrapper)
+--112341-- REDIR: 0x7bc47b0 (libc.so.6:strcasecmp) redirected to 0x48311d0 (_vgnU_ifunc_wrapper)
+--112341-- REDIR: 0x7bc30a0 (libc.so.6:strcat) redirected to 0x48311d0 (_vgnU_ifunc_wrapper)
+--112341-- REDIR: 0x7bc37e0 (libc.so.6:rindex) redirected to 0x48311d0 (_vgnU_ifunc_wrapper)
+--112341-- REDIR: 0x7bc5c50 (libc.so.6:rawmemchr) redirected to 0x48311d0 (_vgnU_ifunc_wrapper)
+--112341-- REDIR: 0x7be0ce0 (libc.so.6:wmemchr) redirected to 0x48311d0 (_vgnU_ifunc_wrapper)
+--112341-- REDIR: 0x7be0820 (libc.so.6:wcscmp) redirected to 0x48311d0 (_vgnU_ifunc_wrapper)
+--112341-- REDIR: 0x7bc45e0 (libc.so.6:mempcpy) redirected to 0x48311d0 (_vgnU_ifunc_wrapper)
+--112341-- REDIR: 0x7bc4410 (libc.so.6:bcmp) redirected to 0x48311d0 (_vgnU_ifunc_wrapper)
+--112341-- REDIR: 0x7bc3710 (libc.so.6:strncmp) redirected to 0x48311d0 (_vgnU_ifunc_wrapper)
+--112341-- REDIR: 0x7bc3150 (libc.so.6:strcmp) redirected to 0x48311d0 (_vgnU_ifunc_wrapper)
+--112341-- REDIR: 0x7bc4540 (libc.so.6:memset) redirected to 0x48311d0 (_vgnU_ifunc_wrapper)
+--112341-- REDIR: 0x7be07e0 (libc.so.6:wcschr) redirected to 0x48311d0 (_vgnU_ifunc_wrapper)
+--112341-- REDIR: 0x7bc3670 (libc.so.6:strnlen) redirected to 0x48311d0 (_vgnU_ifunc_wrapper)
+--112341-- REDIR: 0x7bc3230 (libc.so.6:strcspn) redirected to 0x48311d0 (_vgnU_ifunc_wrapper)
+--112341-- REDIR: 0x7bc4800 (libc.so.6:strncasecmp) redirected to 0x48311d0 (_vgnU_ifunc_wrapper)
+--112341-- REDIR: 0x7bc31d0 (libc.so.6:strcpy) redirected to 0x48311d0 (_vgnU_ifunc_wrapper)
+--112341-- REDIR: 0x7bc4950 (libc.so.6:memcpy@@GLIBC_2.14) redirected to 0x48311d0 (_vgnU_ifunc_wrapper)
+--112341-- REDIR: 0x7be1f50 (libc.so.6:wcsnlen) redirected to 0x48311d0 (_vgnU_ifunc_wrapper)
+--112341-- REDIR: 0x7be0860 (libc.so.6:wcscpy) redirected to 0x48311d0 (_vgnU_ifunc_wrapper)
+--112341-- REDIR: 0x7bc3820 (libc.so.6:strpbrk) redirected to 0x48311d0 (_vgnU_ifunc_wrapper)
+--112341-- REDIR: 0x7bc3100 (libc.so.6:index) redirected to 0x48311d0 (_vgnU_ifunc_wrapper)
+--112341-- REDIR: 0x7bc3630 (libc.so.6:strlen) redirected to 0x48311d0 (_vgnU_ifunc_wrapper)
+--112341-- REDIR: 0x7bccbb0 (libc.so.6:memrchr) redirected to 0x48311d0 (_vgnU_ifunc_wrapper)
+--112341-- REDIR: 0x7bc4850 (libc.so.6:strcasecmp_l) redirected to 0x48311d0 (_vgnU_ifunc_wrapper)
+--112341-- REDIR: 0x7bc43d0 (libc.so.6:memchr) redirected to 0x48311d0 (_vgnU_ifunc_wrapper)
+--112341-- REDIR: 0x7be0930 (libc.so.6:wcslen) redirected to 0x48311d0 (_vgnU_ifunc_wrapper)
+--112341-- REDIR: 0x7bc3ae0 (libc.so.6:strspn) redirected to 0x48311d0 (_vgnU_ifunc_wrapper)
+--112341-- REDIR: 0x7bc4750 (libc.so.6:stpncpy) redirected to 0x48311d0 (_vgnU_ifunc_wrapper)
+--112341-- REDIR: 0x7bc46f0 (libc.so.6:stpcpy) redirected to 0x48311d0 (_vgnU_ifunc_wrapper)
+--112341-- REDIR: 0x7bc5c90 (libc.so.6:strchrnul) redirected to 0x48311d0 (_vgnU_ifunc_wrapper)
+--112341-- REDIR: 0x7bc48a0 (libc.so.6:strncasecmp_l) redirected to 0x48311d0 (_vgnU_ifunc_wrapper)
+--112341-- REDIR: 0x7cac500 (libc.so.6:__strrchr_avx2) redirected to 0x483ea10 (rindex)
+--112341-- REDIR: 0x7bbe0e0 (libc.so.6:malloc) redirected to 0x483b780 (malloc)
+--112341-- REDIR: 0x7cac6d0 (libc.so.6:__strlen_avx2) redirected to 0x483ef40 (strlen)
+--112341-- REDIR: 0x7ca8cc0 (libc.so.6:__memcmp_avx2_movbe) redirected to 0x48421e0 (bcmp)
+--112341-- REDIR: 0x7ca7bd0 (libc.so.6:__strcmp_avx2) redirected to 0x483fed0 (strcmp)
+--112341-- REDIR: 0x79d1b20 (libstdc++.so.6:operator new(unsigned long)) redirected to 0x483bdf0 (operator new(unsigned long))
+--112341-- REDIR: 0x7caf6e0 (libc.so.6:__memcpy_avx_unaligned_erms) redirected to 0x48429f0 (memmove)
+--112341-- REDIR: 0x79cfd70 (libstdc++.so.6:operator delete(void*)) redirected to 0x483cf50 (operator delete(void*))
+--112341-- REDIR: 0x7ca8010 (libc.so.6:__strncmp_avx2) redirected to 0x483f670 (strncmp)
+--112341-- REDIR: 0x7cafb60 (libc.so.6:__memset_avx2_unaligned_erms) redirected to 0x48428e0 (memset)
+--112341-- REDIR: 0x7ca8530 (libc.so.6:__memchr_avx2) redirected to 0x4840050 (memchr)
+--112341-- REDIR: 0x7bbfb10 (libc.so.6:calloc) redirected to 0x483dce0 (calloc)
+--112341-- REDIR: 0x7caf6c0 (libc.so.6:__mempcpy_avx_unaligned_erms) redirected to 0x4843660 (mempcpy)
+ ACME PERCEPTION MODULE 
+
+**** Enter filepath on which detection should be carried****: 
+==112341== 
+==112341== Process terminating with default action of signal 2 (SIGINT)
+==112341==    at 0x7C31FD2: read (read.c:26)
+==112341==    by 0x7BB4B9E: _IO_file_underflow@@GLIBC_2.2.5 (fileops.c:517)
+==112341==    by 0x7BB5F85: _IO_default_uflow (genops.c:362)
+==112341==    by 0x7A304B0: __gnu_cxx::stdio_sync_filebuf<char, std::char_traits<char> >::underflow() (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.28)
+==112341==    by 0x79EB499: std::basic_istream<char, std::char_traits<char> >& std::getline<char, std::char_traits<char>, std::allocator<char> >(std::basic_istream<char, std::char_traits<char> >&, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >&, char) (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.28)
+==112341==    by 0x179A9E: main (main.cpp:48)
+--112341-- REDIR: 0x7bbe6d0 (libc.so.6:free) redirected to 0x483c9d0 (free)
+==112341== 
+==112341== HEAP SUMMARY:
+==112341==     in use at exit: 31,881 bytes in 267 blocks
+==112341==   total heap usage: 4,430 allocs, 4,163 frees, 344,363 bytes allocated
+==112341== 
+==112341== Searching for pointers to 267 not-freed blocks
+==112341== Checked 1,531,640 bytes
+==112341== 
+==112341== LEAK SUMMARY:
+==112341==    definitely lost: 0 bytes in 0 blocks
+==112341==    indirectly lost: 0 bytes in 0 blocks
+==112341==      possibly lost: 0 bytes in 0 blocks
+==112341==    still reachable: 31,881 bytes in 267 blocks
+==112341==         suppressed: 0 bytes in 0 blocks
+==112341== Reachable blocks (those to which a pointer was found) are not shown.
+==112341== To see them, rerun with: --leak-check=full --show-leak-kinds=all
+==112341== 
+==112341== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
