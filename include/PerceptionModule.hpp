@@ -44,17 +44,35 @@
 
 
 /**
- * @brief 
+ * @brief Perception Module
  * This class initiates the entire module which consists of
  * the data reader, detector, tracker and then frame transformation
  * 
  */
 class PerceptionModule {
+    /**
+     * @brief FilePath for the perception module
+     * 
+     */
     std::string path;
+
+    /**
+     * @brief Filetype for the input
+     * 
+     */
     int fileOption;
 
  public:
+    /**
+     * @brief ReadData object for getting the files and filetype
+     * 
+     */
     ReadData frame;
+
+    /**
+     * @brief Human Detector object for detection
+     * and tracking functionalities on input
+     */
     HumanDetector acmeDetector;
     /**
      * @brief Construct a new Perception Module object which asks the
