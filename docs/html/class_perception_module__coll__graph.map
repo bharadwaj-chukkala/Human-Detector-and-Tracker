@@ -1,0 +1,5 @@
+<map id="PerceptionModule" name="PerceptionModule">
+<area shape="rect" id="node1" title="Perception Module This class initiates the entire module which consists of the data reader,..." alt="" coords="64,95,203,121"/>
+<area shape="rect" id="node2" href="$class_human_detector.html" title="class HumanDetector This class uses a pre&#45;trained SVM model to detect humans and uses co&#45;ordinates of..." alt="" coords="5,5,131,32"/>
+<area shape="rect" id="node3" href="$class_read_data.html" title="ReadData class which reads the input frame by frame." alt="" coords="155,5,242,32"/>
+</map>

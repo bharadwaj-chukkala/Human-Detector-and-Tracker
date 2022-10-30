@@ -5,14 +5,10 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.17"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Acmerobotics_perpception: include/HumanDetector.hpp Source File</title>
+<title>Acme Perception Module: include/HumanDetector.hpp Source File</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
-<link href="navtree.css" rel="stylesheet" type="text/css"/>
-<script type="text/javascript" src="resize.js"></script>
-<script type="text/javascript" src="navtreedata.js"></script>
-<script type="text/javascript" src="navtree.js"></script>
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
@@ -31,11 +27,12 @@
 <table cellspacing="0" cellpadding="0">
  <tbody>
  <tr style="height: 56px;">
+  <td id="projectlogo"><img alt="Logo" src="University_of_Maryland.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">Acmerobotics_perpception
-   &#160;<span id="projectnumber">0.1</span>
+   <div id="projectname">Acme Perception Module
+   &#160;<span id="projectnumber">1.0.0</span>
    </div>
-   <div id="projectbrief">Perception module for Acme Robotics Robot</div>
+   <div id="projectbrief">Human Detector and Tracking</div>
   </td>
  </tr>
  </tbody>
@@ -58,23 +55,6 @@ $(function() {
 });
 /* @license-end */</script>
 <div id="main-nav"></div>
-</div><!-- top -->
-<div id="side-nav" class="ui-resizable side-nav-resizable">
-  <div id="nav-tree">
-    <div id="nav-tree-contents">
-      <div id="nav-sync" class="sync"></div>
-    </div>
-  </div>
-  <div id="splitbar" style="-moz-user-select:none;" 
-       class="ui-resizable-handle">
-  </div>
-</div>
-<script type="text/javascript">
-/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
-$(document).ready(function(){initNavTree('_human_detector_8hpp_source.html',''); initResizable(); });
-/* @license-end */
-</script>
-<div id="doc-content">
 <!-- window showing the filter options -->
 <div id="MSearchSelectWindow"
      onmouseover="return searchBox.OnSearchSelectShow()"
@@ -89,51 +69,67 @@ $(document).ready(function(){initNavTree('_human_detector_8hpp_source.html','');
 </iframe>
 </div>
 
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_d44c64559bbebec7f509842c48db8b23.html">include</a></li>  </ul>
+</div>
+</div><!-- top -->
 <div class="header">
   <div class="headertitle">
 <div class="title">HumanDetector.hpp</div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160; </div>
-<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;<span class="preprocessor"> # include &lt;iostream&gt;</span></div>
-<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;<span class="preprocessor"> # include &lt;opencv2/opencv.hpp&gt;</span></div>
-<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;<span class="preprocessor"> # include &lt;string&gt;</span></div>
-<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;<span class="preprocessor"> # include &lt;&quot;<a class="code" href="_human_classifier_8hpp.html">HumanClassifier.hpp</a>&quot;</span>&gt;</div>
-<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160; </div>
-<div class="line"><a name="l00046"></a><span class="lineno"><a class="line" href="class_human_detector.html">   46</a></span>&#160; <span class="keyword">class </span><a class="code" href="class_human_detector.html">HumanDetector</a>:Public <a class="code" href="class_human_classifier.html">HumanClassifier</a>{</div>
-<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;    <span class="keyword">public</span>:</div>
-<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;    </div>
-<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;    <a class="code" href="class_human_detector.html#a8910bbd14716e8e47a4f3d33daeb5eba">HumanDetector</a>();</div>
-<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160; </div>
-<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;    cv::Rect2d <a class="code" href="class_human_detector.html#a8441a10804a6ab1291dcae30c6f3c48e">drawBoundingBox</a>();</div>
-<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;    </div>
-<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;    std::pair <a class="code" href="class_human_detector.html#a43a8510e9233b3de1b4fd6a1c92253e7">calculateCentroid</a>(cv::Rect2d);</div>
-<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160; </div>
-<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_human_detector.html#a096710334f07d3f02c54d57e9975e3ff">transform</a>(std::pair);</div>
-<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160; </div>
-<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;    </div>
-<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;    <a class="code" href="class_human_detector.html#a66e5fbc1db9629476ef77f7c4c72f82f">~HumanDetector</a>();</div>
-<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160; </div>
-<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160; }</div>
-<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160; </div>
+<a href="_human_detector_8hpp.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#ifndef INCLUDE_HUMANDETECTOR_HPP_</span></div>
+<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor">#define INCLUDE_HUMANDETECTOR_HPP_</span></div>
+<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160; </div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;<span class="preprocessor"># include &lt;iostream&gt;</span></div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;<span class="preprocessor"># include &lt;string&gt;</span></div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;<span class="preprocessor">#include &lt;algorithm&gt;</span></div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;<span class="preprocessor"># include &lt;utility&gt;</span></div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;<span class="preprocessor"># include &lt;vector&gt;</span></div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;<span class="preprocessor"># include &lt;opencv2/opencv.hpp&gt;</span></div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;<span class="preprocessor"># include &lt;../include/HumanClassifier.hpp&gt;</span></div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;<span class="preprocessor"># include &lt;../include/RectsandConfidences.hpp&gt;</span></div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160; </div>
+<div class="line"><a name="l00053"></a><span class="lineno"><a class="line" href="class_human_detector.html">   53</a></span>&#160;<span class="keyword">class </span><a class="code" href="class_human_detector.html">HumanDetector</a>{</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;  <a class="code" href="class_human_classifier.html">HumanClassifier</a> humanClassifier;</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160; </div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160; </div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160; </div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;    std::vector&lt;cv::Point&gt; calculateCenters(</div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;      <span class="keyword">const</span> std::vector&lt;cv::Rect&gt; &amp;boundingBoxes);</div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160; </div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160; </div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;    std::vector&lt;cv::Point3d&gt; calculateRobotCordSysPoints(</div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;      <span class="keyword">const</span> std::vector&lt;cv::Point&gt; &amp;centers,</div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;    std::vector&lt;double&gt; &amp;confidences);</div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160; </div>
+<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;    <span class="keywordtype">int</span> drawBoundingBox(cv::Mat returnedFrame,</div>
+<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;      <span class="keyword">const</span> std::vector&lt;cv::Rect&gt; &amp;boundingBoxes,</div>
+<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;      <span class="keyword">const</span> std::vector&lt;double&gt; &amp;Confidences);</div>
+<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160; </div>
+<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160; <span class="keyword">public</span>:</div>
+<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;    <a class="code" href="class_human_detector.html#a8910bbd14716e8e47a4f3d33daeb5eba">HumanDetector</a>();</div>
+<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160; </div>
+<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;    <a class="code" href="class_human_detector.html#a66e5fbc1db9629476ef77f7c4c72f82f">~HumanDetector</a>();</div>
+<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160; </div>
+<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160; </div>
+<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160; </div>
+<div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;    <span class="keywordtype">int</span> <a class="code" href="class_human_detector.html#a44e2f4c3ba2a955b084fcf6ae3349b15">detectHumans</a>(cv::Mat returnedFrame);</div>
+<div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;};</div>
+<div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;<span class="preprocessor">#endif  // INCLUDE_HUMANDETECTOR_HPP_</span></div>
+<div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160; </div>
 </div><!-- fragment --></div><!-- contents -->
-</div><!-- doc-content -->
-<div class="ttc" id="aclass_human_detector_html_a66e5fbc1db9629476ef77f7c4c72f82f"><div class="ttname"><a href="class_human_detector.html#a66e5fbc1db9629476ef77f7c4c72f82f">HumanDetector::~HumanDetector</a></div><div class="ttdeci">~HumanDetector()</div><div class="ttdoc">Destroys the Human Detector object.</div></div>
-<div class="ttc" id="aclass_human_classifier_html"><div class="ttname"><a href="class_human_classifier.html">HumanClassifier</a></div><div class="ttdef"><b>Definition:</b> <a href="_human_classifier_8hpp_source.html#l00042">HumanClassifier.hpp:42</a></div></div>
-<div class="ttc" id="aclass_human_detector_html_a096710334f07d3f02c54d57e9975e3ff"><div class="ttname"><a href="class_human_detector.html#a096710334f07d3f02c54d57e9975e3ff">HumanDetector::transform</a></div><div class="ttdeci">void transform(std::pair)</div><div class="ttdoc">Moving from 2d Image coordinate system to 3d Robot coordinate system and display it.</div></div>
-<div class="ttc" id="aclass_human_detector_html"><div class="ttname"><a href="class_human_detector.html">HumanDetector</a></div><div class="ttdoc">class HumanDetector This class uses a pre-trained SVM model to detect humans and returns co-ordinates...</div><div class="ttdef"><b>Definition:</b> <a href="_human_detector_8hpp_source.html#l00046">HumanDetector.hpp:46</a></div></div>
-<div class="ttc" id="aclass_human_detector_html_a8910bbd14716e8e47a4f3d33daeb5eba"><div class="ttname"><a href="class_human_detector.html#a8910bbd14716e8e47a4f3d33daeb5eba">HumanDetector::HumanDetector</a></div><div class="ttdeci">HumanDetector()</div><div class="ttdoc">Construct a new Human Detector object.</div></div>
-<div class="ttc" id="aclass_human_detector_html_a43a8510e9233b3de1b4fd6a1c92253e7"><div class="ttname"><a href="class_human_detector.html#a43a8510e9233b3de1b4fd6a1c92253e7">HumanDetector::calculateCentroid</a></div><div class="ttdeci">std::pair calculateCentroid(cv::Rect2d)</div><div class="ttdoc">Finds the centroid of the bounding box.</div></div>
-<div class="ttc" id="a_human_classifier_8hpp_html"><div class="ttname"><a href="_human_classifier_8hpp.html">HumanClassifier.hpp</a></div><div class="ttdoc">Reads the data and process it.</div></div>
-<div class="ttc" id="aclass_human_detector_html_a8441a10804a6ab1291dcae30c6f3c48e"><div class="ttname"><a href="class_human_detector.html#a8441a10804a6ab1291dcae30c6f3c48e">HumanDetector::drawBoundingBox</a></div><div class="ttdeci">cv::Rect2d drawBoundingBox()</div><div class="ttdoc">This function calls predict function from the classifier. The 2d image points for the bounding box is...</div></div>
+<div class="ttc" id="aclass_human_detector_html_a66e5fbc1db9629476ef77f7c4c72f82f"><div class="ttname"><a href="class_human_detector.html#a66e5fbc1db9629476ef77f7c4c72f82f">HumanDetector::~HumanDetector</a></div><div class="ttdeci">~HumanDetector()</div><div class="ttdoc">Destroys the Human Detector object.</div><div class="ttdef"><b>Definition:</b> <a href="_human_detector_8cpp_source.html#l00045">HumanDetector.cpp:45</a></div></div>
+<div class="ttc" id="aclass_human_classifier_html"><div class="ttname"><a href="class_human_classifier.html">HumanClassifier</a></div><div class="ttdoc">class HumanClassifier This class gets a pre-trained SVM model to detect humans and classifies the sen...</div><div class="ttdef"><b>Definition:</b> <a href="_human_classifier_8hpp_source.html#l00047">HumanClassifier.hpp:47</a></div></div>
+<div class="ttc" id="aclass_human_detector_html"><div class="ttname"><a href="class_human_detector.html">HumanDetector</a></div><div class="ttdoc">class HumanDetector This class uses a pre-trained SVM model to detect humans and uses co-ordinates of...</div><div class="ttdef"><b>Definition:</b> <a href="_human_detector_8hpp_source.html#l00053">HumanDetector.hpp:53</a></div></div>
+<div class="ttc" id="aclass_human_detector_html_a8910bbd14716e8e47a4f3d33daeb5eba"><div class="ttname"><a href="class_human_detector.html#a8910bbd14716e8e47a4f3d33daeb5eba">HumanDetector::HumanDetector</a></div><div class="ttdeci">HumanDetector()</div><div class="ttdoc">Construct a new Human Detector object.</div><div class="ttdef"><b>Definition:</b> <a href="_human_detector_8cpp_source.html#l00044">HumanDetector.cpp:44</a></div></div>
+<div class="ttc" id="aclass_human_detector_html_a44e2f4c3ba2a955b084fcf6ae3349b15"><div class="ttname"><a href="class_human_detector.html#a44e2f4c3ba2a955b084fcf6ae3349b15">HumanDetector::detectHumans</a></div><div class="ttdeci">int detectHumans(cv::Mat returnedFrame)</div><div class="ttdoc">This method carries out the detection pipeline. It calls Humanclassifier to detect humans,...</div><div class="ttdef"><b>Definition:</b> <a href="_human_detector_8cpp_source.html#l00125">HumanDetector.cpp:125</a></div></div>
 <!-- start footer part -->
-<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
-  <ul>
-    <li class="navelem"><a class="el" href="dir_d44c64559bbebec7f509842c48db8b23.html">include</a></li><li class="navelem"><b>HumanDetector.hpp</b></li>
-    <li class="footer">Generated by
-    <a href="http://www.doxygen.org/index.html">
-    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.17 </li>
-  </ul>
-</div>
+<hr class="footer"/><address class="footer"><small>
+Generated by &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.17
+</small></address>
 </body>
 </html>

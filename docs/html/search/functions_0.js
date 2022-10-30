@@ -1,4 +1,5 @@
 var searchData=
 [
-  ['calculatecentroid_19',['calculateCentroid',['../class_human_detector.html#a43a8510e9233b3de1b4fd6a1c92253e7',1,'HumanDetector']]]
+  ['detecthumans_53',['detectHumans',['../class_human_detector.html#a44e2f4c3ba2a955b084fcf6ae3349b15',1,'HumanDetector']]],
+  ['dotransform_54',['doTransform',['../class_transformation.html#ad7a3a4218a1730fcf86d49cd13af4b89',1,'Transformation']]]
 ];

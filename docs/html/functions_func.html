@@ -5,14 +5,10 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.17"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Acmerobotics_perpception: Class Members - Functions</title>
+<title>Acme Perception Module: Class Members - Functions</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
-<link href="navtree.css" rel="stylesheet" type="text/css"/>
-<script type="text/javascript" src="resize.js"></script>
-<script type="text/javascript" src="navtreedata.js"></script>
-<script type="text/javascript" src="navtree.js"></script>
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
@@ -31,11 +27,12 @@
 <table cellspacing="0" cellpadding="0">
  <tbody>
  <tr style="height: 56px;">
+  <td id="projectlogo"><img alt="Logo" src="University_of_Maryland.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">Acmerobotics_perpception
-   &#160;<span id="projectnumber">0.1</span>
+   <div id="projectname">Acme Perception Module
+   &#160;<span id="projectnumber">1.0.0</span>
    </div>
-   <div id="projectbrief">Perception module for Acme Robotics Robot</div>
+   <div id="projectbrief">Human Detector and Tracking</div>
   </td>
  </tr>
  </tbody>
@@ -59,22 +56,6 @@ $(function() {
 /* @license-end */</script>
 <div id="main-nav"></div>
 </div><!-- top -->
-<div id="side-nav" class="ui-resizable side-nav-resizable">
-  <div id="nav-tree">
-    <div id="nav-tree-contents">
-      <div id="nav-sync" class="sync"></div>
-    </div>
-  </div>
-  <div id="splitbar" style="-moz-user-select:none;" 
-       class="ui-resizable-handle">
-  </div>
-</div>
-<script type="text/javascript">
-/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
-$(document).ready(function(){initNavTree('functions_func.html',''); initResizable(); });
-/* @license-end */
-</script>
-<div id="doc-content">
 <!-- window showing the filter options -->
 <div id="MSearchSelectWindow"
      onmouseover="return searchBox.OnSearchSelectShow()"
@@ -91,14 +72,29 @@ $(document).ready(function(){initNavTree('functions_func.html',''); initResizabl
 
 <div class="contents">
 &#160;<ul>
-<li>calculateCentroid()
-: <a class="el" href="class_human_detector.html#a43a8510e9233b3de1b4fd6a1c92253e7">HumanDetector</a>
+<li>detectHumans()
+: <a class="el" href="class_human_detector.html#a44e2f4c3ba2a955b084fcf6ae3349b15">HumanDetector</a>
 </li>
-<li>drawBoundingBox()
-: <a class="el" href="class_human_detector.html#a8441a10804a6ab1291dcae30c6f3c48e">HumanDetector</a>
+<li>doTransform()
+: <a class="el" href="class_transformation.html#ad7a3a4218a1730fcf86d49cd13af4b89">Transformation</a>
+</li>
+<li>getConfidences()
+: <a class="el" href="class_rectsand_confidences.html#a3cabdbc27db76188cca2471395d3ed89">RectsandConfidences</a>
+</li>
+<li>getRectangles()
+: <a class="el" href="class_rectsand_confidences.html#a695b9056b008551d81b0e984e8217f0d">RectsandConfidences</a>
+</li>
+<li>HumanClassifier()
+: <a class="el" href="class_human_classifier.html#aa1bef1eb13a18bbe727bacdc9d266e28">HumanClassifier</a>
 </li>
 <li>HumanDetector()
 : <a class="el" href="class_human_detector.html#a8910bbd14716e8e47a4f3d33daeb5eba">HumanDetector</a>
+</li>
+<li>PerceptionModule()
+: <a class="el" href="class_perception_module.html#af2934d26ef59d525c82128a67a06ceef">PerceptionModule</a>
+</li>
+<li>predict()
+: <a class="el" href="class_human_classifier.html#a9b993ed5e7edce8eafdee4915f258a08">HumanClassifier</a>
 </li>
 <li>ReadData()
 : <a class="el" href="class_read_data.html#abdc3a24ea2bfab9690d0dd9fde90542e">ReadData</a>
@@ -106,25 +102,37 @@ $(document).ready(function(){initNavTree('functions_func.html',''); initResizabl
 <li>readFrame()
 : <a class="el" href="class_read_data.html#a56f88a9e4d080091b1c39fb533b94814">ReadData</a>
 </li>
-<li>transform()
-: <a class="el" href="class_human_detector.html#a096710334f07d3f02c54d57e9975e3ff">HumanDetector</a>
+<li>RectsandConfidences()
+: <a class="el" href="class_rectsand_confidences.html#a08d166f255d86315fa5b1496a339fcb8">RectsandConfidences</a>
+</li>
+<li>Transformation()
+: <a class="el" href="class_transformation.html#a40ab64d41c752804740e972ef5f2479f">Transformation</a>
+</li>
+<li>~HumanClassifier()
+: <a class="el" href="class_human_classifier.html#ac6c2cb0bfa6a589804d57e6ba56cb345">HumanClassifier</a>
 </li>
 <li>~HumanDetector()
 : <a class="el" href="class_human_detector.html#a66e5fbc1db9629476ef77f7c4c72f82f">HumanDetector</a>
 </li>
+<li>~PerceptionModule()
+: <a class="el" href="class_perception_module.html#a52bf1fd6688cd15a6687bc8af69bf116">PerceptionModule</a>
+</li>
 <li>~ReadData()
 : <a class="el" href="class_read_data.html#a07e89e0f5dfbfb78a5b4c463fa0d3bb7">ReadData</a>
 </li>
+<li>~RectsandConfidences()
+: <a class="el" href="class_rectsand_confidences.html#aaacef9f8c6ac6e6111eefcbcc64b5176">RectsandConfidences</a>
+</li>
+<li>~Transformation()
+: <a class="el" href="class_transformation.html#ade11a9f133b2acd81ae9383187cc255e">Transformation</a>
+</li>
 </ul>
 </div><!-- contents -->
-</div><!-- doc-content -->
 <!-- start footer part -->
-<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
-  <ul>
-    <li class="footer">Generated by
-    <a href="http://www.doxygen.org/index.html">
-    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.17 </li>
-  </ul>
-</div>
+<hr class="footer"/><address class="footer"><small>
+Generated by &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.17
+</small></address>
 </body>
 </html>
