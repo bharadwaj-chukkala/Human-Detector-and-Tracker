@@ -1,0 +1,13 @@
+<map id="include/HumanClassifier.hpp" name="include/HumanClassifier.hpp">
+<area shape="rect" id="node1" title="Header file for HumanClassifier.cpp." alt="" coords="344,5,553,32"/>
+<area shape="rect" id="node2" href="$_human_classifier_8cpp.html" title="Implementation for HumanClassifier.hpp." alt="" coords="85,80,271,107"/>
+<area shape="rect" id="node3" href="$_human_detector_8hpp.html" title="Header file for HumanDetector.cpp." alt="" coords="347,80,551,107"/>
+<area shape="rect" id="node5" href="$_perception_module_8hpp.html" title="Header file for PerceptionModule.cpp." alt="" coords="115,155,334,181"/>
+<area shape="rect" id="node10" href="$test___human_classifier_8cpp_source.html" title=" " alt="" coords="575,80,794,107"/>
+<area shape="rect" id="node11" href="$test___rectsand_confidences_8cpp_source.html" title=" " alt="" coords="818,80,1069,107"/>
+<area shape="rect" id="node4" href="$_human_detector_8cpp.html" title="Implementation file for HumanDetector.hpp." alt="" coords="359,155,539,181"/>
+<area shape="rect" id="node7" href="$_perception_module_8cpp.html" title="Implementation file for PerceptionModule.hpp." alt="" coords="450,229,645,256"/>
+<area shape="rect" id="node9" href="$test___human_detector_8cpp_source.html" title=" " alt="" coords="614,155,827,181"/>
+<area shape="rect" id="node6" href="$app_2main_8cpp.html" title="The final app implementation." alt="" coords="5,229,116,256"/>
+<area shape="rect" id="node8" href="$test___perception_module_8cpp_source.html" title=" " alt="" coords="141,229,367,256"/>
+</map>

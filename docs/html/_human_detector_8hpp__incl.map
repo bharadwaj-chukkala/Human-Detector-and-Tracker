@@ -1,0 +1,11 @@
+<map id="include/HumanDetector.hpp" name="include/HumanDetector.hpp">
+<area shape="rect" id="node1" title="Header file for HumanDetector.cpp." alt="" coords="238,5,442,32"/>
+<area shape="rect" id="node2" title=" " alt="" coords="5,80,85,107"/>
+<area shape="rect" id="node3" title=" " alt="" coords="109,80,168,107"/>
+<area shape="rect" id="node4" title=" " alt="" coords="192,80,277,107"/>
+<area shape="rect" id="node5" title=" " alt="" coords="318,229,378,256"/>
+<area shape="rect" id="node6" title=" " alt="" coords="434,229,497,256"/>
+<area shape="rect" id="node7" title=" " alt="" coords="616,229,771,256"/>
+<area shape="rect" id="node8" href="$_human_classifier_8hpp.html" title="Header file for HumanClassifier.cpp." alt="" coords="453,80,675,107"/>
+<area shape="rect" id="node9" href="$_rectsand_confidences_8hpp.html" title="Header file for RectandConfidence.cpp." alt="" coords="403,155,656,181"/>
+</map>
