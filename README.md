@@ -239,72 +239,9 @@ doxywizard
 
 ---
 ## Project Videos
+### [Final Video]
 ### [Sprint 1 Video](https://drive.google.com/file/d/1hh5f50VzA4mIPJmc9IJAOi4N9bs-uyPp/view?usp=sharing)
 Note: The Microphone had some issue, apologies beforehand,
 ### [Proposal Video](https://drive.google.com/file/d/1BUSOc8T6gLknhAt8TJ6uW9MLCY49dpPH/view?usp=sharing)
-```
 
-```
-# Valgrind
-sudo apt install valgrind
-sudo apt-get install -y kcachegrind
-```
-
-```
-# Doxygen
-sudo apt-get install doxygen
-sudo apt-get install doxygen-gui
-```
-
-### Build and Code Coverage
-```
-# Clone
-git clone https://github.com/bharadwaj-chukkala/ENPM808X_Midterm_project.git
-cd <path to repository>
-mkdir build
-cd build
-cmake ..
-make
-
-# Run
-Run tests: ./test/cpp-test
-Run the perception module: ./app/shell-app
-```
-
-```
-# Static Code Analysis
-1. cppcheck
-bash run_cppcheck.sh
-2. cpplint
-bash run_cpplint.sh
-```
-Note: Static Code Analysis Results are stored in `./results`
-
-```
-# Valgrind
-valgrind --leak-check=full <path of the executable>
-valgrind --tool=callgrind  ./app/shell-app
-kcachegrind
-```
-
-```
-# Code Coverage
-cmake -D COVERAGE=ON -D CMAKE_BUILD_TYPE=Debug ../
-make
-make code_coverage
-firefox index.html
-```
-
-### Doxygen Documentation
-```
-cd ..
-doxygen doxygen.config
-doxywizard
-```
-
----
-## Project Videos
-### [Sprint 1 Video]
-### [Proposal Video](https://drive.google.com/file/d/1BUSOc8T6gLknhAt8TJ6uW9MLCY49dpPH/view?usp=sharing)
-### [Final Video]
 
