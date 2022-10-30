@@ -215,7 +215,6 @@ cd ..
 doxygen doxygen.config
 doxywizard
 ```
-
 ---
 ## Project Videos
 ### [Sprint 1 Video](https://drive.google.com/file/d/1hh5f50VzA4mIPJmc9IJAOi4N9bs-uyPp/view?usp=sharing)
