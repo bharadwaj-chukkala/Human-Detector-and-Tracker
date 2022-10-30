@@ -1,6 +1,10 @@
 # Human Obstacle Detection and Tracking
 [![Build Status](https://app.travis-ci.com/bharadwaj-chukkala/ENPM808X_Midterm_project.svg?branch=phase1)](https://app.travis-ci.com/github/bharadwaj-chukkala/ENPM808X_Midterm_project)
+<<<<<<< HEAD
 [![Coverage Status](https://coveralls.io/repos/github/spauly98/ENPM808X_Midterm_project/badge.svg?branch=phase1)](https://coveralls.io/github/spauly98/ENPM808X_Midterm_project?branch=phase1)
+=======
+[![Coverage Status](https://coveralls.io/repos/github/spauly98/ENPM808X_Midterm_project/badge.svg)](https://coveralls.io/github/spauly98/ENPM808X_Midterm_project)
+>>>>>>> master
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 ---
 
@@ -17,6 +21,7 @@ The Software Product will consist of 4 modules which will take a continuous vide
   - Data Reader Module will take continuous video input, resize the frame and perform image transformations and then return the output to Classifier Module.
   - Classifier Module works using an SVM Model, To train the model we generate a Histogram of Gradients for the given dataser. The generated feature vectors will be used to train the SVM Classifier. The Classifier will detect the location of the feature (Human) in the input frames with an error bound. The Output Error will be calculated between the ground truth and the classified output and it will be iterated through and through to minimize error and improve feature detection accuracy. After the desired accuracy is being reached, the Classifer Module will help the Human Detector Module to draw bounding boxes as it keeps classifying the human in the input.
   - Human Detector Module will detect the person in the input as frames are extracted, it will draw bounding boxes as identification of the detected person from the classifier output and return the bounding box output data for each frame continuously.
+<<<<<<< HEAD
 
 <p align="center"> 
   <img width="500" height="300" src="https://user-images.githubusercontent.com/106445479/198857946-d84752f5-9db8-45dc-8b48-200fb6bf2f12.jpg">
@@ -24,6 +29,8 @@ The Software Product will consist of 4 modules which will take a continuous vide
 <h4 align="center">Advanced AGV with Perception capabilities</h1>
 
 
+=======
+>>>>>>> master
 ---
 ## License
 MIT License
@@ -107,6 +114,7 @@ The Members are Graduate students at The University of Maryland, College Park. T
 - Git Version Control Workflow.
 - Developer-level documentation.
 ---
+<<<<<<< HEAD
 
 ## Results
 ### Image Result
@@ -132,6 +140,27 @@ Agile Iterative Development Process will be used to develop the software along T
 # Code Coverage
 sudo apt-get install -y -qq lcov
 ```
+=======
+## Development Aspects
+Agile Iterative Development Process will be used to develop the software along Test-Driven Development.
+
+### [Product Backlog and Sprint Sheet](https://docs.google.com/spreadsheets/d/18YPf_3DI0MOv161B0Y4bDmjeRzd9c_LTEvauJ4ByTYQ/edit#gid=0)
+### [Sprint Review Sheet](https://docs.google.com/document/d/1KK2tiQVW7YDc3A5AzL9GQOzPdxCIJ_7yfH8meOmB9ho/edit#heading=h.dawifg8c0hwe)
+
+### Software Dependencies
+- OpenCV 4.6.0 (covered under the open-source Apache 2 License)
+- Eigen 3.4 the Mozilla Public License 2.0
+- GTest BSD 3-Clause "New" or "Revised" License
+### Tools and Technologies
+`Ubuntu 18.04(LTS)` `C++ 14+` `CMake` `OpenCV` `TravisCI` `Coveralls`
+`Makefile` `CMake` `cpplint` `cppcheck` `clangd` `Valgrind` `GTest` `VScode`
+
+### Installation via Command Line
+```
+# Code Coverage
+sudo apt-get install -y -qq lcov
+```
+>>>>>>> master
 
 ```
 # OpenCV install
@@ -156,6 +185,7 @@ cd ../../
 # Static Code Analysis
 sudo apt install cpplint
 sudo apt install cppcheck
+<<<<<<< HEAD
 ```
 
 ```
@@ -221,8 +251,74 @@ doxywizard
 ### [Sprint 1 Video](https://drive.google.com/file/d/1hh5f50VzA4mIPJmc9IJAOi4N9bs-uyPp/view?usp=sharing)
 Note: The Microphone had some issue, apologies beforehand,
 ### [Proposal Video](https://drive.google.com/file/d/1BUSOc8T6gLknhAt8TJ6uW9MLCY49dpPH/view?usp=sharing)
+=======
+```
 
+```
+# Valgrind
+sudo apt install valgrind
+sudo apt-get install -y kcachegrind
+```
 
+```
+# Doxygen
+sudo apt-get install doxygen
+sudo apt-get install doxygen-gui
+```
 
+### Build and Code Coverage
+```
+# Clone
+git clone https://github.com/bharadwaj-chukkala/ENPM808X_Midterm_project.git
+cd <path to repository>
+mkdir build
+cd build
+cmake ..
+make
 
+# Run
+Run tests: ./test/cpp-test
+Run the perception module: ./app/shell-app
+```
+
+```
+# Static Code Analysis
+1. cppcheck
+bash run_cppcheck.sh
+2. cpplint
+bash run_cpplint.sh
+```
+Note: Static Code Analysis Results are stored in `./results`
+>>>>>>> master
+
+```
+# Valgrind
+valgrind --leak-check=full <path of the executable>
+valgrind --tool=callgrind  ./app/shell-app
+kcachegrind
+```
+
+<<<<<<< HEAD
+
+=======
+```
+# Code Coverage
+cmake -D COVERAGE=ON -D CMAKE_BUILD_TYPE=Debug ../
+make
+make code_coverage
+firefox index.html
+```
+
+### Doxygen Documentation
+```
+cd ..
+doxygen doxygen.config
+doxywizard
+```
+>>>>>>> master
+
+---
+## Project Videos
+### [Sprint 1 Video]
+### [Proposal Video](https://drive.google.com/file/d/1BUSOc8T6gLknhAt8TJ6uW9MLCY49dpPH/view?usp=sharing)
 
