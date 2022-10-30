@@ -17,6 +17,13 @@ The Software Product will consist of 4 modules which will take a continuous vide
   - Data Reader Module will take continuous video input, resize the frame and perform image transformations and then return the output to Classifier Module.
   - Classifier Module works using an SVM Model, To train the model we generate a Histogram of Gradients for the given dataser. The generated feature vectors will be used to train the SVM Classifier. The Classifier will detect the location of the feature (Human) in the input frames with an error bound. The Output Error will be calculated between the ground truth and the classified output and it will be iterated through and through to minimize error and improve feature detection accuracy. After the desired accuracy is being reached, the Classifer Module will help the Human Detector Module to draw bounding boxes as it keeps classifying the human in the input.
   - Human Detector Module will detect the person in the input as frames are extracted, it will draw bounding boxes as identification of the detected person from the classifier output and return the bounding box output data for each frame continuously.
+
+<p align="center"> 
+  <img width="500" height="300" src="https://user-images.githubusercontent.com/106445479/198857946-d84752f5-9db8-45dc-8b48-200fb6bf2f12.jpg">
+</p>
+<h4 align="center">Advanced AGV with Perception capabilities</h1>
+
+
 ---
 ## License
 MIT License
@@ -99,6 +106,12 @@ The Members are Graduate students at The University of Maryland, College Park. T
 - Valgrind Check for Memory Leaks.
 - Git Version Control Workflow.
 - Developer-level documentation.
+---
+
+## Results
+### Image Result
+
+### Video Result
 ---
 ## Development Aspects
 Agile Iterative Development Process will be used to develop the software along Test-Driven Development.
